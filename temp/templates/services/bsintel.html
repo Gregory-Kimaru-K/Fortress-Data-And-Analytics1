@@ -1,0 +1,393 @@
+{% extends "base.html" %}
+{% block title %}
+    Bussiness Intelligence Services
+{% endblock %}
+{% block content %}
+<div class="land">
+    <img src="{{ url_for('static', filename='landing/bi.jpeg') }}" alt="">
+    <div class="cont">
+        <h1></h1>
+        <h1>
+            Business Intelligence Services
+        </h1>
+        <p>
+            Fortress Data And Analytics: Cultivate data literacy, unlock insights, enhance efficiency.            
+        </p>
+        <a href="{{ url_for('contact') }}">
+            <button>
+                Consult a BI expert
+            </button>
+        </a>
+    </div>
+</div>
+
+<div class="services-content">
+    <div class="intro-cont">
+            <h2>
+                Business Intelligence Company Helping Brands to Create Data-Driven Culture
+            </h2>
+            <p>
+                We offer a comprehensive suite of business intelligence and analytics services that help growing organizations drive data literacy and unleash the power of data to be ready for a data-driven tomorrow.
+            </p>
+    </div>
+    
+    <div class="main-cont">
+        <div class="contents left">
+            <h3>
+                <img src="{{ url_for('static', filename='services/Data-Visualization-Services-Icon.png') }}" alt="">
+                Data Visualization Services.
+            </h3>
+            <p>
+                Discover hidden trends, patterns, and insights by converting your raw data into a visual format and make data interactive, intuitive, and easy to understand. Our data reporting capabilities ensure covering important KPIs (Key Performance Indicators) for your business to capture 360-degree-view. With Data Fortress And Analytics' comprehensive data visualization services, drill down data and explore multidimensional data for more insights and visibility.
+            </p>
+        </div>
+        <div class="contents right">
+            <h3>
+                <img src="{{ url_for('static', filename='services/Enterprise-Business-Intelligence-Icon.png') }}" alt="">
+    
+                Enterprise Business Intelligence
+            </h3>
+            <p>
+                Meet your data security, accuracy, usability, and data management needs with Fortress Data And Analytics enterprise business intelligence. Our enterprise BI offers end-to-end solutions to gain insights from data wherever it is and provides a robust data governance framework to build a data culture across the organization. Manage multi-formatted, multi-level, and multidimensional data across departments, branches, and locations with enterprise business intelligence.
+            </p>
+        </div>
+        <div class="contents left">
+            <h3>
+                <img src="{{ url_for('static', filename='services/Predictive-Analytics-Solutions-Icon.png') }}" alt="">
+
+                Predictive Analytics Solutions
+            </h3>
+            <p>
+                Predict future outcomes and identify future risks and opportunities from data using advanced predictive analytics solutions offered by Fortress Data And Analytics. Predictive analytics help uncover hidden insights from data with the help of data mining, statistical modeling, and machine learning techniques. We build predictive models to find patterns from your data that help you plan what’s next, proactively respond to challenges, and reduce risks.
+            </p>
+        </div>
+        <div class="contents right">
+            <h3>
+                <img src="{{ url_for('static', filename='services/Business-Intelligence-Implementation-Icon.png') }}" alt="">
+
+                Implementing Business Intelligence
+            </h3>
+            <p>
+                Fortress Data And Analytics caters to a wide range of business intelligence implementation needs right from data warehousing, and data management, to data analytics and BI reporting. Our tailored BI solutions help large-scale organizations extract, manage, and analyze data to gain a complete picture of your enterprise. Gain actionable, real-time insights by implementing business intelligence solutions that are unique to your ever-changing business needs.
+            </p>
+        </div>
+        <div class="contents left">
+            <h3>
+                <img src="{{ url_for('static', filename='services/Data-Warehousing-Services-Icon.png') }}" alt="">
+
+                Data Warehousing Services
+            </h3>
+            <p>
+                Address the data management needs with Fortress Data And Analytics data warehousing services that include consulting, implementation, support, and maintenance. We understand your business needs and create a central, single repository of all your data from apps, systems, departments, and other sources and store processed data. Create a foundation for data quality, better insights, and smarter decision-making with powerful and tailored data warehousing solutions by Fortress Data And Analytics.
+            </p>
+        </div>
+        <div class="contents right">
+            <h3>
+                <img src="{{ url_for('static', filename='services/BI-Consulting-Services-Icon.png') }}" alt="">
+
+                BI Consulting
+            </h3>
+            <p>
+                Our business intelligence consulting services help organizations realize the power of business intelligence and analytics for actionable insights that help companies solve complex business challenges. Hire a business intelligence consultant to enable a data-centric environment with custom BI strategy, architecture, and implementation. Our skilled and qualified team of business intelligence consultants and BI developers helps organizations execute end-to-end BI strategies for improved visibility and performance.
+            </p>
+        </div>
+        <div class="contents left">
+            <h3>
+                <img src="{{ url_for('static', filename='services/Business-Analytics-Services-Icon.png') }}" alt="">
+
+                Business Analytics Services
+            </h3>
+            <p>
+                Become analytics-driven with Fortress Data And Analytics comprehensive business analytics solutions to make better strategic decisions. Empower your businesses with smarter, real-time insights using the latest data analytics technologies. We use advanced business analytics tools that enable businesses to uncover trends and patterns for faster and more accurate decision-making. Gain a competitive edge with business analytics services regardless of your business domain
+            </p>
+        </div>
+        <div class="contents right">
+            <h3>
+                <img src="{{ url_for('static', filename='services/ETL-Process-Icon.png') }}" alt="">
+
+                ETL Process
+            </h3>
+            <p>
+                Extract, Transform, Load (ETL) is a three-phase data integration process that consolidates data from various sources into a single data store. Our expertise in data integration services helps organizations effectively design consistent data pipelines to fuel data analytics. ETL is an important part of big data that cleanses and organizes data to improve quality and ensure consistency and visibility. We efficiently build a high-performing ETL pipeline that integrates multiple structured, semi-structured, and unstructured data into one BI-ready data source.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="services-tech-stack">
+    <h2>
+        Our Business Intelligence Services Tech Stack
+    </h2>
+    <div class="contents">
+        <h4>
+            Data Intergration
+        </h4>
+        <img src="{{ url_for('static', filename='services/PDI-Pentaho-Technology.png') }}" alt="">
+        <img src="{{ url_for('static', filename='services/Hevo-Technology.png') }}" alt="">
+        <img src="{{ url_for('static', filename='services/Azure-Data-Factory-Technology.png') }}" alt="">
+        <img src="{{ url_for('static', filename='services/SQL-Server-Technology.png') }}" alt="">
+        <img src="{{ url_for('static', filename='services/AWS-Glue-Technology.png') }}" alt="">
+
+    </div>
+    <div class="contents">
+        <h4>
+            Data Warehousing
+        </h4>
+        <img src="{{ url_for('static', filename='services/SQL-Server-Technology.png') }}" alt="">
+        <img src="{{ url_for('static', filename='services/Azure-Synapse-Technology.png') }}" alt="">
+        <img src="{{ url_for('static', filename='services/Redshift-Technology.png') }}" alt="">
+        <img src="{{ url_for('static', filename='services/MySQL-Technology.png') }}" alt="">
+        <img src="{{ url_for('static', filename='services/PostgreSQL-Technology.png') }}" alt="">
+
+    </div>
+    <div class="contents">
+        <h4>
+            Data Visualization
+        </h4>
+        <img src="{{ url_for('static', filename='services/Power-BI-Technology.png') }}" alt="">
+        <img src="{{ url_for('static', filename='services/PDI-Pentaho-Technology.png') }}" alt="">
+        <img src="{{ url_for('static', filename='services/Hevo-Technology.png') }}" alt="">
+        <img src="{{ url_for('static', filename='services/SQL-Server-Technology.png') }}" alt="">
+        <img src="{{ url_for('static', filename='services/Excel-Technology.png') }}" alt="">
+
+    </div>
+    <div class="contents">
+        <h4>
+            Cloud Services
+        </h4>
+        <img src="{{ url_for('static', filename='services/AWS-Technology.png') }}" alt="">
+        <img src="{{ url_for('static', filename='services/Azure-Technology.png') }}" alt="">
+        <img src="{{ url_for('static', filename='services/Google-Cloud-Technology.png') }}" alt="">
+    </div>        
+</div>
+
+<div class="serv-land">
+    <div class="polygon serv-poly">
+        <div class="serv-land-head">
+            <h1>
+                Benefits Of BI Services
+            </h1>
+        </div>
+    </div>
+    <div class="serv-land-cont serv-ben">
+        <div class="card">
+            <h2>
+                Competitive Advantage
+            </h2>
+            <p>
+                Data helps organizations track business performance, get a 360-degree-view, and create a strategic roadmap based on all data sources. Business intelligence help businesses keep up with the industry trends, deliver superior customer experience, and increase growth.
+            </p>
+        </div>
+        <div class="card">
+            <h2>
+                Improved Operational Efficiency
+            </h2>
+            <p>
+                With powerful data visualization tools, businesses can spot trends, identify opportunities/risks, and get insights into the inefficient process and underperforming departments. This will help businesses to take action for resource optimizations and innovate new programs to accelerate growth.
+            </p>
+        </div>
+        <div class="card">
+            <h2>
+                Better Decision-Making
+            </h2>
+            <p>
+                Visual representation of data is easy to digest and interpret. Business intelligence reporting enables companies to see all key performance indicators on a single page. BI tools deliver fast and accurate information with current, historical, and predictive views to make timely, faster, and smarter decisions.
+            </p>
+        </div>
+        <div class="card">
+            <h2>
+                Data-Driven Culture
+            </h2>
+            <p>
+                Data is an important asset for businesses. BI helps create a data-driven culture based on company-specific metrics and measures to make faster, more accurate, and rational decisions. Using business intelligence analytics, organizations can make data-driven decisions backed by factual and real-time information.
+            </p>
+        </div>
+        <div class="card">
+            <h2>
+                Actionable Insights
+            </h2>
+            <p>
+                Business Intelligence tools collect data from multiple resources and monitor key performance indicators that offer a holistic view of your business. With powerful analytics and self-service BI, even non-technical users can interact with data and gain actionable insights to make informed decisions, quickly and safely.
+            </p>
+        </div>
+    </div>
+</div>
+<div class="other">
+</div>
+<div class="other">
+</div>
+<div class="other">
+</div>
+<div class="other3">
+</div>
+
+<div class="services-technologies">
+    <h2>
+        Related Technologies
+    </h2>
+    <button>
+        <img src="{{ url_for('static', filename='tech/powerbi.png') }}"><br>
+        Power BI
+    </button>
+    <button>
+        <img src="{{ url_for('static', filename='tech/tableau.png') }}"><br>
+        Tableau
+    </button>
+    <button>
+        <img src="{{ url_for('static', filename='tech/pentaho.png') }}"><br>
+        Pentaho
+    </button>
+    <button>
+        <img src="{{ url_for('static', filename='tech/warehouseicon.png') }}"><br>
+        Data Warehousing Services
+    </button>
+    <button>
+        <img src="{{ url_for('static', filename='tech/visualizationicon.png') }}"><br>
+        Data Visualization Services
+    </button>
+</div>
+
+<div class="contact">
+    <div class="polygon serv-poly">
+        <div class="contact-head">
+            <h1>
+                Hire a Bussiness Intelligence developer
+            </h1>
+        </div>
+    </div>
+    <div class="contact-cont">
+        <div class="main">
+            <img src="{{ url_for('static', filename='landing/contact2.jpeg') }}" alt="">
+            <div class="content">
+                <p>
+                    Our dedicated business intelligence consultants help startups, mid-sized, and enterprise businesses unlock the power of data to make better business decisions.
+                </p>
+                <a href="{{ url_for('contact') }}">
+                    <button>
+                        Lets Discuss Your Project
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="ind-land">
+    <div class="polygon">
+        <div class="ind-head">
+            <h1>
+                Industries We Serve
+            </h1>
+        </div>
+    </div>
+    <div class="ind-cont">
+        <div class="contents magnet">
+            <a href="{{ url_for('fitness') }}" class="text">
+                <img src="{{ url_for('static', filename='industries/fitness.png') }}">
+                <h5>
+                    Fitness
+                </h5>
+            </a>
+        </div>
+
+        <div class="contents magnet">
+            <a href="{{ url_for('fintech') }}" class="text">
+                <img src="{{ url_for('static', filename='industries/fintech.png') }}">
+                <h5>
+                    Fintech
+                </h5>
+            </a>
+        </div>
+
+        <div class="contents magnet">
+            <a href="{{ url_for('education') }}" class="text">
+                <img src="{{ url_for('static', filename='industries/education.png') }}">
+                <h5>
+                    Education
+                </h5>
+            </a>
+        </div>
+
+        <div class="contents magnet">
+            <a href="{{ url_for('healthcare') }}" class="text">
+                <img src="{{ url_for('static', filename='industries/healthcareicon.png') }}">
+                <h5>
+                    Healthcare
+                </h5>
+            </a>
+        </div>
+
+        <div class="contents magnet">
+            <a href="{{ url_for('energy') }}" class="text">
+                <img src="{{ url_for('static', filename='industries/energy-and-utilities.png') }}">
+                <h5>
+                    Energy & Utilities
+                </h5>
+            </a>
+        </div>
+
+        <div class="contents magnet">
+            <a href="{{ url_for('travel') }}" class="text">
+                <img src="{{ url_for('static', filename='industries/travel-and-hospitality.png') }}">
+                <h5>
+                    Travel & Hospitality
+                </h5>
+            </a>
+        </div>
+
+        <div class="contents magnet">
+            <a href="{{ url_for('manufacturing') }}" class="text">
+                <img src="{{ url_for('static', filename='industries/manufacturing.png') }}">
+                <h5>
+                    Manufacturing
+                </h5>
+            </a>
+        </div>
+
+        <div class="contents magnet">
+            <a href="{{ url_for('adverts') }}" class="text">
+                <img src="{{ url_for('static', filename='industries/advertising.png') }}">
+                <h5>
+                    Advertising
+                </h5>
+            </a>
+        </div>
+
+        <div class="contents magnet">
+            <a href="{{ url_for('retail') }}" class="text">
+                <img src="{{ url_for('static', filename='industries/retail.png') }}">
+                <h5>
+                    Retail
+                </h5>
+            </a>
+        </div>
+
+        <div class="contents magnet">
+            <a href="{{ url_for('entertain') }}" class="text">
+                <img src="{{ url_for('static', filename='industries/media-and-entertainment.png') }}">
+                    <h5>
+                        Media & Entertainment
+                    </h5>
+            </a>
+        </div>
+
+        <div class="contents magnet">
+            <a href="{{ url_for('supplychain') }}" class="text">
+                <img src="{{ url_for('static', filename='industries/logistics.png') }}">
+                <h5>
+                    Supply Chain And Logistics
+                </h5>
+            </a>
+        </div>
+
+        <div class="contents magnet">
+            <a href="{{ url_for('travel') }}" class="text">
+                <img src="{{ url_for('static', filename='industries/life-sciences.png') }}" alt="">
+                <h5>
+                    Life Science
+                </h5>
+            </a>
+        </div>  
+    </div>
+</div>
+{% endblock %}

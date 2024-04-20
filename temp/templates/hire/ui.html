@@ -1,0 +1,265 @@
+{% extends "base.html" %}
+{% block title %}
+    Hire UI/UX Developers
+{% endblock %}
+{% block content %}
+<main class="main-services hiring">
+    <div class="land">
+        <img src="{{ url_for('static', filename='landing/ui.jpeg') }}" alt="">
+        <div class="cont">
+            <h1></h1>
+            <h1>
+                Hire UI UX Designer
+            </h1>
+            <p>
+                With a complete focus on developing visually appealing designs with utmost accuracy and utilization of state-of-the-art technologies like Bootstrap, HTML5, Figma, Invision, Dreamweaver, PhotoShop, XD, etc., our expert pool of website designers and developers are keen to offer striking and robust designs, each having a class of its own. Our skilled UI UX designers ensure SEO-friendly designs as per the search engine guidelines.
+            </p>
+            <a href="{{ url_for('contact') }}">
+                <button>
+                    Hire a UI/UX Designer
+                </button>
+            </a>
+        </div>
+    </div>
+
+    <div class="serv-land">
+        <div class="polygon serv-poly">
+            <div class="serv-land-head">
+                <h1>
+                    Our UI/UX Designer Benefits
+                </h1>
+            </div>
+        </div>
+        <div class="serv-land-cont serv-ben">
+            <div class="races">
+                <div class="card">
+                    <h2>
+                        Extensive Experience
+                    </h2>
+                    <p>
+                        Our groomed and talented developers, designers, team leads, and architects are well-versed with all cutting-edge technologies and facets related to modern software development services.
+                    </p>
+                </div>
+                <div class="card">
+                    <h2>
+                        Zero Training Cost
+                    </h2>
+                    <p>
+                        We ensure a thorough training schedule for all our resources beforehand which is why there is no preparation cost to be borne by our clients.
+                    </p>
+                </div>
+                <div class="card">
+                    <h2>
+                        Maximum ROI
+                    </h2>
+                    <p>
+                        Our developers are proficient in all the stages of the software development life cycle and hence, they are instrumental in garnering maximized Return on Investment.
+                    </p>
+                </div>
+                <div class="card">
+                    <h2>
+                        Work as Partners
+                    </h2>
+                    <p>
+                        We strive hard to work as a supporting IT partner to our clients by offering them our services, guidance, and solutions, as and when they want.
+                    </p>
+                </div>
+                <div class="card">
+                    <h2>
+                        No Additional Costs
+                    </h2>
+                    <p>
+                        We have a stringent and well-planned project schedule that ensures considering all expenditures to be incurred right from start and hence, there are no additional expenses.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="other">
+    </div>
+    <div class="other">
+    </div>
+    
+   <div class="services-content">
+        <div class="intro-cont">
+                <h2>
+                    Steps to Hire Dedicated Developers from Fortress Data And Analytics
+                </h2>
+        </div>
+        <div class="main-cont">
+            <div class="contents left">
+                <h3>
+                    <img src="{{ url_for('static', filename='services/hire_1.png') }}" alt="">
+                    Post Your Inquiry
+                </h3>
+
+            </div>
+            <div class="contents right">
+                <h3>
+                    <img src="{{ url_for('static', filename='services/hire_4.png') }}" alt="">
+     
+                    Interview
+                </h3>
+            </div>
+            <div class="contents left">
+                <h3>
+                    <img src="{{ url_for('static', filename='services/hire_3.png') }}" alt="">
+
+                    Engagement Terms
+                </h3>
+            </div>
+            <div class="contents right">
+                <h3>
+                    <img src="{{ url_for('static', filename='services/hire_2.png') }}" alt="">
+
+                    Get Started
+                </h3>
+            </div>
+        </div>
+   </div>
+
+    <div class="contact">
+        <div class="polygon serv-poly">
+            <div class="contact-head">
+                <h1>
+                    Hire UI UX Designer - To Incorporate Trendy Designs
+                </h1>
+            </div>
+        </div>
+        <div class="contact-cont">
+            <div class="main">
+                <img src="{{ url_for('static', filename='landing/contact2.jpeg') }}" alt="">
+                <div class="content">
+                    <p>
+                        Our UI/UX designers have years of proficiency in selecting the best of designs that match your expectations, suit your requirements, and are trendy, modern, and secure.
+                    </p>
+                    <a href="{{ url_for('contact') }}">
+                        <button>
+                            Hire UI/UX Designers
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ind-land">
+        <div class="polygon">
+            <div class="ind-head">
+                <h1>
+                    Industries We Serve
+                </h1>
+            </div>
+        </div>
+        <div class="ind-cont">
+            <div class="contents magnet">
+                <a href="{{ url_for('fitness') }}" class="text">
+                    <img src="{{ url_for('static', filename='industries/fitness.png') }}">
+                    <h5>
+                        Fitness
+                    </h5>
+                </a>
+            </div>
+    
+            <div class="contents magnet">
+                <a href="{{ url_for('fintech') }}" class="text">
+                    <img src="{{ url_for('static', filename='industries/fintech.png') }}">
+                    <h5>
+                        Fintech
+                    </h5>
+                </a>
+            </div>
+    
+            <div class="contents magnet">
+                <a href="{{ url_for('education') }}" class="text">
+                    <img src="{{ url_for('static', filename='industries/education.png') }}">
+                    <h5>
+                        Education
+                    </h5>
+                </a>
+            </div>
+    
+            <div class="contents magnet">
+                <a href="{{ url_for('healthcare') }}" class="text">
+                    <img src="{{ url_for('static', filename='industries/healthcareicon.png') }}">
+                    <h5>
+                        Healthcare
+                    </h5>
+                </a>
+            </div>
+    
+            <div class="contents magnet">
+                <a href="{{ url_for('energy') }}" class="text">
+                    <img src="{{ url_for('static', filename='industries/energy-and-utilities.png') }}">
+                    <h5>
+                        Energy & Utilities
+                    </h5>
+                </a>
+            </div>
+    
+            <div class="contents magnet">
+                <a href="{{ url_for('travel') }}" class="text">
+                    <img src="{{ url_for('static', filename='industries/travel-and-hospitality.png') }}">
+                    <h5>
+                        Travel & Hospitality
+                    </h5>
+                </a>
+            </div>
+    
+            <div class="contents magnet">
+                <a href="{{ url_for('manufacturing') }}" class="text">
+                    <img src="{{ url_for('static', filename='industries/manufacturing.png') }}">
+                    <h5>
+                        Manufacturing
+                    </h5>
+                </a>
+            </div>
+    
+            <div class="contents magnet">
+                <a href="{{ url_for('adverts') }}" class="text">
+                    <img src="{{ url_for('static', filename='industries/advertising.png') }}">
+                    <h5>
+                        Advertising
+                    </h5>
+                </a>
+            </div>
+    
+            <div class="contents magnet">
+                <a href="{{ url_for('retail') }}" class="text">
+                    <img src="{{ url_for('static', filename='industries/retail.png') }}">
+                    <h5>
+                        Retail
+                    </h5>
+                </a>
+            </div>
+    
+            <div class="contents magnet">
+                <a href="{{ url_for('entertain') }}" class="text">
+                    <img src="{{ url_for('static', filename='industries/media-and-entertainment.png') }}">
+                        <h5>
+                            Media & Entertainment
+                        </h5>
+                </a>
+            </div>
+    
+            <div class="contents magnet">
+                <a href="{{ url_for('supplychain') }}" class="text">
+                    <img src="{{ url_for('static', filename='industries/logistics.png') }}">
+                    <h5>
+                        Supply Chain And Logistics
+                    </h5>
+                </a>
+            </div>
+    
+            <div class="contents magnet">
+                <a href="{{ url_for('travel') }}" class="text">
+                    <img src="{{ url_for('static', filename='industries/life-sciences.png') }}" alt="">
+                    <h5>
+                        Life Science
+                    </h5>
+                </a>
+            </div>  
+        </div>
+    </div>
+</main>
+{% endblock %}

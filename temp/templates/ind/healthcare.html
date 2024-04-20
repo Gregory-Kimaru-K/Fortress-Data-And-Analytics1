@@ -1,0 +1,311 @@
+{% extends 'base.html' %}
+{% block title %}
+    Healthcare Industry
+{% endblock %}
+{% block content %}
+<main class="ind">
+    <div class="land">
+        <img src="{{ url_for('static', filename='landing/anim_animation.gif') }}" alt="">
+        <div class="cont">
+            <h1></h1>
+            <h1>
+                Healthcare Solutions and Services
+            </h1>
+            <p>
+                Fortress Data And Analytics, a leading Custom Healthcare Software Development Company, provides top-notch Healthcare IT services and solutions focused on integrating a wide range of health-related activities accessible to all – easily, swiftly, and efficiently. Our specialized healthcare solutions aim to provide near real-time information, operational clarity, and seamless collaboration across stakeholders – including doctors, administrators, government bodies, patients, clinicians, and insurance sectors.
+            </p>
+            <a href="{{ url_for('contact') }}">
+                <button>
+                    Connect With Us
+                </button>
+            </a>
+        </div>
+    </div>
+
+    <div class="ind-sol">
+        <div class="ind-sol-intro">
+            <h2>
+                Our Healthcare Software Solutions Expertise
+            </h2>
+            <p>
+                Our custom healthcare software development harnesses the power of today's mobile technology mantra, offering high-quality mobile apps tailored to provide an excellent experience for patients, doctors, employees, and all stakeholders. Our healthcare mobility solutions aim to help hospitals, pharmacies, laboratories, and clinics overcome challenges, enhancing business profitability and productivity. With an expert team possessing domain experience in healthcare IT consultancy services, we have successfully completed multiple projects for clients globally.
+            </p>
+        </div>
+        <div class="ind-sol-main">
+            <div class="content left">
+                <h3>
+                    Healthcare Analytics
+                </h3>
+                <p>
+                    A forward-thinking solution addressing various analytical healthcare needs, including predictive care, ensuring better care and cost reduction by acting proactively.
+                </p>
+            </div>
+            <div class="content center">
+                <h3>
+                    Hospital Management Systems
+                </h3>
+                <p>
+                    A web-based application automating all hospital/clinic operations, from patient registration to report generation and beyond, facilitating smooth daily operations and providing accurate information.
+                </p>
+            </div>
+            <div class="content right">
+                <h3>
+                    Wellness and Home Care App
+                </h3>
+                <p>
+                    A mobile wellness app promoting collective healthcare and wellness, including a weight management program for employee fitness. Also, a home care application for planning and managing patient care plans and tracking caregivers.
+                </p>
+            </div>
+            <div class="content left">
+                <h3>
+                    Enterprise Mobility For Healthcare
+                </h3>
+                <p>
+                    Enterprise mobile apps tailored for the healthcare sector, facilitating activities like checking medical history, symptoms, and references, thereby enhancing work efficiency.
+                </p>
+            </div>
+            <div class="content center">
+                <h3>
+                    Automation in Healthcare
+                </h3>
+                <p>
+                    Reduce costs and boost operational efficiency by implementing robotic process automation and chatbots for member enrollments, prior authorizations, and customer service activities.
+                </p>
+            </div>
+            <div class="content right">
+                <h3>
+                    Custom Healthcare Software
+                </h3>
+                <p>
+                    Custom healthcare software development includes solutions for accessing medical services and assisting healthcare professionals in their work. We design and develop web and mobile apps tailored to an organization's specific requirements.
+                </p>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="contact">
+        <div class="polygon serv-poly">
+            <div class="contact-head">
+                <h1>
+                    Hire The Best Talent That Meet Your Needs
+                </h1>
+            </div>
+        </div>
+        <div class="contact-cont">
+            <div class="main">
+                <img src="{{ url_for('static', filename='landing/contact2.jpeg') }}" alt="">
+                <div class="content">
+                    <p>
+                        We offer best-in-class Healthcare IT Solutions focused on integrating a full range of health-related tasks accessible to all.
+                    </p>
+                    <a href="{{ url_for('contact') }}">
+                        <button>
+                            Lets Discuss Your Project
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ind-benefits">
+        <h2>
+            Our Healthcare IT Services Benefits
+        </h2>
+        <div class="ind-benefits-cont">
+
+            <div class="benefit">
+                <h3>Improved Treatments</h3>
+                <p>
+                    Healthcare solutions connected to cloud computing or other infrastructures enable providers to access real-time information, aiding in well-informed decision-making and offering timely and effective treatment.
+                </p>
+            </div>
+            
+            <div class="benefit">
+                <h3>Better Patient Experience</h3>
+                <p>
+                    Integration with healthcare systems creates an environment tailored to patient needs, providing treatment options and procedures based on medical history and current condition, leading to a better patient experience.
+                </p>
+            </div>
+            
+            <div class="benefit">
+                <h3>Reduced Cost</h3>
+                <p>
+                    Healthcare IT systems allow real-time patient monitoring without the need for physical hospital visits, reducing hospital admissions and associated costs for check-ups.
+                </p>
+            </div>
+            
+            <div class="benefit">
+                <h3>Better Disease Management</h3>
+                <p>
+                    Continuous patient monitoring enables healthcare providers to access real-time data for timely disease treatment.
+                </p>
+            </div>
+            
+            <div class="benefit">
+                <h3>Minimal Errors</h3>
+                <p>
+                    Well-connected systems collect accurate real-time data and automated workflows help in making decisions with minimal risk or errors.
+                </p>
+            </div>
+            
+            <div class="benefit">
+                <h3>Better Drug Management</h3>
+                <p>
+                    Real-time data analysis helps in predicting trends and analyzing medical requirements, allowing for better drug inventory management.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="ind-land">
+        <div class="polygon">
+            <div class="ind-head">
+                <h1>
+                    Technologies And Platform We Use
+                </h1>
+            </div>
+        </div>
+        <div class="ind-cont">
+            <div class="contents magnet">
+                <a href="" class="text">
+                    <img src="{{ url_for('static', filename='services/Salesforce-Logo.png') }}" >
+                    <h5>
+                        Salesforce
+                    </h5>
+                </a>
+            </div>
+    
+            <div class="contents magnet">
+                <a href="" class="text">
+                    <img src="{{ url_for('static', filename='services/pythone-icon.png') }}" width="70">
+                    <h5>
+                        Python
+                    </h5>
+                </a>
+            </div>
+    
+            <div class="contents magnet">
+                <a href="{{ url_for('education') }}" class="text">
+                    <img src="{{ url_for('static', filename='services/JAVA-icon.png') }}" width="70">
+                    <h5>
+                        Java
+                    </h5>
+                </a>
+            </div>
+    
+            <div class="contents magnet">
+                <a href="" class="text">
+                    <img src="{{ url_for('static', filename='services/Swift-Logo.png') }}" alt="">
+                    <h5>
+                        Swift
+                    </h5>
+                </a>
+            </div>
+    
+            <div class="contents magnet">
+                <a href="" class="text">
+                    <img src="{{ url_for('static', filename='services/Kotlin-Logo.png') }}" alt="">
+                    <h5>
+                        Kotlin
+                    </h5>
+                </a>
+            </div>
+    
+            <div class="contents magnet">
+                <a href="" class="text">
+                    <img src="{{ url_for('static', filename='services/Power-BI-Logo.png') }}" alt="">
+                    <h5>
+                        Power BI
+                    </h5>
+                </a>
+            </div>
+    
+        </div>
+    </div>
+
+    <div class="hire">
+        <div class="polygon">
+            <div class="head">
+                <h1>
+                    Looking to Develop Custom Healthcare Software Development Projects?
+                </h1>
+            </div>
+        </div>
+    
+        <div class="cont-polygon">
+            <div class="ind-hire">
+                <div class="img">
+                    <img src=" {{ url_for('static', filename='contact/looking.png') }} " alt="">
+                    <img src=" {{ url_for('static', filename='contact/looking2.png') }} " alt="">
+                </div>
+                <p>
+                    We have collaborated with some of the most innovative ideas and brands worldwide across various industries.
+                </p>
+                <a href="{{ url_for('contact') }}">
+                    <button>
+                        <p>
+                            Connect With Us
+                        </p>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Select all .magnet and .text elements
+        const magnetElements = document.querySelectorAll('.magnet');
+        const magnetTextElements = document.querySelectorAll('.text');
+    
+        // Function to activate the magnetic effect on mouse move
+        const activateMagneto = (event) => {
+            const boundBox = event.currentTarget.getBoundingClientRect();
+            const magnetoStrength = 40;
+            const magnetoTextStrength = 300;
+            const newX = ((event.clientX - boundBox.left) / event.currentTarget.offsetWidth) - 0.5;
+            const newY = ((event.clientY - boundBox.top) / event.currentTarget.offsetHeight) - 0.5;
+    
+            // Move the current magnet element
+            gsap.to(event.currentTarget, {
+                duration: 1,
+                x: newX * magnetoStrength,
+                y: newY * magnetoStrength,
+                ease: Power4.easeOut
+            });
+    
+            // Move the corresponding text element
+            const textElement = event.currentTarget.querySelector('.text');
+            gsap.to(textElement, {
+                duration: 1,
+                x: newX * magnetoTextStrength,
+                y: newY * magnetoTextStrength,
+                ease: Power4.easeOut
+            });
+        };
+    
+        // Function to reset the magnetic effect on mouse leave
+        const resetMagneto = (event) => {
+            // Reset the position of the magnet and the text
+            gsap.to([event.currentTarget, event.currentTarget.querySelector('.text')], {
+                duration: 1,
+                x: 0,
+                y: 0,
+                ease: Elastic.easeOut
+            });
+        };
+    
+        // Add event listeners to each magnet element
+        magnetElements.forEach((element) => {
+            element.addEventListener('mouseenter', () => {
+                element.addEventListener('mousemove', activateMagneto);
+            });
+            element.addEventListener('mouseleave', () => {
+                element.removeEventListener('mousemove', activateMagneto);
+                resetMagneto({ currentTarget: element });
+            });
+        });
+    </script>
+</main>
+{% endblock %}

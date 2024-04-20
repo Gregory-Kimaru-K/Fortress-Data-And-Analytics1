@@ -1,0 +1,334 @@
+{% extends "base.html" %}
+{% block title %}
+    Technology Consultation Services
+{% endblock %}
+{% block content %}
+<div class="land">
+    <img src="{{ url_for('static', filename='landing/consult.jpeg') }}" alt="">
+    <div class="cont">
+        <h1></h1>
+        <h1>
+            Technology Consulting Services
+        </h1>            
+        <p>
+            Not Just a Development Partner, We Are a Single Stop Solution Provider for Information Technology Consulting Services
+        </p>
+
+        <a href="{{ url_for('contact') }}">
+            <button>
+                Contact Us
+            </button>
+        </a>
+    </div>
+</div>
+
+<div class="services-content">
+    <div class="intro-cont">
+        <h2>
+            Fortress Data And Analytics as IT Consulting Company
+        </h2>
+        <p>
+            Being one of the top technology consulting companies, We believe in taking a step further than just being a development partner of our esteemed clients. With our proven Information technology IT consulting and support services, we help our customers beyond regular development, testing, and deployment. Our skilled and experienced consultants and analysts can assist you in:
+        </p>
+    </div>
+    <div class="main-cont">
+        <div class="contents left">
+            <h3>
+                <img src="{{ url_for('static', filename='services/Design_icon-3.png') }}" alt="">
+                Solution Designing and Planning Strategies
+            </h3>
+            <p>
+                Owing to the vast experience and skilled expertise that we possess in technology consulting services, we can help organizations to Derive the ROI, Plan and design scalable solution, Implement the right architecture, Derive IT Roadmaps, Planning strategies,Cost and feature comparisons for various implementation models, Arrive at the total cost of ownership for solutions etc.
+            </p>
+        </div>
+        <div class="contents right">
+            <h3>
+                <img src="{{ url_for('static', filename='services/Application-Maintenance-Support.png') }}" alt="">
+                Implementing Support and Training
+            </h3>
+            <p>
+                The key success factor for any IT solution that is implemented is its acceptance by the end-users. Possessing experience in implementing solutions globally for decades, we understand this and help our customers in ensuring the success of the planned solutions. We help you Derive the implementation plan, deployment plan, training plan which could cover end-user training, administrator’s training, technical training, etc.
+            </p>
+        </div>
+        <div class="contents left">
+            <h3>
+                <img src="{{ url_for('static', filename='services/Efficient-Design-And-Developer-Tools-icon_.png') }}" alt="">
+                Architecting and Technical Design
+            </h3>
+            <p>
+                We can help you in deriving the pros and cons of implementing different system architectures and can advise you to choose the right architecture. We can help in preparing technical design plans be it for web applications, mobile applications, data warehousing, or BI and data analytics.
+            </p>
+        </div>
+        <div class="contents right">
+            <h3>
+                <img src="{{ url_for('static', filename='services/Migration-icon.png') }}" alt="">
+                Application Re-platforming and Migration
+            </h3>
+            <p>
+                We have been actively involved in helping organizations wanting to move on from traditional legacy systems to state-of-the-art systems using the latest tools and technologies. We can help you Perform an in-depth analysis of your current systems Identify the pain areas, objectives, and expectations Provide you a study report that would detail out possible solutions, project plans, risk and mitigation strategies, key success factors, etc.
+            </p>        
+        </div>
+
+    </div>  
+</div>
+
+<div class="services-tech-stack">
+    <h2>
+        IT Consultation Services Tech Portfolio
+    </h2>
+    <div class="contents">
+        <h4>
+            Web-Mobile
+        </h4>
+        <img src="{{ url_for('static', filename='services/Android-icon.png') }}" alt="">
+        <img src="{{ url_for('static', filename='services/Ios-icon.png') }}" alt="">
+        <img src="{{ url_for('static', filename='services/Flutter-icon.png') }}" alt="">
+        <img src="{{ url_for('static', filename='services/React-icon.png') }}" alt="">
+        <img src="{{ url_for('static', filename='services/Angular-icon.png') }}" alt="">
+        <img src="{{ url_for('static', filename='services/HTML-icon.png') }}" alt="">
+
+    </div>
+    <div class="contents">
+        <h4>
+            Data Warehousing
+        </h4>
+        <img src="{{ url_for('static', filename='services/SQL-Server-Technology.png') }}" alt="">
+        <img src="{{ url_for('static', filename='services/Azure-Synapse-Technology.png') }}" alt="">
+        <img src="{{ url_for('static', filename='services/Redshift-Technology.png') }}" alt="">
+        <img src="{{ url_for('static', filename='services/MySQL-Technology.png') }}" alt="">
+        <img src="{{ url_for('static', filename='services/Snowflake-Technology.png') }}" alt="">
+        <img src="{{ url_for('static', filename='services/PostgreSQL-Technology.png') }}" alt="">
+
+    </div>
+    <div class="contents">
+        <h4>
+            Data Visualization
+        </h4>
+        <img src="{{ url_for('static',filename='services/Power-BI-Technology.png') }}" alt="">
+        <img src="{{ url_for('static',filename='services/Tableau-Technology.png') }}" alt="">
+        <img src="{{ url_for('static',filename='services/SQL-Server-Technology.png') }}" alt="">
+        <img src="{{ url_for('static',filename='services/Logi-Composer-Technology.png') }}" alt="">
+
+    </div>
+    <div class="contents">
+        <h4>
+            Frameworks
+        </h4>
+        <img src="{{ url_for('static', filename='services/Dot_net-icon.png') }}" alt="">
+        <img src="{{ url_for('static', filename='services/django-icon.png') }}" alt="">
+        <img src="{{ url_for('static', filename='services/Spring-icon.png') }}" alt="">
+        <img src="{{ url_for('static', filename='services/Express.js-icon.png') }}" alt="">
+        <img src="{{ url_for('static', filename='services/Laravel-icon.png') }}" alt="">
+
+    </div>
+    <div class="contents">
+        <h4>
+            Software Testing
+        </h4>
+        <img src="{{ url_for('static', filename='services/JMeter-icon.png') }}" alt="">
+        <img src="{{ url_for('static', filename='services/LoadRunner-icon.png') }}" alt="">
+        <img src="{{ url_for('static', filename='services/Selenium-icon.png') }}" alt="">
+        <img src="{{ url_for('static', filename='services/Appium-icon.png') }}" alt="">
+        <img src="{{ url_for('static', filename='services/UFT-icon.png') }}" alt="">
+
+    </div>   
+</div>
+
+<div class="contact">
+    <div class="polygon serv-poly">
+        <div class="contact-head">
+            <h1>
+                Technology Consulting Services for Modern Businesses
+            </h1>
+        </div>
+    </div>
+    <div class="contact-cont">
+        <div class="main">
+            <img src="{{ url_for('static', filename='landing/contact2.jpeg') }}" alt="">
+            <div class="content">
+                <p>
+                    Our accomplished experts understand the prevailing functionalities and challenges met by the client and set up consistent support methods along with communication protocols to be followed.
+                </p>
+                <a href="{{ url_for('contact') }}">
+                    <button>
+                        Lets Discuss Your Project
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="ind-land">
+    <div class="polygon">
+        <div class="ind-head">
+            <h1>
+                Industries We Serve
+            </h1>
+        </div>
+    </div>
+    <div class="ind-cont">
+        <div class="magnet">
+            <a href="{{ url_for('fitness') }}" class="text">
+                <img src="{{ url_for('static', filename='industries/fitness.png') }}">
+                <h5>
+                    Fitness
+                </h5>
+            </a>
+        </div>
+
+        <div class="magnet">
+            <a href="{{ url_for('fintech') }}" class="text">
+                <img src="{{ url_for('static', filename='industries/fintech.png') }}">
+                <h5>
+                    Fintech
+                </h5>
+            </a>
+        </div>
+
+        <div class="magnet">
+            <a href="{{ url_for('education') }}" class="text">
+                <img src="{{ url_for('static', filename='industries/education.png') }}">
+                <h5>
+                    Education
+                </h5>
+            </a>
+        </div>
+
+        <div class="magnet">
+            <a href="{{ url_for('healthcare') }}" class="text">
+                <img src="{{ url_for('static', filename='industries/healthcareicon.png') }}">
+                <h5>
+                    Healthcare
+                </h5>
+            </a>
+        </div>
+
+        <div class="magnet">
+            <a href="{{ url_for('energy') }}" class="text">
+                <img src="{{ url_for('static', filename='industries/energy-and-utilities.png') }}">
+                <h5>
+                    Energy & Utilities
+                </h5>
+            </a>
+        </div>
+
+        <div class="magnet">
+            <a href="{{ url_for('travel') }}" class="text">
+                <img src="{{ url_for('static', filename='industries/travel-and-hospitality.png') }}">
+                <h5>
+                    Travel & Hospitality
+                </h5>
+            </a>
+        </div>
+
+        <div class="magnet">
+            <a href="{{ url_for('manufacturing') }}" class="text">
+                <img src="{{ url_for('static', filename='industries/manufacturing.png') }}">
+                <h5>
+                    Manufacturing
+                </h5>
+            </a>
+        </div>
+
+        <div class="magnet">
+            <a href="{{ url_for('adverts') }}" class="text">
+                <img src="{{ url_for('static', filename='industries/advertising.png') }}">
+                <h5>
+                    Advertising
+                </h5>
+            </a>
+        </div>
+
+        <div class="magnet">
+            <a href="{{ url_for('retail') }}" class="text">
+                <img src="{{ url_for('static', filename='industries/retail.png') }}">
+                <h5>
+                    Retail
+                </h5>
+            </a>
+        </div>
+
+        <div class="magnet">
+            <a href="{{ url_for('entertain') }}" class="text">
+                <img src="{{ url_for('static', filename='industries/media-and-entertainment.png') }}">
+                    <h5>
+                        Media & Entertainment
+                    </h5>
+            </a>
+        </div>
+
+        <div class="magnet">
+            <a href="{{ url_for('supplychain') }}" class="text">
+                <img src="{{ url_for('static', filename='industries/logistics.png') }}">
+                <h5>
+                    Supply Chain And Logistics
+                </h5>
+            </a>
+        </div>
+
+        <div class="magnet">
+            <a href="{{ url_for('travel') }}" class="text">
+                <img src="{{ url_for('static', filename='industries/life-sciences.png') }}" alt="">
+                <h5>
+                    Life Science
+                </h5>
+            </a>
+        </div>  
+    </div>
+</div>
+
+<script>
+    // Select all .magnet and .text elements
+    const magnetElements = document.querySelectorAll('.magnet');
+    const magnetTextElements = document.querySelectorAll('.text');
+
+    // Function to activate the magnetic effect on mouse move
+    const activateMagneto = (event) => {
+        const boundBox = event.currentTarget.getBoundingClientRect();
+        const magnetoStrength = 40;
+        const magnetoTextStrength = 300;
+        const newX = ((event.clientX - boundBox.left) / event.currentTarget.offsetWidth) - 0.5;
+        const newY = ((event.clientY - boundBox.top) / event.currentTarget.offsetHeight) - 0.5;
+
+        // Move the current magnet element
+        gsap.to(event.currentTarget, {
+            duration: 1,
+            x: newX * magnetoStrength,
+            y: newY * magnetoStrength,
+            ease: Power4.easeOut
+        });
+
+        // Move the corresponding text element
+        const textElement = event.currentTarget.querySelector('.text');
+        gsap.to(textElement, {
+            duration: 1,
+            x: newX * magnetoTextStrength,
+            y: newY * magnetoTextStrength,
+            ease: Power4.easeOut
+        });
+    };
+
+    // Function to reset the magnetic effect on mouse leave
+    const resetMagneto = (event) => {
+        // Reset the position of the magnet and the text
+        gsap.to([event.currentTarget, event.currentTarget.querySelector('.text')], {
+            duration: 1,
+            x: 0,
+            y: 0,
+            ease: Elastic.easeOut
+        });
+    };
+
+    // Add event listeners to each magnet element
+    magnetElements.forEach((element) => {
+        element.addEventListener('mouseenter', () => {
+            element.addEventListener('mousemove', activateMagneto);
+        });
+        element.addEventListener('mouseleave', () => {
+            element.removeEventListener('mousemove', activateMagneto);
+            resetMagneto({ currentTarget: element });
+        });
+    });
+</script>
+{% endblock %}

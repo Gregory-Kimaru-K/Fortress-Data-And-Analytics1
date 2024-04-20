@@ -1,0 +1,373 @@
+{% extends "base.html" %}
+{% block title %}
+    Custom Software Development Services
+{% endblock %}
+{% block content %}
+<div class="land">
+    <img src="{{ url_for('static', filename='landing/customsof.jpeg') }}" alt="">
+    <div class="cont">
+        <h1></h1>
+        <h1>
+            Custom Software Development
+        </h1>
+        <p>
+            Our custom software development services cover the gamut from developing to testing to deployment and management. We help you realize your vision at scale with our custom, seamless, and scalable software that is designed to meet a specific set of needs of users and organizations.
+        </p>
+        <a href="{{ url_for('contact') }}">
+            <button>
+                Get Started
+            </button>
+        </a>
+    </div>
+</div>
+
+<div class="services-content">
+    <div class="intro-cont">
+        <h2>
+            Our Custom Software Development Services
+        </h2>
+        <p>
+            We leverage our decades-long experience in crafting bespoke solutions that are the need of today’s disruptive environment. We have helped leading organizations, startups, and SMBs solve challenges of any complexity and scale through our state-of-the-art customized solutions.
+        </p>
+    </div>
+    <div class="main-cont">
+        <div class="contents left">
+            <h3>
+                <img src="{{ url_for('static', filename='services/Web-Dev-Services.png') }}" alt="">
+                Web Development Services
+            </h3>
+            <p>
+                Our wide range of full-stack web development covers building custom web applications that meet your specific business needs. We use advanced frameworks and popular programming languages to create feature-rich, user-friendly, and custom web applications to meet the evolving user as well as market demands.
+            </p>
+        </div>
+
+        <div class="contents right">
+            <h3>
+                <img src="{{ url_for('static', filename='services/Mobile-App-Dev-Services.png') }}" alt="">
+                Mobile App Development Services
+            </h3>
+            <p>
+                Whether you want native, cross-platform mobile apps, PWA, or Hybrid mobile apps, our experienced team got everything covered. SPEC INDIA’s mobile app development team builds compelling, cross-platform, and robust mobile apps from scratch by considering customized needs, and key objectives, and knowing your target audience
+            </p>
+        </div>
+        <div class="contents left">
+            <h3>
+                <img src="{{ url_for('static', filename='services/Cloud-Deployment-Services.png') }}" alt="">
+
+                Cloud Deployment
+            </h3>
+            <p>
+                Reap the benefits of cloud computing by hosting a development environment in the cloud. With our hands-on expertise in cloud deployment models and environments, we help organizations gain advantages such as cost control, easy maintenance, flexibility, and scalability by deploying secure websites and apps on the cloud.
+            </p>
+        </div>
+        <div class="contents right">
+            <h3>
+                <img src="{{ url_for('static', filename='services/Legacy-App-Modernization.png') }}" alt="">
+
+                Legacy App Modernization
+            </h3>
+            <p>
+                Our low-risk approach to legacy app modernization helps organizations evolve with minimal disruption. Enhance the functionality and redesign outdated legacy systems with the latest technologies and models such as cloud, analytics, and mobility. Leverage new IT to make your existing systems more agile, resilient, and efficient.
+            </p>
+        </div>
+        <div class="contents left">
+            <h3>
+                <img src="{{ url_for('static', filename='services/Product-Engineering-Services.png') }}" alt="">
+
+                Product Engineering Services
+            </h3>
+            <p>
+                Our product engineering services include end-to-end product development from initial analysis to design, development, testing, and scaling of a feature-rich, customized product. We are trusted by global enterprises for customized products that paved the path forward for agility, innovation, and continuous digital transformation journey.
+            </p>
+        </div>
+        <div class="contents right">
+            <h3>
+                <img src="{{ url_for('static', filename='services/Software-Testing-Services.png') }}" alt="">
+
+                Software Testing Services
+            </h3>
+            <p>
+                Our QA team uses various technologies, methods, and the latest practices to deliver high-quality software that meets the required standards. Our product testing services include automated as well as manual testing practices to increase the efficiency of the system and create error-free, flawless software products.
+            </p>
+        </div>
+        <div class="contents left">
+            <h3>
+                <img src="{{ url_for('static', filename='services/Enterprise-Business-Intelligence-Icon.png') }}" alt="">
+
+                Business Intelligence Services
+            </h3>
+            <p>
+                Fortess Data And Analytics business intelligence services offer a wide range of data management, integration, warehousing, and analytics services to help businesses establish a data-driven culture. We make your data more valuable and usable by integrating powerful analytics that create the foundation for growth. Our broad expertise in data-related services empowers organizations to gain a 360-degree business picture.
+            </p>
+        </div>
+        <div class="contents right">
+            <h3>
+                <img src="{{ url_for('static', filename='services/API-Development-Services.png') }}" alt="">
+
+                API development
+            </h3>
+            <p>
+                API – Application Programming Interface offers ease of integration, faster data transformation, improved services, and an automated environment. Our skilled developers offer custom API development and third-party API integration services to extend the functionality of your system and integrate components, tools, and programs. Our services help businesses build, execute, and scale custom APIs to add more functionalities.
+            </p>
+        </div>
+    </div>
+</div>
+<div class="services-tech-stack">
+    <h2>
+        Tech Stack For Custom Software Development Services
+    </h2>
+    <div class="contents">
+        <h4>
+            Frontend
+        </h4>
+        <img src="{{ url_for('static', filename='services/React-icon.png') }}" alt="">
+        <img src="{{ url_for('static', filename='services/Angular-icon.png') }}" alt="">
+        <img src="{{ url_for('static', filename='services/vue_js-icon.png') }}" alt="">
+        <img src="{{ url_for('static', filename='services/HTML-icon.png') }}" alt="">
+        <img src="{{ url_for('static', filename='services/CSS-icon.png') }}" alt="">
+
+    </div>
+    <div class="contents">
+        <h4>
+            Backend
+        </h4>
+        <img src="{{ url_for('static', filename='services/Dot_net-icon .png') }}" alt="">
+        <img src="{{ url_for('static', filename='services/PHP-icon.png') }}" alt="">
+        <img src="{{ url_for('static', filename='services/JAVA-icon.png') }}" alt="">
+        <img src="{{ url_for('static', filename='services/Python_Tech_Logo.png') }}" alt="">
+        <img src="{{ url_for('static', filename='services/Node_js-icon.png') }}" alt="">
+
+    </div>
+    <div class="contents">
+        <h4>
+            Mobile
+        </h4>
+        <img src="{{ url_for('static', filename='services/Ios-icon.png') }}" alt="">
+        <img src="{{ url_for('static', filename='services/Android-icon.png') }}" alt="">
+        <img src="{{ url_for('static', filename='services/PWA-icon.png') }}" alt="">
+        <img src="{{ url_for('static', filename='services/Hybrid-icon.png') }}" alt="">
+        <img src="{{ url_for('static', filename='services/Cross-platform-icon.png') }}" alt="">
+
+    </div>
+    <div class="contents">
+        <h4>
+            Databases
+        </h4>
+        <img src="{{ url_for('static', filename='services/MySQL-Technology.png') }}" alt="">
+        <img src="{{ url_for('static', filename='services/SQL-Server-Technology.png') }}" alt="">
+        <img src="{{ url_for('static', filename='services/Oracle-icon.png') }}" alt="">
+        <img src="{{ url_for('static', filename='services/PostgreSQL-Technology.png') }}" alt="">
+        <img src="{{ url_for('static', filename='services/Mongo_bd-icon.png') }}" alt="">
+
+    </div>
+    <div class="contents">
+        <h4>
+            QA
+        </h4>
+        <img src="{{ url_for('static', filename='services/Selenium-icon.png') }}" alt="">
+        <img src="{{ url_for('static', filename='services/Appium-icon.png') }}" alt="">
+        <img src="{{ url_for('static', filename='services/JMeter-icon.png') }}" alt="">
+        <img src="{{ url_for('static', filename='services/LoadRunner-icon.png') }}" alt="">
+        <img src="{{ url_for('static', filename='services/UFT-icon.png') }}" alt="">
+
+    </div>
+    
+</div>
+<div class="contact">
+    <div class="polygon serv-poly">
+        <div class="contact-head">
+            <h1>
+                Custom Software Solutions Designed For Digital Era
+            </h1>
+        </div>
+    </div>
+    <div class="contact-cont">
+        <div class="main">
+            <img src="{{ url_for('static', filename='landing/contact2.jpeg') }}" alt="">
+            <div class="content">
+                <p>
+                    We listen to your ideas and understand your requirements to build custom software that meets your unique needs on time and within budget.
+                </p>
+                <a href="{{ url_for('contact') }}">
+                    <button>
+                        Lets Discuss Your Project
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="ind-land">
+    <div class="polygon">
+        <div class="ind-head">
+            <h1>
+                Industries We Serve
+            </h1>
+        </div>
+    </div>
+    <div class="ind-cont">
+        <div class="contents magnet">
+            <a href="{{ url_for('fitness') }}" class="text">
+                <img src="{{ url_for('static', filename='industries/fitness.png') }}">
+                <h5>
+                    Fitness
+                </h5>
+            </a>
+        </div>
+
+        <div class="contents magnet">
+            <a href="{{ url_for('fintech') }}" class="text">
+                <img src="{{ url_for('static', filename='industries/fintech.png') }}">
+                <h5>
+                    Fintech
+                </h5>
+            </a>
+        </div>
+
+        <div class="contents magnet">
+            <a href="{{ url_for('education') }}" class="text">
+                <img src="{{ url_for('static', filename='industries/education.png') }}">
+                <h5>
+                    Education
+                </h5>
+            </a>
+        </div>
+
+        <div class="contents magnet">
+            <a href="{{ url_for('healthcare') }}" class="text">
+                <img src="{{ url_for('static', filename='industries/healthcareicon.png') }}">
+                <h5>
+                    Healthcare
+                </h5>
+            </a>
+        </div>
+
+        <div class="contents magnet">
+            <a href="{{ url_for('energy') }}" class="text">
+                <img src="{{ url_for('static', filename='industries/energy-and-utilities.png') }}">
+                <h5>
+                    Energy & Utilities
+                </h5>
+            </a>
+        </div>
+
+        <div class="contents magnet">
+            <a href="{{ url_for('travel') }}" class="text">
+                <img src="{{ url_for('static', filename='industries/travel-and-hospitality.png') }}">
+                <h5>
+                    Travel & Hospitality
+                </h5>
+            </a>
+        </div>
+
+        <div class="contents magnet">
+            <a href="{{ url_for('manufacturing') }}" class="text">
+                <img src="{{ url_for('static', filename='industries/manufacturing.png') }}">
+                <h5>
+                    Manufacturing
+                </h5>
+            </a>
+        </div>
+
+        <div class="contents magnet">
+            <a href="{{ url_for('adverts') }}" class="text">
+                <img src="{{ url_for('static', filename='industries/advertising.png') }}">
+                <h5>
+                    Advertising
+                </h5>
+            </a>
+        </div>
+
+        <div class="contents magnet">
+            <a href="{{ url_for('retail') }}" class="text">
+                <img src="{{ url_for('static', filename='industries/retail.png') }}">
+                <h5>
+                    Retail
+                </h5>
+            </a>
+        </div>
+
+        <div class="contents magnet">
+            <a href="{{ url_for('entertain') }}" class="text">
+                <img src="{{ url_for('static', filename='industries/media-and-entertainment.png') }}">
+                    <h5>
+                        Media & Entertainment
+                    </h5>
+            </a>
+        </div>
+
+        <div class="contents magnet">
+            <a href="{{ url_for('supplychain') }}" class="text">
+                <img src="{{ url_for('static', filename='industries/logistics.png') }}">
+                <h5>
+                    Supply Chain And Logistics
+                </h5>
+            </a>
+        </div>
+
+        <div class="contents magnet">
+            <a href="{{ url_for('travel') }}" class="text">
+                <img src="{{ url_for('static', filename='industries/life-sciences.png') }}" alt="">
+                <h5>
+                    Life Science
+                </h5>
+            </a>
+        </div>  
+    </div>
+</div>
+
+<script>
+     // Select all .magnet and .text elements
+     const magnetElements = document.querySelectorAll('.magnet');
+    const magnetTextElements = document.querySelectorAll('.text');
+
+    // Function to activate the magnetic effect on mouse move
+    const activateMagneto = (event) => {
+        const boundBox = event.currentTarget.getBoundingClientRect();
+        const magnetoStrength = 40;
+        const magnetoTextStrength = 300;
+        const newX = ((event.clientX - boundBox.left) / event.currentTarget.offsetWidth) - 0.5;
+        const newY = ((event.clientY - boundBox.top) / event.currentTarget.offsetHeight) - 0.5;
+
+        // Move the current magnet element
+        gsap.to(event.currentTarget, {
+            duration: 1,
+            x: newX * magnetoStrength,
+            y: newY * magnetoStrength,
+            ease: Power4.easeOut
+        });
+
+        // Move the corresponding text element
+        const textElement = event.currentTarget.querySelector('.text');
+        gsap.to(textElement, {
+            duration: 1,
+            x: newX * magnetoTextStrength,
+            y: newY * magnetoTextStrength,
+            ease: Power4.easeOut
+        });
+    };
+
+    // Function to reset the magnetic effect on mouse leave
+    const resetMagneto = (event) => {
+        // Reset the position of the magnet and the text
+        gsap.to([event.currentTarget, event.currentTarget.querySelector('.text')], {
+            duration: 1,
+            x: 0,
+            y: 0,
+            ease: Elastic.easeOut
+        });
+    };
+
+    // Add event listeners to each magnet element
+    magnetElements.forEach((element) => {
+        element.addEventListener('mouseenter', () => {
+            element.addEventListener('mousemove', activateMagneto);
+        });
+        element.addEventListener('mouseleave', () => {
+            element.removeEventListener('mousemove', activateMagneto);
+            resetMagneto({ currentTarget: element });
+        });
+    });
+</script>
+{% endblock %}

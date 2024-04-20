@@ -1,0 +1,240 @@
+{% extends 'base.html' %}
+{% block title %}
+    Entertainment Industry
+{% endblock %}
+{% block content %}
+<main class="ind">
+    <div class="land">
+        <img src="{{ url_for('static', filename='landing/anim_animation.gif') }}" alt="">
+        <div class="cont">
+            <h1></h1>
+            <h1>
+                Media & Entertainment Software Development
+            </h1>
+            <p>
+                As a proficient provider of Media & Entertainment software solutions, we continuously strive to keep abreast of the rapidly evolving technological landscape within the industry. Our state-of-the-art software solutions have earned recognition worldwide, serving a diverse clientele. Despite experiencing significant growth, the media and entertainment sector faces formidable challenges such as enhancing user experience, retaining customers, reducing time-to-market, integrating across multiple platforms, and more. The digitization era has redefined the industry's landscape, emphasizing customer-centricity akin to other sectors.
+            </p>
+            <a href="{{ url_for('contact') }}">
+                <button>
+                    Start Now
+                </button>
+            </a>
+        </div>
+    </div>
+
+    <div class="ind-sol">
+        <div class="ind-sol-intro">
+            <h2>
+                Our Diverse Media & Entertainment Software Solutions
+            </h2>
+        </div>
+        <div class="ind-sol-main">
+            <div class="content left">
+                <h3>
+                    Media And Entertainment Software Solutions
+                </h3>
+                <p>
+                    Offering an immersive user experience, this suite of business software systems focuses on resource planning, management, and operational control across different departments, sections, offices, and locations. Various software modules address distinct operational areas and are seamlessly integrated through intermediary modules.
+                </p>
+            </div>
+            <div class="content center">
+                <h3>
+                    Entertainment Industry Solutions
+                </h3>
+                <p>
+                    Tailored technological solutions for the media & entertainment industry aim to leverage assets, enhance business operations, and maximize return on investment. Customized to meet user requirements, these solutions span music, video, films, and business information systems, among others.
+                </p>
+            </div>
+            <div class="content right">
+                <h3>
+                    Enterprise Mobility Solution For Media & Entertainment
+                </h3>
+                <p>
+                    Mobility-enabled IT solutions for media & entertainment enterprises enable the seamless integration of technology with business models. Targeting ad agencies, broadcasters, and music and film companies, these solutions enhance productivity and profitability.
+                </p>
+            </div>
+            <div class="content left">
+                <h3>
+                    Media & Entertainment CRM Solution
+                </h3>
+                <p>
+                    Custom CRM development for media & entertainment emphasizes the integration of features across critical areas such as Sales, Service, Marketing, and Satisfaction.
+                </p>
+            </div>
+            <div class="content center">
+                <h3>
+                    Media & Entertainment ERP Solution
+                </h3>
+                <p>
+                    An ERP system comprising business software solutions tailored for the industry, focusing on resource planning, management, and operational control across diverse departments, sections, offices, and locations. Assorted software modules cater to individual operational areas and are integrated through transitional modules.
+                </p>
+            </div>
+            <div class="content right">
+                <h3>
+                    Media & Entertainment Mobile Apps
+                </h3>
+                <p>
+                    Interactive mobile apps are indispensable in this industry, offering users what they desire. These apps drive better viewer engagement, fostering further growth in the media & entertainment sector. Key areas covered include music, mobile gaming, movies, live streaming, and brand marketing.
+                </p>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="contact">
+        <div class="polygon serv-poly">
+            <div class="contact-head">
+                <h1>
+                    Your Preferred Technology Partner For Media & Entertainment IT Solutions
+                </h1>
+            </div>
+        </div>
+        <div class="contact-cont">
+            <div class="main">
+                <img src="{{ url_for('static', filename='landing/contact2.jpeg') }}" alt="">
+                <div class="content">
+                    <p>
+                        Our streamlined processes, enriched content, and commitment to quality-driven services are the cornerstones of our success in the digital realm. We excel in blending our bouquet of enterprise business solutions with the intricacies and requirements of the media & entertainment industry, delivering excellence every time.
+                    </p>
+                    <a href="{{ url_for('contact') }}">
+                        <button>
+                            Lets Discuss Your Project
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ind-land">
+        <div class="polygon">
+            <div class="ind-head">
+                <h1>
+                    Technologies And Platform We Use
+                </h1>
+            </div>
+        </div>
+        <div class="ind-cont">
+            <div class="contents magnet">
+                <a href="" class="text">
+                    <img src="{{ url_for('static', filename='services/hire-iOS-icon.png') }}" width="70">
+                    <h5>
+                        IOS
+                    </h5>
+                </a>
+            </div>
+    
+            <div class="contents magnet">
+                <a href="" class="text">
+                    <img src="{{ url_for('static', filename='services/hire-Android-icon.png') }}" width="70">
+                    <h5>
+                        Android
+                    </h5>
+                </a>
+            </div>
+    
+            <div class="contents magnet">
+                <a href="{{ url_for('education') }}" class="text">
+                    <img src="{{ url_for('static', filename='services/JAVA-Logo.png') }}" alt="">
+                    <h5>
+                        Java
+                    </h5>
+                </a>
+            </div>
+    
+            <div class="contents magnet">
+                <a href="" class="text">
+                    <img src="{{ url_for('static', filename='services/NET-Logo.png') }}" alt="">
+                    <h5>
+                        .NET
+                    </h5>
+                </a>
+            </div>    
+        </div>
+    </div>
+   
+    <div class="hire">
+        <div class="polygon">
+            <div class="head">
+                <h1>
+                    Bring Your Media & Entertainment IT Project to Life
+                </h1>
+            </div>
+        </div>
+    
+        <div class="cont-polygon">
+            <div class="ind-hire">
+                <div class="img">
+                    <img src=" {{ url_for('static', filename='contact/looking.png') }} " alt="">
+                    <img src=" {{ url_for('static', filename='contact/looking2.png') }} " alt="">
+                </div>
+                <p>
+                    Our developers are dedicated to providing comprehensive Media & Entertainment IT Solutions inspired by industry best practices.
+                </p>
+                <a href="{{ url_for('contact') }}">
+                    <button>
+                        <p>
+                            Connect With Us
+                        </p>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Select all .magnet and .text elements
+        const magnetElements = document.querySelectorAll('.magnet');
+        const magnetTextElements = document.querySelectorAll('.text');
+    
+        // Function to activate the magnetic effect on mouse move
+        const activateMagneto = (event) => {
+            const boundBox = event.currentTarget.getBoundingClientRect();
+            const magnetoStrength = 40;
+            const magnetoTextStrength = 300;
+            const newX = ((event.clientX - boundBox.left) / event.currentTarget.offsetWidth) - 0.5;
+            const newY = ((event.clientY - boundBox.top) / event.currentTarget.offsetHeight) - 0.5;
+    
+            // Move the current magnet element
+            gsap.to(event.currentTarget, {
+                duration: 1,
+                x: newX * magnetoStrength,
+                y: newY * magnetoStrength,
+                ease: Power4.easeOut
+            });
+    
+            // Move the corresponding text element
+            const textElement = event.currentTarget.querySelector('.text');
+            gsap.to(textElement, {
+                duration: 1,
+                x: newX * magnetoTextStrength,
+                y: newY * magnetoTextStrength,
+                ease: Power4.easeOut
+            });
+        };
+    
+        // Function to reset the magnetic effect on mouse leave
+        const resetMagneto = (event) => {
+            // Reset the position of the magnet and the text
+            gsap.to([event.currentTarget, event.currentTarget.querySelector('.text')], {
+                duration: 1,
+                x: 0,
+                y: 0,
+                ease: Elastic.easeOut
+            });
+        };
+    
+        // Add event listeners to each magnet element
+        magnetElements.forEach((element) => {
+            element.addEventListener('mouseenter', () => {
+                element.addEventListener('mousemove', activateMagneto);
+            });
+            element.addEventListener('mouseleave', () => {
+                element.removeEventListener('mousemove', activateMagneto);
+                resetMagneto({ currentTarget: element });
+            });
+        });
+    </script>
+
+</main>
+{% endblock %}

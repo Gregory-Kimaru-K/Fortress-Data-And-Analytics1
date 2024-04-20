@@ -1,0 +1,314 @@
+{% extends 'base.html' %}
+{% block title %}
+    Service & Maintainance Solutions
+{% endblock %}
+{% block content %}
+<main class="bs">
+    <div class="land">
+        <img src="{{ url_for('static', filename='landing/sfa.jpeg') }}" alt="">
+        <div class="cont">
+            <h1></h1>
+            <h1 >
+                Enterprise Service & Maintenance Solution
+            </h1>
+            <p>
+                Ensure Service Level Compliance and Utmost Customer Satisfaction with Effective Service and Maintenance.
+            </p>
+            <a href="">
+                <button>
+                    Request a Demo
+                </button>
+            </a>
+        </div>
+    </div>
+
+    <div class="something">
+        <div class="polygon">
+            <div class="head">
+                <h1>
+                    Service & Maintenance Application
+                </h1>
+            </div>
+        </div>
+        <p>
+            Fortress Data And Analytics' comprehensive solution, ‘Enterprise Service and Maintenance Solution– eSAM’, is an application to carry out Field Service and Maintenance activities like Service Call Assignments, Service Call Logging, Scheduled Maintenance, Call based Servicing, Site Survey, Equipment Health Data Capture and Collection, for In-premises installations and facilities, Manufacturing units, Large Production setups, Engineering industries, Hospitals, Hotels etc. It is of most use to the field maintenance staff and the field service engineering teams. Providing clients with valuable and competent service and maintenance as per defined Standard Operating Procedures (SOP) or as per companies’ standardized compliance is the USP of eSAM.
+        </p>
+    </div>
+
+   <div class="bs-benefits">
+        <h2>
+            How does eSAM ensure Service Level Compliance and Maximized RoI?
+        </h2>
+        <ul>
+            <li>Real time Access to Information</li>
+            <li>Reduced Job Completion Cycle</li>
+            <li>Increases field performance by 40%</li>
+            <li>Eliminate redundancy, paperwork and scheduling time benefiting to save 30% time from administrative tasks and logistics</li>
+            <li>Increase service lead capturing</li>
+            <li>Third party integration with legacy systems and ERP</li>
+        </ul>
+   </div>
+    
+   <div class="bs-benefits maintain">
+    <h2>
+        Benefits Of ERP System
+    </h2>
+    <ul>
+        <li>
+            Uniform user-friendly interfaces for web portals and mobile applications
+        </li>
+        <li>
+            Maximum features and reports of all modules available on the mobile app
+        </li>
+        <li>
+            Highly secured login methods (pin, fingerprint, OTP, face detection)
+        </li>
+        <li>
+            Geo-fencing to restrict the work area and restricted access based on user location/device/sim ID
+        </li>
+        <li>
+            Intelligent reports for top-level management for forecasting, budgeting & planning
+        </li>
+        <li>
+            Custom report builder to get interactive reports in various formats (table/chart etc. as per requirements)
+        </li>
+    </ul>
+   </div>
+   
+
+    <!-- <h2>
+        eSAM - The Process Flow
+    </h2>
+
+    <p>
+        Display customer data & service call details on mobile device
+    </p>
+
+    <p>
+        View today’s visit planning
+    </p>
+
+    <p>
+        View visit sequence on map as per visit plan
+    </p>
+
+    <p>
+        Select customer, view call details and perform necessary servicing
+    </p>
+
+    <p>
+        Re-assign call to another engineer / reschedule visit for various possible reasons
+    </p>
+
+    <p>
+        Update visit summary and call completion status (pending, done, etc.)
+    </p>
+
+    <p>
+        Take customer’s signature and feedback on visit completion
+    </p>
+
+    <p>
+        Back office data synchronization on continuous basis or in batch
+    </p> -->
+
+    <!--Ind we serve-->
+    <div class="ind-land">
+        <div class="polygon">
+            <div class="ind-head">
+                <h1>
+                    Industries We Serve
+                </h1>
+            </div>
+        </div>
+        <div class="ind-cont">
+            <div class="contents magnet">
+                <a href="{{ url_for('fitness') }}" class="text">
+                    <img src="{{ url_for('static', filename='industries/fitness.png') }}">
+                    <h5>
+                        Fitness
+                    </h5>
+                </a>
+            </div>
+    
+            <div class="contents magnet">
+                <a href="{{ url_for('fintech') }}" class="text">
+                    <img src="{{ url_for('static', filename='industries/fintech.png') }}">
+                    <h5>
+                        Fintech
+                    </h5>
+                </a>
+            </div>
+    
+            <div class="contents magnet">
+                <a href="{{ url_for('education') }}" class="text">
+                    <img src="{{ url_for('static', filename='industries/education.png') }}">
+                    <h5>
+                        Education
+                    </h5>
+                </a>
+            </div>
+    
+            <div class="contents magnet">
+                <a href="{{ url_for('healthcare') }}" class="text">
+                    <img src="{{ url_for('static', filename='industries/healthcareicon.png') }}">
+                    <h5>
+                        Healthcare
+                    </h5>
+                </a>
+            </div>
+    
+            <div class="contents magnet">
+                <a href="{{ url_for('energy') }}" class="text">
+                    <img src="{{ url_for('static', filename='industries/energy-and-utilities.png') }}">
+                    <h5>
+                        Energy & Utilities
+                    </h5>
+                </a>
+            </div>
+    
+            <div class="contents magnet">
+                <a href="{{ url_for('travel') }}" class="text">
+                    <img src="{{ url_for('static', filename='industries/travel-and-hospitality.png') }}">
+                    <h5>
+                        Travel & Hospitality
+                    </h5>
+                </a>
+            </div>
+    
+            <div class="contents magnet">
+                <a href="{{ url_for('manufacturing') }}" class="text">
+                    <img src="{{ url_for('static', filename='industries/manufacturing.png') }}">
+                    <h5>
+                        Manufacturing
+                    </h5>
+                </a>
+            </div>
+    
+            <div class="contents magnet">
+                <a href="{{ url_for('adverts') }}" class="text">
+                    <img src="{{ url_for('static', filename='industries/advertising.png') }}">
+                    <h5>
+                        Advertising
+                    </h5>
+                </a>
+            </div>
+    
+            <div class="contents magnet">
+                <a href="{{ url_for('retail') }}" class="text">
+                    <img src="{{ url_for('static', filename='industries/retail.png') }}">
+                    <h5>
+                        Retail
+                    </h5>
+                </a>
+            </div>
+    
+            <div class="contents magnet">
+                <a href="{{ url_for('entertain') }}" class="text">
+                    <img src="{{ url_for('static', filename='industries/media-and-entertainment.png') }}">
+                        <h5>
+                            Media & Entertainment
+                        </h5>
+                </a>
+            </div>
+    
+            <div class="contents magnet">
+                <a href="{{ url_for('supplychain') }}" class="text">
+                    <img src="{{ url_for('static', filename='industries/logistics.png') }}">
+                    <h5>
+                        Supply Chain And Logistics
+                    </h5>
+                </a>
+            </div>
+    
+            <div class="contents magnet">
+                <a href="{{ url_for('travel') }}" class="text">
+                    <img src="{{ url_for('static', filename='industries/life-sciences.png') }}" alt="">
+                    <h5>
+                        Life Science
+                    </h5>
+                </a>
+            </div>  
+        </div>
+    </div>
+    
+    <script>
+        // Select all .magnet and .text elements
+        const magnetElements = document.querySelectorAll('.magnet');
+        const magnetTextElements = document.querySelectorAll('.text');
+    
+        // Function to activate the magnetic effect on mouse move
+        const activateMagneto = (event) => {
+            const boundBox = event.currentTarget.getBoundingClientRect();
+            const magnetoStrength = 40;
+            const magnetoTextStrength = 300;
+            const newX = ((event.clientX - boundBox.left) / event.currentTarget.offsetWidth) - 0.5;
+            const newY = ((event.clientY - boundBox.top) / event.currentTarget.offsetHeight) - 0.5;
+    
+            // Move the current magnet element
+            gsap.to(event.currentTarget, {
+                duration: 1,
+                x: newX * magnetoStrength,
+                y: newY * magnetoStrength,
+                ease: Power4.easeOut
+            });
+    
+            // Move the corresponding text element
+            const textElement = event.currentTarget.querySelector('.text');
+            gsap.to(textElement, {
+                duration: 1,
+                x: newX * magnetoTextStrength,
+                y: newY * magnetoTextStrength,
+                ease: Power4.easeOut
+            });
+        };
+    
+        // Function to reset the magnetic effect on mouse leave
+        const resetMagneto = (event) => {
+            // Reset the position of the magnet and the text
+            gsap.to([event.currentTarget, event.currentTarget.querySelector('.text')], {
+                duration: 1,
+                x: 0,
+                y: 0,
+                ease: Elastic.easeOut
+            });
+        };
+    
+        // Add event listeners to each magnet element
+        magnetElements.forEach((element) => {
+            element.addEventListener('mouseenter', () => {
+                element.addEventListener('mousemove', activateMagneto);
+            });
+            element.addEventListener('mouseleave', () => {
+                element.removeEventListener('mousemove', activateMagneto);
+                resetMagneto({ currentTarget: element });
+            });
+        });
+    </script>
+
+
+<div class="contact">
+    <div class="polygon serv-poly">
+        <div class="contact-head">
+            <h1>
+                Talk To Us
+            </h1>
+        </div>
+    </div>
+    <div class="contact-cont">
+        <div class="main">
+            <img src="{{ url_for('static', filename='landing/contact2.jpeg') }}" alt="">
+            <div class="content">
+                <p>Our dedicated .NET developers deliver custom .NET development solutions using versatile, cross-platform, and modern .NET frameworks.</p>
+                <a href="{{ url_for('contact') }}">
+                    <button>
+                        Lets Discuss Your Project
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+    
+</main>
+{% endblock %}

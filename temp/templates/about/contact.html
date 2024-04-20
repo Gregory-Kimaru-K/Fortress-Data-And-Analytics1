@@ -1,0 +1,188 @@
+{% extends "base.html" %}
+{% block title %}
+Contact Us
+{% endblock %}
+{% block content %}
+<main class="contact">
+    <div class="polygon">
+    <div class="head">
+        <h1>
+            Share, inquire, innovate, accelerate digital transformation.
+        </h1>
+    </div>
+    </div>
+    <div class="contact-container">
+        <div class="location">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249.30352519893526!2d36.80625857055906!3d-1.2581679912176038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1711b717afcd%3A0x2711a49b1cd18c1d!2sFortress%20Data%20and%20Analytics!5e0!3m2!1sen!2ske!4v1711099827224!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+    <div class="contact-sec">
+        <form id="contact-form" method="post" action="/send">
+            <div class="form-control">
+            <input type="text" name="name" required="">
+            <label>
+                <span style="transition-delay:0ms">N</span>
+                <span style="transition-delay:100ms">a</span>
+                <span style="transition-delay:200ms">m</span>
+                <span style="transition-delay:300ms">e</span>
+            </label>
+            </div>
+        
+            <div class="form-control">
+                <input type="email" name="email" required="">
+                <label>
+                    <span style="transition-delay:0ms">E</span>
+                    <span style="transition-delay:100ms">m</span>
+                    <span style="transition-delay:200ms">a</span>
+                    <span style="transition-delay:300ms">i</span>
+                    <span style="transition-delay:400ms">l</span>
+
+                </label>
+            </div>
+            
+            <div class="form-control">
+                <input type="tel" name="telNumber" required="">
+                <label>
+                    <span style="transition-delay:0ms">T</span>
+                    <span style="transition-delay:50ms">e</span>
+                    <span style="transition-delay:100ms">l</span>
+                    <span style="transition-delay:150ms">e</span>
+                    <span style="transition-delay:200ms">p</span>
+                    <span style="transition-delay:250ms">h</span>
+                    <span style="transition-delay:300ms">o</span>
+                    <span style="transition-delay:350ms">n</span>
+                    <span style="transition-delay:400ms">e</span>
+                    <span style="transition-delay:450ms"> </span>
+                    <span style="transition-delay:500ms">N</span>
+                    <span style="transition-delay:550ms">u</span>
+                    <span style="transition-delay:600ms">m</span>
+                    <span style="transition-delay:650ms">b</span>
+                    <span style="transition-delay:700ms">e</span>
+                    <span style="transition-delay:750ms">r</span>
+                </label>
+            </div>
+
+            <div class="form-control">
+                <input type="text" name="subject" required="">
+                <label>
+                    <span style="transition-delay:0ms">S</span>
+                    <span style="transition-delay:100ms">u</span>
+                    <span style="transition-delay:200ms">b</span>
+                    <span style="transition-delay:300ms">j</span>
+                    <span style="transition-delay:400ms">e</span>
+                    <span style="transition-delay:500ms">c</span>
+                    <span style="transition-delay:600ms">t</span>
+                </label>
+            </div>
+
+            <div class="textarea-cont">
+                <textarea name="message" required="" cols="32" rows="8"></textarea>
+                <label>
+                    <span style="transition-delay:0ms">M</span>
+                    <span style="transition-delay:100ms">e</span>
+                    <span style="transition-delay:200ms">s</span>
+                    <span style="transition-delay:300ms">s</span>
+                    <span style="transition-delay:400ms">a</span>
+                    <span style="transition-delay:500ms">g</span>
+                    <span style="transition-delay:600ms">e</span>
+                </label>
+            </div>
+
+            <button type="submit" class="form-btn contact-btn">
+                        <div class="svg-wrapper-1">
+                        <div class="svg-wrapper">
+                            <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            width="24"
+                            height="24"
+                            >
+                            <path fill="none" d="M0 0h24v24H0z"></path>
+                            <path
+                                fill="rgba(252, 242, 240)"
+                                d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
+                            ></path>
+                            </svg>
+                        </div>
+                        </div>
+                        <span>Send</span>
+            </button>
+        </form>
+    </div>
+    </div>
+    <script>
+        // Function to handle form submission
+        function submitForm() {
+            // Prevent the default form submission behavior
+            event.preventDefault();
+
+            // Get the form data
+            const formData = new FormData(document.getElementById('contact-form'));
+
+            // Send the form data asynchronously using fetch
+            fetch('/send', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => {
+                if (response.ok) {
+                    // If the response is successful, display a success message
+                    return response.text().then(message => {
+                        // Display success message
+                        showMessage(message, 'success');
+                    });
+                } else {
+                    // If the response is not successful, display an error message
+                    return response.text().then(message => {
+                        // Display error message
+                        showMessage(message, 'error');
+                    });
+                }
+            })
+            .catch(error => {
+                // If there's an error with the fetch request, display a generic error message
+                console.error('Error:', error);
+                // Display error message
+                showMessage('An error occurred. Please try again later.', 'error');
+            });
+        }
+
+        // Function to display messages
+        function showMessage(message, type) {
+            // Create message element
+            const messageElement = document.createElement('div');
+            messageElement.classList.add('message-flash', type);
+
+            // Create image element
+            const imgElement = document.createElement('img');
+            imgElement.src = type === 'success' ? "{{ url_for('static', filename='tick.png') }}" : "{{ url_for('static', filename='x.png') }}";
+            imgElement.alt = type === 'success' ? 'Success' : 'Error';
+
+            // Create h4 element
+            const h4Element = document.createElement('h4');
+            h4Element.textContent = message;
+
+            // Create button element
+            const buttonElement = document.createElement('button');
+            buttonElement.classList.add('close-msg');
+            buttonElement.textContent = 'OK';
+            buttonElement.addEventListener('click', function() {
+                messageElement.remove();
+            });
+
+            // Append elements to message element
+            messageElement.appendChild(imgElement);
+            messageElement.appendChild(h4Element);
+            messageElement.appendChild(buttonElement);
+
+            // Append message element to body
+            document.body.appendChild(messageElement);
+        }
+
+        // Add event listener to the form for form submission
+        document.getElementById('contact-form').addEventListener('submit', submitForm);
+    </script>
+</main>
+
+
+{% endblock content %}

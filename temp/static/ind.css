@@ -1,0 +1,313 @@
+.ind {
+    color: #fff;
+}
+
+.ind .flex-intro::before {
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    width: 70%;
+    height: 50%;
+    background-image: linear-gradient(45deg,#eae0c8, var(--curosel-before));
+    background-size: 500%;
+    transition: 1s;
+    filter: blur(150px);
+    z-index: -1;
+    animation: techanime 15s ease-in-out infinite alternate;
+}
+
+.ind .flex-intro {
+    padding-top: 13%;
+    padding-bottom: 20%;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+}
+
+.ind .flex-intro .ind-head {
+    padding-top: 5%;
+    padding-bottom: 10%;
+    width: 50%;
+    text-align: center;
+}
+
+.ind .flex-intro img {
+    width: 40%;
+}
+
+
+
+.ind .flex-intro .ind-head a button {
+    margin-top: 5%;
+    width: 50%;
+    height: 35px;
+    background: #004242;
+    color: aliceblue;
+    transition: 1s;
+}
+
+.ind .flex-intro .ind-head a button:hover {
+    background-color: #4169e1;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.ind .ind-sol {
+    width: 100%;
+    position: relative;
+    color: aliceblue;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ind .ind-sol .ind-sol-intro {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+    gap: 2rem;
+}
+
+.ind .ind-sol .ind-sol-intro .polygon{
+    width: 64%;
+}
+
+.ind .ind-sol .ind-sol-intro p {
+    position: relative;
+    width: 50%;
+}
+
+.ind .ind-sol .ind-sol-main .content {
+    width: 30%;
+    height: 100%;
+    margin: 10%;
+    margin-top: 5%;
+    border: 2px solid rgba(252, 116, 45);
+    padding: 3%;
+    border-radius: 50px;
+    text-align: center;
+    transition: .5s;
+}
+
+
+
+.ind .ind-sol .ind-sol-main {
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+.ind .ind-sol::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: linear-gradient(45deg,var(--bs-brief1), var(--bs-brief2), var(--bs-brief3));
+    filter: blur(100px);
+    background-size: 600%;
+    z-index: -1;
+    animation: techanime 15s ease-in-out infinite alternate;
+}
+
+.ind .ind-contact {
+    position: relative;
+    left: 15%;
+    padding-top: 5%;
+    padding: 4%;
+    width: 70%;
+    border-radius: 100px;
+    text-align: center;
+    background: #1d2951;
+    padding-bottom: 5%;
+}
+
+.ind .ind-contact img {
+    width: 50%;
+    position: relative;
+}
+
+.ind .ind-contact a button {
+    margin-top: 5%;
+    width: 50%;
+    height: 35px;
+    background: #004242;
+    color: aliceblue;
+    transition: 1s;
+}
+
+.ind .ind-contact a button:hover {
+    transform: scale(1.1);
+    background-color: #4169e1;
+}
+
+.ind .ind-benefits::before {
+    content: "";
+    background-image: linear-gradient(45deg, var(--bs-brief1), var(--bs-brief2), var(--bs-brief3));
+    filter: blur(150px);
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background-size: 700%;
+    animation: serviceanime 10s ease-in-out infinite alternate;
+}
+
+.ind .ind-benefits {
+    position: relative;
+    text-align: center;
+    margin-top: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ind .ind-benefits .ind-benefits-cont {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5%;
+}
+
+.ind .ind-benefits .benefit {
+    border-radius: 50px;
+    padding: 2%;
+    width: 30%;
+    border: 2px solid rgba(252, 116, 45);
+    margin-bottom: 5%;
+    margin-left: 10%;
+    transition: 1s;
+}
+
+.ind .ind-land .ind-cont .magnet img {
+    width: 150px;
+    height: 80px;
+    padding: 2%;
+}
+
+.ind .hire {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+.ind .polygon {
+    width: 86%;
+    align-items: center;
+    animation-duration: 30s;
+
+}
+
+.ind .cont-polygon {
+    position: relative;
+    width: 88%;
+    height: 100%;
+    padding: 2%;
+    background: linear-gradient(180deg, var(--color2) 20%, var(--color3), transparent);
+    display: flex;
+    clip-path: polygon( 24.769% 7.919%,24.769% 7.919%,22.525% 7.821%,20.414% 7.538%,18.416% 7.092%,16.509% 6.501%,14.671% 5.787%,12.882% 4.969%,11.119% 4.068%,9.361% 3.103%,7.588% 2.094%,5.778% 1.062%,5.778% 1.062%,4.925% 0.753%,4.094% 0.778%,3.301% 1.111%,2.562% 1.725%,1.892% 2.593%,1.309% 3.69%,0.828% 4.988%,0.464% 6.461%,0.234% 8.082%,0.154% 9.825%,0.154% 74.189%,0.154% 74.189%,0.202% 75.521%,0.339% 76.8%,0.561% 78.01%,0.861% 79.138%,1.234% 80.169%,1.673% 81.089%,2.171% 81.882%,2.725% 82.535%,3.326% 83.033%,3.969% 83.361%,48.957% 99.553%,48.957% 99.553%,49.119% 99.605%,49.281% 99.646%,49.443% 99.675%,49.606% 99.692%,49.769% 99.698%,49.931% 99.693%,50.094% 99.676%,50.257% 99.647%,50.419% 99.607%,50.58% 99.555%,96.024% 83.35%,96.024% 83.35%,96.668% 83.024%,97.27% 82.527%,97.824% 81.875%,98.324% 81.082%,98.764% 80.162%,99.137% 79.131%,99.438% 78.002%,99.66% 76.79%,99.798% 75.51%,99.846% 74.177%,99.846% 9.516%,99.846% 9.516%,99.768% 7.799%,99.544% 6.195%,99.19% 4.728%,98.72% 3.424%,98.148% 2.307%,97.491% 1.401%,96.763% 0.731%,95.979% 0.322%,95.153% 0.197%,94.301% 0.382%,75.694% 7.919%,75.694% 7.919%,73.648% 7.949%,71.304% 7.5%,68.729% 6.686%,65.989% 5.623%,63.15% 4.426%,60.277% 3.21%,57.436% 2.091%,54.694% 1.184%,52.116% 0.604%,49.769% 0.466%,49.769% 0.466%,47.547% 0.773%,45.294% 1.397%,43% 2.255%,40.652% 3.265%,38.238% 4.345%,35.746% 5.412%,33.165% 6.386%,30.483% 7.183%,27.688% 7.722%,24.769% 7.919% );
+    transform: scale(0.8);
+}
+
+.ind .cont-polygon .ind-hire {
+    width: 100%;
+    height: 100%;
+    padding: 8%;
+    display: flex;
+    background: #000;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    clip-path: polygon( 24.769% 7.919%,24.769% 7.919%,22.525% 7.821%,20.414% 7.538%,18.416% 7.092%,16.509% 6.501%,14.671% 5.787%,12.882% 4.969%,11.119% 4.068%,9.361% 3.103%,7.588% 2.094%,5.778% 1.062%,5.778% 1.062%,4.925% 0.753%,4.094% 0.778%,3.301% 1.111%,2.562% 1.725%,1.892% 2.593%,1.309% 3.69%,0.828% 4.988%,0.464% 6.461%,0.234% 8.082%,0.154% 9.825%,0.154% 74.189%,0.154% 74.189%,0.202% 75.521%,0.339% 76.8%,0.561% 78.01%,0.861% 79.138%,1.234% 80.169%,1.673% 81.089%,2.171% 81.882%,2.725% 82.535%,3.326% 83.033%,3.969% 83.361%,48.957% 99.553%,48.957% 99.553%,49.119% 99.605%,49.281% 99.646%,49.443% 99.675%,49.606% 99.692%,49.769% 99.698%,49.931% 99.693%,50.094% 99.676%,50.257% 99.647%,50.419% 99.607%,50.58% 99.555%,96.024% 83.35%,96.024% 83.35%,96.668% 83.024%,97.27% 82.527%,97.824% 81.875%,98.324% 81.082%,98.764% 80.162%,99.137% 79.131%,99.438% 78.002%,99.66% 76.79%,99.798% 75.51%,99.846% 74.177%,99.846% 9.516%,99.846% 9.516%,99.768% 7.799%,99.544% 6.195%,99.19% 4.728%,98.72% 3.424%,98.148% 2.307%,97.491% 1.401%,96.763% 0.731%,95.979% 0.322%,95.153% 0.197%,94.301% 0.382%,75.694% 7.919%,75.694% 7.919%,73.648% 7.949%,71.304% 7.5%,68.729% 6.686%,65.989% 5.623%,63.15% 4.426%,60.277% 3.21%,57.436% 2.091%,54.694% 1.184%,52.116% 0.604%,49.769% 0.466%,49.769% 0.466%,47.547% 0.773%,45.294% 1.397%,43% 2.255%,40.652% 3.265%,38.238% 4.345%,35.746% 5.412%,33.165% 6.386%,30.483% 7.183%,27.688% 7.722%,24.769% 7.919% );
+    gap: 2rem;
+    font-size: 2rem;
+}
+
+.ind .cont-polygon .ind-hire a {
+    width: 60%;
+}
+
+
+@media screen and (max-width:800px) {
+    .ind .flex-intro {
+        flex-direction: column-reverse;
+    }
+
+    .ind .flex-intro img {
+        width: 100%;
+    }
+    .ind .flex-intro .ind-head {
+        width: 90%;
+        margin-left: 5%;
+    }
+    .ind .flex-intro::before {
+        width: 100%;
+        left: 0;
+        top: 20%;
+        height: 45%;
+    }
+
+    .ind .flex-intro .ind-head a button {
+        width: 60%;
+    }
+
+    .ind .ind-sol .ind-sol-intro p {
+        width: 80%;
+        left: 10%;
+    }
+
+    .ind .ind-sol .ind-sol-main .content {
+        width: 70%;
+        margin-left: 15%;
+    }
+
+    .ind .ind-contact {
+        width: 90%;
+        left: 5%;
+    }
+
+    .ind .ind-contact a button {
+        width: 60%;
+    }
+
+    .ind .ind-benefits .benefit {
+        width: 70%;
+        margin-left: 15%;
+        margin-bottom: 10%;
+    }
+
+    .ind .ind-tech .tech-cont .techy {
+        width: 40%;
+    }
+
+    .ind .ind-tech .tech-cont .last {
+        margin-left: 25%;
+    }
+
+    .ind .ind-hire {
+        width: 90%;
+        left: 5%;
+    }
+
+    .ind .ind-hire img {
+        width: 40%;
+    }
+
+    .ind .ind-hire a button {
+        width: 60%;
+        height: 32px;
+    }
+
+}

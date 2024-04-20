@@ -1,0 +1,262 @@
+{% extends "base.html" %}
+{% block title %}
+    Hire QA Developers
+{% endblock %}
+{% block content %}
+<main class="main-services hiring">
+    <div class="land">
+        <img src="{{ url_for('static', filename='landing/test.jpeg') }}" alt="">
+        <div class="cont">
+            <h1></h1>
+            <h1>
+                Hire Software Tester
+            </h1>
+            <p>
+                As one of the principal testing organizations in India, our dedicated and skilled testers and QA engineers are committed to offering the best testing services, coupled with controlled cost runs, minimal rework time, and balanced evaluation of the solutions with a perfect blend of manual and automated testing.
+            </p>
+            <a href="{{ url_for('contact') }}">
+                <button>
+                    Hire QA Engineers
+                </button>
+            </a>
+        </div>
+    </div>
+    
+    
+   <div class="services-content">
+        <div class="intro-cont">
+                <h2>
+                    Steps to Hire Dedicated Developers from Fortress Data And Analytics
+                </h2>
+        </div>
+        <div class="main-cont">
+            <div class="contents left">
+                <h3>
+                    <img src="{{ url_for('static', filename='services/hire_1.png') }}" alt="">
+                    Post Your Inquiry
+                </h3>
+
+            </div>
+            <div class="contents right">
+                <h3>
+                    <img src="{{ url_for('static', filename='services/hire_4.png') }}" alt="">
+     
+                    Interview
+                </h3>
+            </div>
+            <div class="contents left">
+                <h3>
+                    <img src="{{ url_for('static', filename='services/hire_3.png') }}" alt="">
+
+                    Engagement Terms
+                </h3>
+            </div>
+            <div class="contents right">
+                <h3>
+                    <img src="{{ url_for('static', filename='services/hire_2.png') }}" alt="">
+
+                    Get Started
+                </h3>
+            </div>
+        </div>
+   </div>
+
+    <div class="contact">
+        <div class="polygon serv-poly">
+            <div class="contact-head">
+                <h1>
+                    Hire a QA Engineers
+                </h1>
+            </div>
+        </div>
+        <div class="contact-cont">
+            <div class="main">
+                <img src="{{ url_for('static', filename='landing/contact2.jpeg') }}" alt="">
+                <div class="content">
+                    <p>
+                        Our software testers work towards a single objective – ‘attaining customer satisfaction' along with minimal cost overhead and increased ability. Our testing teams assure you of unparalleled software that matches all your requirements and performs to its best, with full-on quality and performance standards.
+                    </p>
+                    <a href="{{ url_for('contact') }}">
+                        <button>
+                            Hire QA Engineers
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ind-land">
+        <div class="polygon">
+            <div class="ind-head">
+                <h1>
+                    Industries We Serve
+                </h1>
+            </div>
+        </div>
+        <div class="ind-cont">
+            <div class="contents magnet">
+                <a href="{{ url_for('fitness') }}" class="text">
+                    <img src="{{ url_for('static', filename='industries/fitness.png') }}">
+                    <h5>
+                        Fitness
+                    </h5>
+                </a>
+            </div>
+    
+            <div class="contents magnet">
+                <a href="{{ url_for('fintech') }}" class="text">
+                    <img src="{{ url_for('static', filename='industries/fintech.png') }}">
+                    <h5>
+                        Fintech
+                    </h5>
+                </a>
+            </div>
+    
+            <div class="contents magnet">
+                <a href="{{ url_for('education') }}" class="text">
+                    <img src="{{ url_for('static', filename='industries/education.png') }}">
+                    <h5>
+                        Education
+                    </h5>
+                </a>
+            </div>
+    
+            <div class="contents magnet">
+                <a href="{{ url_for('healthcare') }}" class="text">
+                    <img src="{{ url_for('static', filename='industries/healthcareicon.png') }}">
+                    <h5>
+                        Healthcare
+                    </h5>
+                </a>
+            </div>
+    
+            <div class="contents magnet">
+                <a href="{{ url_for('energy') }}" class="text">
+                    <img src="{{ url_for('static', filename='industries/energy-and-utilities.png') }}">
+                    <h5>
+                        Energy & Utilities
+                    </h5>
+                </a>
+            </div>
+    
+            <div class="contents magnet">
+                <a href="{{ url_for('travel') }}" class="text">
+                    <img src="{{ url_for('static', filename='industries/travel-and-hospitality.png') }}">
+                    <h5>
+                        Travel & Hospitality
+                    </h5>
+                </a>
+            </div>
+    
+            <div class="contents magnet">
+                <a href="{{ url_for('manufacturing') }}" class="text">
+                    <img src="{{ url_for('static', filename='industries/manufacturing.png') }}">
+                    <h5>
+                        Manufacturing
+                    </h5>
+                </a>
+            </div>
+    
+            <div class="contents magnet">
+                <a href="{{ url_for('adverts') }}" class="text">
+                    <img src="{{ url_for('static', filename='industries/advertising.png') }}">
+                    <h5>
+                        Advertising
+                    </h5>
+                </a>
+            </div>
+    
+            <div class="contents magnet">
+                <a href="{{ url_for('retail') }}" class="text">
+                    <img src="{{ url_for('static', filename='industries/retail.png') }}">
+                    <h5>
+                        Retail
+                    </h5>
+                </a>
+            </div>
+    
+            <div class="contents magnet">
+                <a href="{{ url_for('entertain') }}" class="text">
+                    <img src="{{ url_for('static', filename='industries/media-and-entertainment.png') }}">
+                        <h5>
+                            Media & Entertainment
+                        </h5>
+                </a>
+            </div>
+    
+            <div class="contents magnet">
+                <a href="{{ url_for('supplychain') }}" class="text">
+                    <img src="{{ url_for('static', filename='industries/logistics.png') }}">
+                    <h5>
+                        Supply Chain And Logistics
+                    </h5>
+                </a>
+            </div>
+    
+            <div class="contents magnet">
+                <a href="{{ url_for('travel') }}" class="text">
+                    <img src="{{ url_for('static', filename='industries/life-sciences.png') }}" alt="">
+                    <h5>
+                        Life Science
+                    </h5>
+                </a>
+            </div>  
+        </div>
+    </div>
+
+    <script>
+        // Select all .magnet and .text elements
+        const magnetElements = document.querySelectorAll('.magnet');
+        const magnetTextElements = document.querySelectorAll('.text');
+    
+        // Function to activate the magnetic effect on mouse move
+        const activateMagneto = (event) => {
+            const boundBox = event.currentTarget.getBoundingClientRect();
+            const magnetoStrength = 40;
+            const magnetoTextStrength = 300;
+            const newX = ((event.clientX - boundBox.left) / event.currentTarget.offsetWidth) - 0.5;
+            const newY = ((event.clientY - boundBox.top) / event.currentTarget.offsetHeight) - 0.5;
+    
+            // Move the current magnet element
+            gsap.to(event.currentTarget, {
+                duration: 1,
+                x: newX * magnetoStrength,
+                y: newY * magnetoStrength,
+                ease: Power4.easeOut
+            });
+    
+            // Move the corresponding text element
+            const textElement = event.currentTarget.querySelector('.text');
+            gsap.to(textElement, {
+                duration: 1,
+                x: newX * magnetoTextStrength,
+                y: newY * magnetoTextStrength,
+                ease: Power4.easeOut
+            });
+        };
+    
+        // Function to reset the magnetic effect on mouse leave
+        const resetMagneto = (event) => {
+            // Reset the position of the magnet and the text
+            gsap.to([event.currentTarget, event.currentTarget.querySelector('.text')], {
+                duration: 1,
+                x: 0,
+                y: 0,
+                ease: Elastic.easeOut
+            });
+        };
+    
+        // Add event listeners to each magnet element
+        magnetElements.forEach((element) => {
+            element.addEventListener('mouseenter', () => {
+                element.addEventListener('mousemove', activateMagneto);
+            });
+            element.addEventListener('mouseleave', () => {
+                element.removeEventListener('mousemove', activateMagneto);
+                resetMagneto({ currentTarget: element });
+            });
+        });
+    </script>
+</main>
+{% endblock %}

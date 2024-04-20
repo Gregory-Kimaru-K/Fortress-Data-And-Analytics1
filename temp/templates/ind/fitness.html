@@ -1,0 +1,311 @@
+{% extends 'base.html' %}
+{% block title %}
+    Fitness Industry
+{% endblock %}
+{% block content %}
+<main class="ind">
+    <div class="land">
+        <img src="{{ url_for('static', filename='landing/anim_animation.gif') }}" alt="">
+        <div class="cont">
+            <h1></h1>
+            <h1>
+                Fitness App Development
+            </h1>
+            <p>
+                We specialize in innovative fitness app development for comprehensive health and wellness, catering to health enthusiasts. Our skilled solution experts possess domain-specific knowledge in digital fitness, addressing the complexities of the industry. We offer a wide range of fitness app development services, including various types of software applications that enhance business prospects, profitability, and client reach.
+            </p>
+            <a href="{{ url_for('contact') }}">
+                <button>
+                    Consult Our Expert
+                </button>
+            </a>
+        </div>
+    </div>
+
+    <div class="ind-sol">
+        <div class="ind-sol-intro">
+            <h2>
+                Our Comprehensive Fitness App Development Services
+            </h2>
+            <p>
+                Our fitness app developers assist industry-driven enterprises, SMBs, and startups in digitizing their business workflows in the health and fitness arena, resulting in enhanced return on investment, community involvement, and user empowerment.
+            </p>
+        </div>
+        <div class="ind-sol-main">
+            <div class="content left">
+                <h3>
+                    Fitness and Activity Tracking App
+                </h3>
+                <p>
+                    Apps that manage major fitness-related activities like fitness schedules, remote training, calorie counting, activity tracking, social fitness, workout tracking, and progress measurement.
+                </p>
+            </div>
+            <div class="content center">
+                <h3>
+                    Mental Relaxation Mobile App
+                </h3>
+                <p>
+                    Specifically designed for rejuvenating mental health, meditation, relaxation techniques, relaxation music, daily audio sessions, destress management, audio streaming/trimming, social media integration, and motivational surveys.
+                </p>
+            </div>
+            <div class="content right">
+                <h3>
+                    Wearable Fitness App
+                </h3>
+                <p>
+                    Seamlessly connects with wearable devices to monitor users' health statistics and provide appropriate advice. Track workouts and monitor fitness on the go with interactive, goal-based fitness apps through wearables.
+                </p>
+            </div>
+            <div class="content left">
+                <h3>
+                    Diet and Nutrition App
+                </h3>
+                <p>
+                    Includes meal tracking, recipes, meal plans, nutrition store, food database, calorie tracking, user subscriptions to meals/nutrition charts/consultations, and daily monitoring of diet plans and supplements.
+                </p>
+            </div>
+            <div class="content center">
+                <h3>
+                    Yoga and Exercise App
+                </h3>
+                <p>
+                    Tracks calorie intake/output, workouts, fitness status with integration, day-wise statistics of different exercises, and progress in terms of start weight, goal weight, and current weight.
+                </p>
+            </div>
+            <div class="content right">
+                <h3>
+                    Fitness Trainer App
+                </h3>
+                <p>
+                    Includes program registrations, user subscriptions, remote training, subscription models for training and support, fitness community support, home training plans, BMI calculation, training content, etc.
+                </p>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="contact">
+        <div class="polygon serv-poly">
+            <div class="contact-head">
+                <h1>
+                    Achieve wellness with our fitness app.
+                </h1>
+            </div>
+        </div>
+        <div class="contact-cont">
+            <div class="main">
+                <img src="{{ url_for('static', filename='landing/contact2.jpeg') }}" alt="">
+                <div class="content">
+                    <p>
+                        We aim to serve a global clientele in the health and fitness industry, whether small, medium, or large organizations, enterprises, or startups. Our competent fitness app developers ensure that our solutions are a step ahead of the competition.
+                    </p>
+                    <a href="{{ url_for('contact') }}">
+                        <button>
+                            Lets Discuss Your Project
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ind-benefits">
+        <h2>
+            Fitness App Development Features and Functionalities
+        </h2>
+        <div class="ind-benefits-cont">
+
+            <div class="benefit">
+                <h3>Wearable Integrations</h3>
+                <p>
+                    Our fitness apps seamlessly connect with a range of wearable devices like smartwatches and fitness bands for real-time fitness statistics. Users can easily control workout-related information on the go, with effective data capture for overall fitness results.
+                </p>
+            </div>
+            
+            <div class="benefit">
+                <h3>Personalized Planning</h3>
+                <p>
+                    Our apps offer personalized planning activities tailored to individual fitness and nutrition needs. Users can customize workouts, nutrition, exercises, diet schedules, and progress tracking based on their goals, fitness levels, and preferences.
+                </p>
+            </div>
+            
+            <div class="benefit">
+                <h3>Workout Audios and Videos</h3>
+                <p>
+                    Our apps provide a vast collection of workout audio and videos by industry experts, catering to various fitness and health genres. Users can access workout videos based on different body types and nutritional recipe videos for guidance.
+                </p>
+            </div>
+            
+            <div class="benefit">
+                <h3>Real-time Insights</h3>
+                <p>
+                    Fitness applications offer real-time information on calorie tracking, breakdown, macronutrients, workout planning, exercise tracking, nutrition intake, measurements, wearable device integration, goals, trackers, push notifications, and alarms, facilitating effective workout planning and nutritional management.
+                </p>
+            </div>
+            
+            <div class="benefit">
+                <h3>Fitness Data Analytics</h3>
+                <p>
+                    Data analytics in fitness apps help estimate the success of fitness regimes, exercises, nutrition charts, and personal training. Leveraging data from various activities through analytical methods provides optimal metrics for enhanced fitness results and informed business decisions.
+                </p>
+            </div>
+            
+            <div class="benefit">
+                <h3>AI-Powered Fitness Apps</h3>
+                <p>
+                    Artificial intelligence enhances fitness apps with automated features, precise motion tracking, performance assessment, real-time workout evaluation, and suitable suggestions. Our fitness app development incorporates AI-driven activities for improved user experience and tracking.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="ind-land">
+        <div class="polygon">
+            <div class="ind-head">
+                <h1>
+                    Technologies and Platforms We Use
+                </h1>
+            </div>
+        </div>
+        <div class="ind-cont">
+            <div class="contents magnet">
+                <a href="" class="text">
+                    <img src="{{ url_for('static', filename='services/React-Logo.png') }}" alt="">
+                    <h5>
+                        React Native
+                    </h5>
+                </a>
+            </div>
+    
+            <div class="contents magnet">
+                <a href="" class="text">
+                    <img src="{{ url_for('static', filename='services/Flutter-Logo.png') }}" >
+                    <h5>
+                        Flutter
+                    </h5>
+                </a>
+            </div>
+    
+            <div class="contents magnet">
+                <a href="{{ url_for('education') }}" class="text">
+                    <img src="{{ url_for('static', filename='services/hire-iOS-icon.png') }}" width="70">
+                    <h5>
+                        iOS
+                    </h5>
+                </a>
+            </div>
+    
+            <div class="contents magnet">
+                <a href="" class="text">
+                    <img src="{{ url_for('static', filename='services/hire-Android-icon.png') }}" width="70">
+                    <h5>
+                        Android
+                    </h5>
+                </a>
+            </div>
+    
+            <div class="contents magnet">
+                <a href="" class="text">
+                    <img src="{{ url_for('static', filename='services/Laravel-Logo.png') }}" alt="">
+                    <h5>
+                        Laravel
+                    </h5>
+                </a>
+            </div>
+    
+            <div class="contents magnet">
+                <a href="" class="text">
+                    <img src="{{ url_for('static', filename='services/Kotlin-Logo.png') }}" alt="">
+                    <h5>
+                        Kotlin
+                    </h5>
+                </a>
+            </div>    
+        </div>
+    </div>
+
+    <div class="hire">
+        <div class="polygon">
+            <div class="head">
+                <h1>
+                    Your Comprehensive Fitness App Development Partner
+                </h1>
+            </div>
+        </div>
+    
+        <div class="cont-polygon">
+            <div class="ind-hire">
+                <div class="img">
+                    <img src=" {{ url_for('static', filename='contact/looking.png') }} " alt="">
+                    <img src=" {{ url_for('static', filename='contact/looking2.png') }} " alt="">
+                </div>
+                <p>
+                    Prioritize your health and wellness with fitness interests, activity tracking, effective monitoring, expert tutorials, and precise nutrition and calorie calculation.
+                </p>
+                <a href="{{ url_for('contact') }}">
+                    <button>
+                        <p>
+                            Connect With Us
+                        </p>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Select all .magnet and .text elements
+        const magnetElements = document.querySelectorAll('.magnet');
+        const magnetTextElements = document.querySelectorAll('.text');
+    
+        // Function to activate the magnetic effect on mouse move
+        const activateMagneto = (event) => {
+            const boundBox = event.currentTarget.getBoundingClientRect();
+            const magnetoStrength = 40;
+            const magnetoTextStrength = 300;
+            const newX = ((event.clientX - boundBox.left) / event.currentTarget.offsetWidth) - 0.5;
+            const newY = ((event.clientY - boundBox.top) / event.currentTarget.offsetHeight) - 0.5;
+    
+            // Move the current magnet element
+            gsap.to(event.currentTarget, {
+                duration: 1,
+                x: newX * magnetoStrength,
+                y: newY * magnetoStrength,
+                ease: Power4.easeOut
+            });
+    
+            // Move the corresponding text element
+            const textElement = event.currentTarget.querySelector('.text');
+            gsap.to(textElement, {
+                duration: 1,
+                x: newX * magnetoTextStrength,
+                y: newY * magnetoTextStrength,
+                ease: Power4.easeOut
+            });
+        };
+    
+        // Function to reset the magnetic effect on mouse leave
+        const resetMagneto = (event) => {
+            // Reset the position of the magnet and the text
+            gsap.to([event.currentTarget, event.currentTarget.querySelector('.text')], {
+                duration: 1,
+                x: 0,
+                y: 0,
+                ease: Elastic.easeOut
+            });
+        };
+    
+        // Add event listeners to each magnet element
+        magnetElements.forEach((element) => {
+            element.addEventListener('mouseenter', () => {
+                element.addEventListener('mousemove', activateMagneto);
+            });
+            element.addEventListener('mouseleave', () => {
+                element.removeEventListener('mousemove', activateMagneto);
+                resetMagneto({ currentTarget: element });
+            });
+        });
+    </script>
+
+</main>
+{% endblock %}

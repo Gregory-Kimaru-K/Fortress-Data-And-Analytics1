@@ -1,0 +1,211 @@
+<div class="carousel">
+    <h2>Our Services</h2>
+    <div class="list">
+        <div class="item">
+            <img src="{{ url_for('static', filename='landing/data_science.png') }}" />
+            <div class="intro">
+                <div class="title">
+                    <h2>Technology Consulting</h2>
+                </div>
+                <div class="des">
+                    <p> Propel your organization forward with expert guidance and strategic insights from Fortress Data And Analytics. Leverage cutting-edge technologies to drive innovation, optimize processes, and achieve your business objectives.</p>
+                </div>
+                <div class="seeMore">
+                    <button>see more</button>
+                </div>
+            </div>
+            <div class="detail">
+                <div class="title">
+                    <h2>Technology Consulting</h2>
+                </div>
+                <div class="des">
+                    <p>Our technology consulting services encompass a wide range of expertise, including IT strategy development, digital transformation, cloud computing, cybersecurity, and more. We collaborate closely with clients to identify opportunities, mitigate risks, and implement tailored technology solutions that deliver tangible business value.</p>
+                </div>
+                <div class="getintouch">
+                    <button><a href="{{ url_for('tech_cosultance') }}">See Details</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="{{ url_for('static', filename='landing/bs_intel.png') }}" />
+            <div class="intro">
+                <div class="title">
+                    <h2>Bussiness Intelligence</h2>
+                </div>
+                <div class="des">
+                    <p>                        
+                        Fortress Data And Analytics champions data literacy, offering potent BI services for strategic decision-making. Their analytics empower businesses to optimize efficiency, reshape models, and drive data-driven transformations.
+                    </p>
+                </div>
+                <div class="seeMore">
+                    <button>see more</button>
+                </div>
+            </div>
+            <div class="detail">
+                <div class="title">
+                    <h2>Bussiness Intelligence</h2>
+                </div>
+                <div class="des">
+                    <p>                       
+                        Fortress Data And Analytics provides a holistic range of BI and analytics services for growing organizations, fostering data literacy and unlocking data's potential for a future-driven strategy, including data visualization, enterprise BI, consulting, and analytics.
+                    </p>
+                </div>
+                <div class="techno">
+                    <div>
+                        <p>Data Visualization</p>
+                        <p>Enterprise BI</p>
+                        <p>Business Analytics</p>
+                        <p>BI Consulting</p>
+                    </div>
+                </div>
+                <div class="getintouch">
+                    <button><a href="{{ url_for('bsintel') }}">See Details</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="{{ url_for('static', filename='landing/IOT.png') }}" />
+            <div class="intro">
+                <div class="title">
+                    <h2>Product Engineering</h2>
+                </div>
+                <div class="des">
+                    <p>Bring your product ideas to life with comprehensive product engineering services from Fortress Data And Analytics. From concept to launch, we help you design, develop, and deliver innovative products that exceed customer expectations.</p>
+                </div>
+                <div class="seeMore">
+                    <button>see more</button>
+                </div>
+            </div>
+            <div class="detail">
+                <div class="title">
+                    <h2>Product Engineering</h2>
+                </div>
+                <div class="des">
+                    <p>Our product engineering team specializes in agile product development methodologies, rapid prototyping, user-centered design, and quality assurance. We provide end-to-end support across the product lifecycle, including requirements analysis, UI/UX design, software development, testing, and maintenance</p>
+                </div>
+                <div class="getintouch">
+                    <button><a href="{{ url_for('product') }}">Get In Touch</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="{{ url_for('static', filename='landing/landing_visual.png') }}" />
+            <div class="intro">
+                <div class="title">
+                    <h2>Data Visualization</h2>
+                </div>
+                <div class="des">
+                    <p>Transform complex data into intuitive visualizations with Fortress Data And Analytics. Communicate insights effectively, foster data-driven decision-making, and drive business growth.</p>
+                </div>
+                <div class="seeMore">
+                    <button>see more</button>
+                </div>
+            </div>
+            <div class="detail">
+                <div class="title">
+                    <h2>Data Visualization</h2>
+                </div>
+                <div class="des">
+                    <p>Our data visualization services focus on creating interactive and visually appealing dashboards, reports, and infographics. We leverage cutting-edge tools and techniques to present data in meaningful and actionable ways.</p>
+                </div>
+                <div class="techno">
+                    <div>
+                        <p>Power BI</p>
+                        <p>Tableau</p>
+                        <p>Plotly</p>
+                    </div>
+                </div>
+                <div class="getintouch">
+                    <button><a href="{{ url_for('datavisualzation') }}">See Details</a></button>
+                </div>
+            </div>
+        </div> 
+        <div class="item">
+            <img src="{{ url_for('static', filename='landing/data_warehouse.png') }}" />
+            <div class="intro">
+                <div class="title">
+                    <h2>Data Warehousing</h2>
+                </div>
+                <div class="des">
+                    <p>Streamline data management and optimize performance with data warehousing solutions from Fortress Data And Analytics. Centralize data storage, improve accessibility, and enable advanced analytics.</p>
+                </div>
+                <div class="seeMore">
+                    <button>see more</button>
+                </div>
+            </div>
+            <div class="detail">
+                <div class="title">
+                    <h2>Data Warehousing</h2>
+                </div>
+                <div class="des">
+                    <p>Our data warehousing services include designing, implementing, and managing data warehouse solutions tailored to your organization's needs. We ensure data integrity, scalability, and security while facilitating data-driven insights and decision-making</p>
+                </div>
+                <div class="techno">
+                    <div>
+                        <p>Amazon Redshift</p>
+                        <p>Microsoft Azure SQL Data </p>
+                        <p>Snowflake</p>
+                    </div>
+                </div>
+                <div class="getintouch">
+                    <button><a href="{{ url_for('datawarehousing') }}">See Details</a></button>
+                </div>
+            </div>
+        </div>         
+    </div>
+    <div class="arrows">
+        <button id="prev"><</button>
+        <button id="back">Go Back &#8599</button>
+        <button id="next">></button>
+    </div>
+</div>
+<!--landing carousel-->
+<script>
+    let nextButton = document.getElementById('next');
+    let prevButton = document.getElementById('prev');
+    let backButton = document.getElementById('back');
+    let seeMoreButtons = document.querySelectorAll('.seeMore');
+    let carousel = document.querySelector('.carousel');
+    let listHTML = document.querySelector('.carousel .list');
+
+    nextButton.onclick = function() {
+        showSlider('next');
+    }
+    prevButton.onclick = function() {
+        showSlider('prev');
+    }
+
+    let unAcceptClick;
+    const showSlider = (type) => {
+        nextButton.style.pointerEvents = 'none';
+        prevButton.style.pointerEvents = 'none';
+
+        carousel.classList.remove('prev', 'next');
+        let items = document.querySelectorAll('.carousel .list .item');
+        if(type === 'next'){
+            listHTML.appendChild(items[0]);
+            carousel.classList.add('next');
+        }
+        else {
+            let positionlast = items.length - 1;
+            listHTML.prepend(items[positionlast]);
+            carousel.classList.add('prev');
+        }
+
+        clearTimeout(unAcceptClick);
+        unAcceptClick = setTimeout(() => {
+            nextButton.style.pointerEvents = 'auto';
+            prevButton.style.pointerEvents = 'auto';
+        }, 2000);
+    }
+
+    seeMoreButtons.forEach(button => {
+        button.onclick = function() {
+            carousel.classList.add('showDetail');
+        }
+    })
+    
+    backButton.onclick = function() {
+        carousel.classList.remove('showDetail')
+    }
+</script>
