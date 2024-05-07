@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>doc</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='nav.css')}}" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body class="nav-body">
+    <header class="header">
+        <div class="logo">
+            <a href="{{ url_for('home') }}"><img src="{{ url_for('static', filename='fortress2.png') }}"></a>
+            <h5 class="fortress">Fortress Data And Analytics</h5>
+        </div>
+
+        <nav class="navbar">
+            <div class="dropdown-serv dropdown">
+                <div class="waah">
+                    <button class="dropbtn">Services <i class="fa fa-chevron-down"></i></button>
+                    <div class="dropdown-serv-content dropdown-content">
+                        <a href="{{ url_for('tech_cosultance')}}">Technology Consulting</a>           
+                        <a href="{{ url_for('bsintel')}}">Bussiness Inteligence</a>                         
+                        <a href="{{ url_for('customsoftware') }}">Custom Software Development</a>
+                        <a href="{{ url_for('datawarehousing')}}">Data Warehousing</a>                
+                        <a href="{{ url_for('webdev')}}">Web Development</a>
+                        <a href="{{ url_for('product')}}">Product Engineering</a>
+                        <a href="{{ url_for('softwaretesting')}}">Software Testing</a>
+                        <a href="{{ url_for('mobileapp')}}">Moblie App Development</a>                               
+                        <a href="{{ url_for('datavisualzation')}}">Data Visualization</a>                                
+                    </div>
+                </div>
+            </div>
+                
+            <div class="dropdown-abt dropdown">
+                <div class="waah">
+                    <button class="dropbtn">About <i class="fa fa-chevron-down"></i></button>
+                    <div class="dropdown-abt-content dropdown-content">
+                        <!-- <a href="{{ url_for('team')}}">Team</a>                                 -->
+                        <a href="{{ url_for('contact')}}">Contact</a>                                
+                        <a href="{{ url_for('privacypolicy')}}">Privacy Policy </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dropdown-tech dropdown">
+                <div class="waah">
+                    <button class="dropbtn">Technologies <i class="fa fa-chevron-down"></i></button>
+                    <div class="dropdown-tech-content dropdown-content">
+                        <a href="{{ url_for('backend')}}">Backend Technologies</a>                             
+                        <a href="{{ url_for('bianalytics')}}">Bi and Analytics</a>                                
+                        <a href="{{ url_for('cloud')}}">Cloud Technologies</a>                                
+                        <a href="{{ url_for('frontend')}}">Frontend Technologies </a>
+                        <a href="{{ url_for('mobile')}}">Mobile Technologies</a>
+                        <a href="{{ url_for('trending')}}">Trending Tech</a>
+                    </div>
+                </div>
+            </div> 
+            <div class="dropdown-ind dropdown">
+                <div class="waah">
+                    <button class="dropbtn indbtn">Industries <i class="fa fa-chevron-down"></i></button>
+                    <div class="dropdown-ind-content dropdown-content">
+                        <a href="{{ url_for('fintech')}}">Fintech Software Development</a>           
+                        <a href="{{ url_for('retail')}}">Retail</a>                         
+                        <a href="{{ url_for('manufacturing') }}">Manufacturing</a>
+                        <a href="{{ url_for('healthcare')}}">Healthcare</a>                
+                        <a href="{{ url_for('supplychain')}}">Supply Chain & Logistics</a>
+                        <a href="{{ url_for('education')}}">Education</a>
+                        <a href="{{ url_for('energy')}}">Energy & Utilities</a>
+                        <a href="{{ url_for('adverts')}}">Advertising</a>                               
+                        <a href="{{ url_for('fitness')}}">Fitness App Development</a>
+                        <a href="{{ url_for('travel')}}">Travel And Hospitality</a>                                
+                        <a href="{{ url_for('entertain')}}">Media & Entertainment</a>    
+                    </div>
+                </div>
+            </div>  
+            <div class="dropdown-sol dropdown">
+                <div class="waah">
+                    <button class="dropbtn">Business Solutions <i class="fa fa-chevron-down"></i></button>
+                    <div class="dropdown-sol-content dropdown-content">
+                        <a href="{{ url_for('erp')}}">Custom ERPs Software</a>           
+                        <a href="{{ url_for('crm')}}">Enterprise CRM Solutions</a>                         
+                        <a href="{{ url_for('maintain') }}">Enterprise service and maintenance</a>
+                        <a href="{{ url_for('sfa')}}">Mobile Sales Force Automation (SFA)</a>                
+                    </div>
+                </div>
+            </div> 
+            <div class="dropdown-hire dropdown">
+                <div class="waah">
+                    <button class="dropbtn hirebtn">Hire Talent <i class="fa fa-chevron-down"></i></button>
+                    <div class="dropdown-hire-content dropdown-content">
+                        <a href="{{ url_for('dev')}}">Hire Dedicated Developers</a>           
+                        <a href="{{ url_for('bidev')}}">Hire BI Developers</a>                         
+                        <a href="{{ url_for('ui') }}">Hire UI\UX Developers</a>
+                        <a href="{{ url_for('tester')}}">Hire software Tester</a>                
+                        <a href="{{ url_for('back')}}">Hire Backend Developer</a>
+                        <a href="{{ url_for('mobiledev')}}">Hire Mobile Developer</a>
+                        <a href="{{ url_for('full')}}">Hire Fullstack Developer</a>
+                    </div>
+                </div>
+            </div>   
+        </nav>
+
+        <div class="mobile-menu">
+            <div class="mobile-menu-icon"></div>
+            <div class="mobile-menu-icon"></div>
+            <div class="mobile-menu-icon"></div>
+        </div>
+    </header>
+
+    <script>
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const navBar = document.querySelector('.navbar');
+        const dropBtns = document.querySelectorAll('.dropbtn');
+
+        mobileMenu.addEventListener('click', function() {
+            mobileMenu.classList.toggle('clicked');
+            navBar.classList.toggle('active');
+        });
+
+        dropBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                const content = this.nextElementSibling;
+                content.classList.toggle('added');
+            });
+        });
+        
+        if (window.innerWidth <= 1200) {
+            const waahDivs = document.querySelectorAll('.waah');
+            waahDivs.forEach(waahDiv => {
+                const parent = waahDiv.parentElement;
+                const children = [...waahDiv.childNodes];
+                parent.replaceChildren(...children);
+            });
+        }
+
+        const hireBtn = document.querySelector('.hirebtn');
+        hireBtn.addEventListener('click', function() {
+            navBar.classList.toggle('active-2');
+        });
+
+        const indBtn = document.querySelector('.indbtn');
+        indBtn.addEventListener('click', function() {
+            navBar.classList.toggle('active-3');
+        });
+    </script>
+    
+    <script>
+        // Function to refresh the page on resize
+        function refreshOnResize() {
+            window.addEventListener('resize', function() {
+                location.reload();
+            });
+        }
+    
+        // Call the function to enable refreshing on resize
+        refreshOnResize();
+    </script>
+        
+</body>
+</html>
+</body>
+</html>
+
+<!--
+    .header .mobile-menu {
+        position: absolute;
+        z-index: 2000;
+        right: 0;
+        display: block;
+        transition: transform 1s;
+    }
+    .header .mobile-menu .mobile-menu-icon.active:nth-child(2) {
+        transform: rotate(45deg);
+    }
+
+    .mobile-menu:hover .mobile-menu-icon.active:nth-child(1) {
+        transform: translate(45deg);
+    }
+
+    .mobile-menu-icon.active:nth-child(1) {
+        transform: rotate(-45deg);
+        position: relative;
+        top: 8px;
+    }
+
+    .mobile-menu-icon.active:nth-child(3) {
+        display: none;
+    }
+-->

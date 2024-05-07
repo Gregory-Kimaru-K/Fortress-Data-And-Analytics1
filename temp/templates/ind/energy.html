@@ -1,0 +1,258 @@
+{% extends 'base.html' %}
+{% block title %}
+    Energy Industry
+{% endblock %}
+{% block content %}
+<main class="ind">
+    <div class="land">
+        <img src="{{ url_for('static', filename='landing/energy.jpeg') }}" alt="">
+        <div class="cont">
+            <h1></h1>
+            <h1>
+                Energy & Utilities Enterprise IT Solutions
+            </h1>
+            <p>
+                We empower the energy & utility sector with comprehensive IT solutions, modernizing operations, automating processes, and delivering real-time information. Addressing challenges like cost-effectiveness, regulatory compliance, and market volatility, our solutions optimize performance and efficiency.
+            </p>
+            <a href="{{ url_for('contact') }}">
+                <button>
+                    Connect With Us
+                </button>
+            </a>
+        </div>
+    </div>
+
+    <div class="ind-sol">
+        <div class="ind-sol-intro">
+            <h2>
+                Our Comprehensive Energy & Utilities Solutions
+            </h2>
+        </div>
+        <div class="ind-sol-main">
+            <div class="content left">
+                <h3>
+                    ERP Solution for Energy & Utilities
+                </h3>
+                <p>
+                    A suite of business software solutions tailored for the energy & utility industry, emphasizing resource planning, management, and operational control across diverse departments, sections, offices, and locations. Modular design facilitates focused attention on specific operational areas, integrated seamlessly through transitional modules.
+                </p>
+            </div>
+            <div class="content center">
+                <h3>
+                    Energy & Utilities CRM Solution
+                </h3>
+                <p>
+                    Custom CRM development for energy & utilities, integrating features across critical areas such as Sales, Service, Marketing, and Satisfaction. Fully customizable to meet industry-specific requirements, it supports primary, secondary, and tertiary sales workflows.
+                </p>
+            </div>
+            <div class="content right">
+                <h3>
+                    Spot Billing System
+                </h3>
+                <p>
+                    A revolutionary solution aimed at streamlining and implementing an efficient metering and billing system. Provides consumers with benefits such as improved cash flow, increased revenue, accurate meter readings, centralized integration, enhanced transparency, and customer satisfaction.
+                </p>
+            </div>
+            <div class="content left">
+                <h3>
+                    Mobile SFA Solution for Energy & Utilities
+                </h3>
+                <p>
+                    Sales Force Automation (SFA) for energy & utilities, automating and connecting mobile field sales force with corporate back office, ensuring real-time and complete flow of information between both entities. Facilitates 40%-50% faster Return on Investment (RoI) and increases sales efficiency by 50%.
+                </p>
+            </div>
+            <div class="content center">
+                <h3>
+                    Energy & Utilities Enterprise Mobility Solutions
+                </h3>
+                <p>
+                    Mobility-enabled IT solutions for the enterprise, accurately aligning technology with business models. Key features include advanced websites, mobile devices ubiquity, and automated, secure banking services.
+                </p>
+            </div>
+            <div class="content right">
+                <h3>
+                    Energy & Utilities Mobile App Development
+                </h3>
+                <p>
+                    Interactive mobile apps are indispensable in this industry, focusing on delivering user-centric experiences. Key features include customer mobile enablement, smart support services, and digital signature capabilities, fostering further growth in the Energy & Utilities sector.
+                </p>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="contact">
+        <div class="polygon serv-poly">
+            <div class="contact-head">
+                <h1>
+                    Transforming Electric Utilities Operations Using Digital Technologies
+                </h1>
+            </div>
+        </div>
+        <div class="contact-cont">
+            <div class="main">
+                <img src="{{ url_for('static', filename='landing/contact2.jpeg') }}" alt="">
+                <div class="content">
+                    <p>
+                        Our energy & utility IT solutions are customizable to meet industry needs, with best-in-class project management and flexible execution models. Leveraging smart data analytics, we provide comprehensive data management and monitoring procedures, ensuring a unique experience for our clients.
+                    </p>
+                    <a href="{{ url_for('contact') }}">
+                        <button>
+                            Lets Discuss Your Project
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ind-land">
+        <div class="polygon">
+            <div class="ind-head">
+                <h1>
+                    Technologies And Platforms We Utilize
+                </h1>
+            </div>
+        </div>
+        <div class="ind-cont">
+            <div class="contents magnet">
+                <a href="" class="text">
+                    <img src="{{ url_for('static', filename='services/NET-Logo.png') }}" alt="">
+                    <h5>
+                        .NET
+                    </h5>
+                </a>
+            </div>
+    
+            <div class="contents magnet">
+                <a href="" class="text">
+                    <img src="{{ url_for('static', filename='services/Oracle-Logo.png') }}" >
+                    <h5>
+                        Oracle
+                    </h5>
+                </a>
+            </div>
+    
+            <div class="contents magnet">
+                <a href="{{ url_for('education') }}" class="text">
+                    <img src="{{ url_for('static', filename='services/MS-SQL-Logo.png') }}" width="70">
+                    <h5>
+                        SQL Server
+                    </h5>
+                </a>
+            </div>
+    
+            <div class="contents magnet">
+                <a href="" class="text">
+                    <img src="{{ url_for('static', filename='services/Power-BI-Logo.png') }}" width="70">
+                    <h5>
+                        Power BI
+                    </h5>
+                </a>
+            </div>
+    
+            <div class="contents magnet">
+                <a href="" class="text">
+                    <img src="{{ url_for('static', filename='services/R-technology.png') }}" alt="">
+                    <h5>
+                        R
+                    </h5>
+                </a>
+            </div>
+    
+            <div class="contents magnet">
+                <a href="" class="text">
+                    <img src="{{ url_for('static', filename='services/pentaho-icon.png') }}" alt="Pentaho">
+                    <h5>
+                        Pentaho
+                    </h5>
+                </a>
+            </div>
+    
+        </div>
+    </div>
+
+    <div class="hire">
+        <div class="polygon">
+            <div class="head">
+                <h1>
+                    Need Customizable Energy & Utility IT Solutions?
+                </h1>
+            </div>
+        </div>
+    
+        <div class="cont-polygon">
+            <div class="ind-hire">
+                <div class="img">
+                    <img src=" {{ url_for('static', filename='contact/looking.png') }} " alt="">
+                    <img src=" {{ url_for('static', filename='contact/looking2.png') }} " alt="">
+                </div>
+                <p>
+                    Our software consultants are ready to assist with your specific energy and utility solution requirements, tailoring a customized solution to suit your needs.
+                </p>
+                <a href="{{ url_for('contact') }}">
+                    <button>
+                        <p>
+                            Connect With Us
+                        </p>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Select all .magnet and .text elements
+        const magnetElements = document.querySelectorAll('.magnet');
+        const magnetTextElements = document.querySelectorAll('.text');
+    
+        // Function to activate the magnetic effect on mouse move
+        const activateMagneto = (event) => {
+            const boundBox = event.currentTarget.getBoundingClientRect();
+            const magnetoStrength = 40;
+            const magnetoTextStrength = 300;
+            const newX = ((event.clientX - boundBox.left) / event.currentTarget.offsetWidth) - 0.5;
+            const newY = ((event.clientY - boundBox.top) / event.currentTarget.offsetHeight) - 0.5;
+    
+            // Move the current magnet element
+            gsap.to(event.currentTarget, {
+                duration: 1,
+                x: newX * magnetoStrength,
+                y: newY * magnetoStrength,
+                ease: Power4.easeOut
+            });
+    
+            // Move the corresponding text element
+            const textElement = event.currentTarget.querySelector('.text');
+            gsap.to(textElement, {
+                duration: 1,
+                x: newX * magnetoTextStrength,
+                y: newY * magnetoTextStrength,
+                ease: Power4.easeOut
+            });
+        };
+    
+        // Function to reset the magnetic effect on mouse leave
+        const resetMagneto = (event) => {
+            // Reset the position of the magnet and the text
+            gsap.to([event.currentTarget, event.currentTarget.querySelector('.text')], {
+                duration: 1,
+                x: 0,
+                y: 0,
+                ease: Elastic.easeOut
+            });
+        };
+    
+        // Add event listeners to each magnet element
+        magnetElements.forEach((element) => {
+            element.addEventListener('mouseenter', () => {
+                element.addEventListener('mousemove', activateMagneto);
+            });
+            element.addEventListener('mouseleave', () => {
+                element.removeEventListener('mousemove', activateMagneto);
+                resetMagneto({ currentTarget: element });
+            });
+        });
+    </script>
+</main>
+{% endblock %}

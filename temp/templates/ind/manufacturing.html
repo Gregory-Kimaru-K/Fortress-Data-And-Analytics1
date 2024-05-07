@@ -1,0 +1,223 @@
+{% extends 'base.html' %}
+{% block title %}
+    Manufacturing industry
+{% endblock %}
+{% block content %}
+<main class="ind">
+    <div class="land">
+        <img src="{{ url_for('static', filename='landing/manu.jpeg') }}" alt="">
+        <div class="cont">
+            <h1></h1>
+            <h1>
+                Manufacturing Software Solutions
+            </h1>
+            <p>
+                Industrial manufacturing undergoes digital transformation, focusing on customer needs. Our manufacturing management software integrates mobility, IoT, and more, enhancing communication and efficiency. Prioritizing client experience, advanced analytics, and smart enterprise solutions drive success.
+            </p>
+            <a href="{{ url_for('contact') }}">
+                <button>
+                    Get In Touch
+                </button>
+            </a>
+        </div>
+    </div>
+
+    <div class="ind-sol">
+        <div class="ind-sol-intro">
+            <h2>
+                Wide Range of Manufacturing Software Solutions
+            </h2>
+        </div>
+        <div class="ind-sol-main">
+            <div class="content left">
+                <h3>
+                    Warehouse Management
+                </h3>
+                <p>
+                    Our Warehouse Management solution for the manufacturing industry seamlessly integrates with 3rd party systems to ensure smooth information flow. It facilitates online updating of information and automates cargo handling processes for hassle-free operations.
+                </p>
+            </div>
+            <div class="content center">
+                <h3>
+                    Vehicle Tracking System
+                </h3>
+                <p>
+                    Our GPS-based fleet tracing system monitors fleet owners and various types of vehicles, focusing on everyday activities and critical areas. Vehicle data is sent from mobile devices via GPRS connectivity & GSM-based SIM signals to the backend server.
+                </p>
+            </div>
+            <div class="content right">
+                <h3>
+                    SFA & CRM for Manufacturing
+                </h3>
+                <p>
+                    SFA and CRM are indispensable for the manufacturing industry, enhancing sales, productivity, and profitability. Our solutions generate visually appealing dashboards and reports that aid decision-making, maximizing ROI and business growth.
+                </p>
+            </div>            
+        </div>
+    </div>
+
+    <div class="contact">
+        <div class="polygon serv-poly">
+            <div class="contact-head">
+                <h1>
+                    Integrate Best Custom Manufacturing Software to Automate Your Business
+                </h1>
+            </div>
+        </div>
+        <div class="contact-cont">
+            <div class="main">
+                <img src="{{ url_for('static', filename='landing/contact2.jpeg') }}" alt="">
+                <div class="content">
+                    <p>
+                        Our manufacturing software solution improves efficiency and streamlines data transfers between different departments.
+                    </p>
+                    <a href="{{ url_for('contact') }}">
+                        <button>
+                            Lets Discuss Your Project
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ind-land">
+        <div class="polygon">
+            <div class="ind-head">
+                <h1>
+                    Technologies And Platform We Use
+                </h1>
+            </div>
+        </div>
+        <div class="ind-cont">
+            <div class="contents magnet">
+                <a href="" class="text">
+                    <img src="{{ url_for('static', filename='services/React-Logo.png') }}" alt="">
+                    <h5>
+                        React
+                    </h5>
+                </a>
+            </div>
+    
+            <div class="contents magnet">
+                <a href="" class="text">
+                    <img src="{{ url_for('static', filename='services/plat1.png') }}" >
+                    <h5>
+                        JavaScript
+                    </h5>
+                </a>
+            </div>
+    
+            <div class="contents magnet">
+                <a href="{{ url_for('education') }}" class="text">
+                    <img src="{{ url_for('static', filename='services/Python-Logo.png') }}" width="70">
+                    <h5>
+                        Python
+                    </h5>
+                </a>
+            </div>
+    
+            <div class="contents magnet">
+                <a href="" class="text">
+                    <img src="{{ url_for('static', filename='services/Laravel-Logo.png') }}" alt="">
+                    <h5>
+                        Laravel
+                    </h5>
+                </a>
+            </div>
+    
+            <div class="contents magnet">
+                <a href="" class="text">
+                    <img src="{{ url_for('static', filename='services/JAVA-Logo.png') }}" alt="">
+                    <h5>
+                        Java
+                    </h5>
+                </a>
+            </div>    
+        </div>
+    </div>
+   
+    <div class="hire">
+        <div class="polygon">
+            <div class="head">
+                <h1>
+                    Get a Manufacturing Software Solution
+                </h1>
+            </div>
+        </div>
+    
+        <div class="cont-polygon">
+            <div class="ind-hire">
+                <div class="img">
+                    <img src=" {{ url_for('static', filename='contact/looking.png') }} " alt="">
+                    <img src=" {{ url_for('static', filename='contact/looking2.png') }} " alt="">
+                </div>
+                <p>
+                    Our consultants have extensive experience in delivering quality manufacturing enterprise solutions. Partner with us to gain a competitive edge.
+                </p>
+                <a href="{{ url_for('contact') }}">
+                    <button>
+                        <p>
+                            Connect With Us
+                        </p>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Select all .magnet and .text elements
+        const magnetElements = document.querySelectorAll('.magnet');
+        const magnetTextElements = document.querySelectorAll('.text');
+    
+        // Function to activate the magnetic effect on mouse move
+        const activateMagneto = (event) => {
+            const boundBox = event.currentTarget.getBoundingClientRect();
+            const magnetoStrength = 40;
+            const magnetoTextStrength = 300;
+            const newX = ((event.clientX - boundBox.left) / event.currentTarget.offsetWidth) - 0.5;
+            const newY = ((event.clientY - boundBox.top) / event.currentTarget.offsetHeight) - 0.5;
+    
+            // Move the current magnet element
+            gsap.to(event.currentTarget, {
+                duration: 1,
+                x: newX * magnetoStrength,
+                y: newY * magnetoStrength,
+                ease: Power4.easeOut
+            });
+    
+            // Move the corresponding text element
+            const textElement = event.currentTarget.querySelector('.text');
+            gsap.to(textElement, {
+                duration: 1,
+                x: newX * magnetoTextStrength,
+                y: newY * magnetoTextStrength,
+                ease: Power4.easeOut
+            });
+        };
+    
+        // Function to reset the magnetic effect on mouse leave
+        const resetMagneto = (event) => {
+            // Reset the position of the magnet and the text
+            gsap.to([event.currentTarget, event.currentTarget.querySelector('.text')], {
+                duration: 1,
+                x: 0,
+                y: 0,
+                ease: Elastic.easeOut
+            });
+        };
+    
+        // Add event listeners to each magnet element
+        magnetElements.forEach((element) => {
+            element.addEventListener('mouseenter', () => {
+                element.addEventListener('mousemove', activateMagneto);
+            });
+            element.addEventListener('mouseleave', () => {
+                element.removeEventListener('mousemove', activateMagneto);
+                resetMagneto({ currentTarget: element });
+            });
+        });
+    </script>
+</main>
+{% endblock %}

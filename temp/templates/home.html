@@ -1,0 +1,462 @@
+{% extends 'base.html' %}
+{% block title %}
+    Fortress Data And Analytics
+{% endblock %}
+{% block content %}
+<div class="land">
+    <img src="{{ url_for('static', filename='landing/anim_animation.gif') }}" alt="">
+    <div class="cont">
+        <h1>YOUR HOME</h1>
+        <h1 >OF ANALYTICS</h1>
+        <!-- <p>
+            YOUR HOME OF ANALYTICS
+        </p> -->
+        <a href="{{ url_for('contact') }}">
+            <button>
+                Get Started
+            </button>
+        </a>
+    </div>
+    <div class="scrolldown">
+        <div class="chevrons">
+            <div class="chevrondown"></div>
+            <div class="chevrondown"></div>
+        </div>
+    </div>
+</div>
+
+<div class="serv-land">
+    <div class="polygon">
+        <div class="serv-land-head">
+            <h1>
+                Our Services
+            </h1>
+        </div>
+    </div>
+    <div class="serv-land-cont">
+        <div class="card">
+            <img src="{{ url_for('static', filename='/landing/product.jpeg') }}" alt="">
+            <h2>Product Engineering</h2>
+            <p>
+                Fortress Data And Analytics offers end-to-end product engineering services, aiding in the creation and delivery of innovative products meeting customer needs.
+            </p>
+            <a href="{{ url_for('product') }}">
+                <button>
+                    See More
+                </button>
+            </a>
+        </div>
+
+        <div class="card">
+            <img src="{{ url_for('static', filename='/landing/customsof.jpeg') }}" alt="">
+            <h2>Custom Software Development</h2>
+            <p>
+                At Data Fortress and Analytics, we provide tailored software solutions tailored to address your specific business challenges.
+            </p>
+            <a href="{{ url_for('customsoftware') }}">
+                <button>
+                    See More
+                </button>
+            </a>
+        </div>
+
+        <div class="card">
+            <img src="{{ url_for('static', filename='/landing/mobileapp.jpeg') }}" alt="">
+            <h2>Mobile Application dev</h2>
+            <p>
+                Fortress Data and Analytics specializes in crafting mobile applications, delivering tailored solutions to meet your unique requirements and objectives.
+            </p>
+            <a href="{{ url_for('mobileapp') }}">
+                <button>
+                    See More
+                </button>
+            </a>
+        </div>
+
+        <div class="card">
+            <img src="{{ url_for('static', filename='/landing/test.jpeg') }}" alt="">
+            <h2>Software testing</h2>
+            <p>
+                Fortress Data and Analytics provides comprehensive software testing services, ensuring the reliability, functionality, and performance of your applications.
+            </p>
+            <a href="{{ url_for('softwaretesting') }}">
+                <button>
+                    See More
+                </button>
+            </a>
+        </div>
+
+        <div class="card">
+            <img src="{{ url_for('static', filename='/landing/erp.jpeg') }}" alt="">
+            <h2>ERPs</h2>
+            <p>Data Fortress and Analytics' ERP service optimizes operations, offering integrated solutions across finance, HR, and supply chain for efficiency, growth, and customer satisfaction.</p>
+            <a href="{{url_for('erp') }}">
+                <button>
+                    See More
+                </button>
+            </a>
+        </div>
+
+        <div class="card">
+            <img src="{{ url_for('static', filename='/landing/visualiz.jpeg') }}" alt="">
+            <h2>Data Visualization</h2>
+            <p>Transform complex data into intuitive visualizations with Fortress Data And Analytics. Communicate insights effectively, foster data-driven decision-making, and drive business growth.</p>
+            <a href="{{ url_for('datavisualzation') }}">
+                <button>
+                    See More
+                </button>
+            </a>
+        </div>
+
+        <div class="card">
+            <img src="{{ url_for('static', filename='/landing/warehs.jpeg') }}" alt="">
+            <h2>Data Warehousing</h2>
+            <p>Streamline data management and optimize performance with data warehousing solutions from Fortress Data And Analytics. Centralize data storage, improve accessibility, and enable advanced analytics.</p>
+            <a href="{{ url_for('datawarehousing') }}">
+                <button>
+                    See More
+                </button>
+            </a>
+        </div>
+
+        <div class="card">
+            <img src="{{ url_for('static', filename='/landing/bs_intel.jpg') }}" alt="">
+            <h2>Bussiness Intelligence</h2> 
+            <p>Fortress Data And Analytics champions data literacy, offering potent BI services for strategic decision-making. Their analytics empower businesses to optimize efficiency, reshape models, and drive data-driven transformations.</p>
+            <a href="{{ url_for('bsintel') }}">
+                <button>
+                    See More
+                </button>
+            </a>
+        </div>
+
+        <div class="card">
+            <img src="{{ url_for('static', filename='/landing/consult.jpeg') }}" alt="">
+            <h2>Technology Consulting</h2>
+            <p>Propel your organization forward with expert guidance and strategic insights from Fortress Data And Analytics. Leverage cutting-edge technologies to drive innovation, optimize processes, and achieve your business objectives.</p>
+            <a href="{{ url_for('tech_cosultance') }}">
+                <button>
+                    See More
+                </button>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="other">
+</div>
+<div class="other">
+</div>
+<div class="other">
+</div>
+<div class="other">
+</div>
+<div class="space">
+</div>
+<div class="thingy">
+</div>
+
+
+<div class="bs-brief">
+    <div class="polygon">
+        <div class="bs-brief-head">
+            <h1>
+                Our Bussiness Solutions
+            </h1>
+        </div>
+    </div>
+    <div class="bs-brief-cont">
+        <div class="content">
+            <h3>
+                Enterprise Resource Planning(ERPs)
+            </h3>
+            <p>
+                Integrated software platforms that manage core business processes (finance, HR, supply chain, etc.). ERPs centralize data, improve collaboration, and enable informed decisions.
+            </p>
+            <a href="{{ url_for('erp') }}">
+                <button>
+                    See More
+                </button>
+            </a>
+        </div>
+        <div class="content">
+            <h3>
+                Customer relationship management(CRMs)
+            </h3>
+            <p>
+                Software for managing customer interactions. CRM systems streamline sales, enhance marketing, and improve customer service by automating tasks and centralizing data.
+            </p>
+            <a href="{{ url_for('crm') }}">
+                <button>
+                    See More
+                </button>
+            </a>
+        </div>
+        <div class="content">
+            <h3>
+                Mobile Sales Force Automation(SFAs)
+            </h3>
+            <p>
+                A component of CRM systems focused on automating sales activities. SFA tools optimize lead management, opportunity tracking, and sales forecasting, improving sales team efficiency and performance.
+            </p>
+            <a href="{{ url_for('sfa') }}">
+                <button>
+                    See More
+                </button>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<div class="tech-land">
+    <div class="polygon">
+        <div class="tech-land-head">
+            <h1>
+                Tech ToolKit
+            </h1>
+        </div>
+    </div>
+    <div class="tech-land-cont">
+        <div class="races">
+            <div class="tech-card">
+                <div class="content">
+                    <img src="{{ url_for('static', filename='/landing/bs_intell.jpg') }}" alt="">
+                    <h2>Backend Technologies</h2>
+                    <p>
+                        Backend development involves building and maintaining the server-side logic and databases that power web applications. It includes managing user authentication, database interactions, and server configurations.
+                    </p>
+                    <a href="{{ url_for('backend') }}">
+                        <button>
+                            See More
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="tech-card">
+                <div class="content">
+                    <img src="{{ url_for('static', filename='/landing/ui.jpeg') }}" alt="">
+                    <h2>Frontend</h2>
+                    <p>
+                        Frontend development focuses on creating the user interface and experience of web applications. It involves designing and implementing features that users interact with directly.
+                    </p>
+                    <a href="{{ url_for('frontend') }}">
+                        <button>
+                            See More
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="tech-card">
+                <div class="content">
+                    <img src="{{ url_for('static', filename='/landing/mobile.jpeg') }}" alt="">
+                    <h2> Mobile Technologies</h2>
+                    <p>
+                        Mobile technologies focus on developing applications for mobile devices such as smartphones and tablets. It includes both native and cross-platform development approaches.
+                    </p>
+                    <a href="{{ url_for('mobile') }}">
+                        <button>
+                            See More
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="tech-card">
+                <div class="content">
+                    <img src="{{ url_for('static', filename='/landing/bi.jpeg') }}" alt="">
+                    <h2>Bussiness Analytics</h2>
+                    <p>
+                        Business analytics involves analyzing data to gain insights that drive business decisions and strategies. It encompasses data mining, predictive analytics, descriptive analytics, and prescriptive analytics.
+                    </p>
+                    <a href="{{ url_for('bianalytics') }}">
+                        <button>
+                            See More
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="tech-card">
+                <div class="content">
+                    <img src="{{ url_for('static', filename='/landing/big.jpeg') }}" alt="">
+                    <h2>Cloud Warehousing</h2>
+                    <p>
+                        Cloud data warehousing, like Amazon Redshift and Google BigQuery, offers scalable and flexible storage and analytics solutions in the cloud, providing agility, cost-effectiveness, and accessibility for analytics tasks.
+                    </p>
+                    <a href="">
+                        <button>
+                            See More
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="tech-card">
+                <div class="content">
+                    <img src="{{ url_for('static', filename='/landing/ai.jpeg') }}" alt="">
+                    <h2>Internet Of Things.</h2>
+                    <p>
+                        IoT connects devices to the internet for data exchange. Its analytics process vast datasets, revealing user behavior insights, device performance, and enabling predictive maintenance.
+                    </p>
+                    <a href="">
+                        <button>
+                            See More
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="other2">
+    </div>
+    <div class="tech-space">
+    </div>
+</div>
+
+
+<div class="ind-land">
+    <div class="polygon">
+        <div class="ind-head">
+            <h1>
+                Industries We Serve
+            </h1>
+        </div>
+    </div>
+    <div class="ind-cont">
+        <div class="contents magnet">
+            <a href="{{ url_for('fitness') }}" class="text">
+                <img src="{{ url_for('static', filename='industries/fitness.png') }}">
+                <h5>
+                    Fitness
+                </h5>
+            </a>
+        </div>
+
+        <div class="contents magnet">
+            <a href="{{ url_for('fintech') }}" class="text">
+                <img src="{{ url_for('static', filename='industries/fintech.png') }}">
+                <h5>
+                    Fintech
+                </h5>
+            </a>
+        </div>
+
+        <div class="contents magnet">
+            <a href="{{ url_for('education') }}" class="text">
+                <img src="{{ url_for('static', filename='industries/education.png') }}">
+                <h5>
+                    Education
+                </h5>
+            </a>
+        </div>
+
+        <div class="contents magnet">
+            <a href="{{ url_for('healthcare') }}" class="text">
+                <img src="{{ url_for('static', filename='industries/healthcareicon.png') }}">
+                <h5>
+                    Healthcare
+                </h5>
+            </a>
+        </div>
+
+        <div class="contents magnet">
+            <a href="{{ url_for('energy') }}" class="text">
+                <img src="{{ url_for('static', filename='industries/energy-and-utilities.png') }}">
+                <h5>
+                    Energy & Utilities
+                </h5>
+            </a>
+        </div>
+
+        <div class="contents magnet">
+            <a href="{{ url_for('travel') }}" class="text">
+                <img src="{{ url_for('static', filename='industries/travel-and-hospitality.png') }}">
+                <h5>
+                    Travel & Hospitality
+                </h5>
+            </a>
+        </div>
+
+        <div class="contents magnet">
+            <a href="{{ url_for('manufacturing') }}" class="text">
+                <img src="{{ url_for('static', filename='industries/manufacturing.png') }}">
+                <h5>
+                    Manufacturing
+                </h5>
+            </a>
+        </div>
+
+        <div class="contents magnet">
+            <a href="{{ url_for('adverts') }}" class="text">
+                <img src="{{ url_for('static', filename='industries/advertising.png') }}">
+                <h5>
+                    Advertising
+                </h5>
+            </a>
+        </div>
+
+        <div class="contents magnet">
+            <a href="{{ url_for('retail') }}" class="text">
+                <img src="{{ url_for('static', filename='industries/retail.png') }}">
+                <h5>
+                    Retail
+                </h5>
+            </a>
+        </div>
+
+        <div class="contents magnet">
+            <a href="{{ url_for('entertain') }}" class="text">
+                <img src="{{ url_for('static', filename='industries/media-and-entertainment.png') }}">
+                    <h5>
+                        Media & Entertainment
+                    </h5>
+            </a>
+        </div>
+
+        <div class="contents magnet">
+            <a href="{{ url_for('supplychain') }}" class="text">
+                <img src="{{ url_for('static', filename='industries/logistics.png') }}">
+                <h5>
+                    Supply Chain And Logistics
+                </h5>
+            </a>
+        </div>
+
+        <div class="contents magnet">
+            <a href="{{ url_for('travel') }}" class="text">
+                <img src="{{ url_for('static', filename='industries/life-sciences.png') }}" alt="">
+                <h5>
+                    Life Science
+                </h5>
+            </a>
+        </div>  
+    </div>
+</div>
+
+<div class="contact">
+    <div class="polygon">
+        <div class="contact-head">
+            <h1>
+                Talk To Us
+            </h1>
+        </div>
+    </div>
+    <div class="contact-cont">
+        <div class="main">
+            <img src="{{ url_for('static', filename='landing/contact2.jpeg') }}" alt="">
+            <div class="content">
+                <p>
+                    Our dedicated business consultants help startups, mid-sized, and enterprise businesses unlock the power of data to make better business decisions.
+                </p>
+                <a href="">
+                    <button>
+                        Get Started
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

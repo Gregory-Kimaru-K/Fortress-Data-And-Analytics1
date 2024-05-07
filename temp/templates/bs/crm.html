@@ -1,0 +1,372 @@
+{% extends 'base.html' %}
+{% block title %}
+    Enterprise CRM Solution
+{% endblock %}
+{% block content %}
+<main class="bs">
+    <div class="land">
+        <img src="{{ url_for('static', filename='landing/crm.jpeg') }}" alt="">
+        <div class="cont">
+            <h1>Fortress</h1>
+            <h1 >Data And Analytics</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam sapiente, quidem eum facilis laborum nobis veniam hic laudantium unde ipsam deserunt nam? Suscipit, quam commodi doloremque nam tempora similique ad!</p>
+            <a href="">
+                <button>
+                    Contact us
+                </button>
+            </a>
+        </div>
+    </div>
+   
+    <div class="something">
+        <div class="polygon">
+            <div class="head">
+                <h1>
+                    Enterprise CRM Software
+                </h1>
+            </div>
+        </div>
+        <p>
+            Fortress Data And Analytics offers industry-specific CRM software solutions, incorporating mobility for field teams and back-office functionality.
+        </p>
+    </div>
+
+    <div class="discover">
+        <h2>
+            Discover How Our Enterprise CRM Can Maximize Your RoI
+        </h2>
+        <div class="discover-cont">
+            <div class="div">
+                <img src="{{ url_for('static', filename='bs_sol/mod12.png') }}" alt="">
+                <p>Marketing</p>
+            </div>
+            <div class="div">
+                <img src="{{ url_for('static', filename='bs_sol/mod11.png') }}" alt="">
+                <p>Sales</p>
+            </div>
+            <div class="div">
+                <img src="{{ url_for('static', filename='bs_sol/mod10.png') }}" alt="">
+                <p>Fleet</p>
+            </div>
+            <div class="div">
+                <img src="{{ url_for('static', filename='bs_sol/mod9.png') }}" alt="">
+                <p>Sales Dashboard</p>
+            </div>
+            <div class="div">
+                <img src="{{ url_for('static', filename='bs_sol/route.png') }}" alt="">
+                <p>Route</p>
+            </div>
+            <div class="div">
+                <img src="{{ url_for('static', filename='bs_sol/spot-billing.png') }}" alt="">
+                <p>Spot Billing</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="discover">
+        <h2>
+            Modules of Our Enterprise CRM
+        </h2>
+
+        <div class="discover-cont">
+            <div class="div">
+                <img src="{{ url_for('static', filename='bs_sol/mod12.png') }}" alt="">
+                <p>
+                    Competition Check & Tracking
+                </p>
+            </div>
+            <div class="div">
+                <img src="{{ url_for('static', filename='bs_sol/mod11.png') }}" alt="">
+                <p>
+                    Credit Balance & Transaction History
+                </p>
+            </div>
+            <div class="div">
+                <img src="{{ url_for('static', filename='bs_sol/mod10.png') }}" alt="">
+                <p>
+                    Signed Transactions
+                </p>
+            </div>
+            <div class="div">
+                <img src="{{ url_for('static', filename='bs_sol/mod9.png') }}" alt="">
+                <p>
+                    Route Planning, Feedback & Survey
+                </p>
+            </div>
+            <div class="div">
+                <img src="{{ url_for('static', filename='bs_sol/view-brodcast-message.png') }}" alt="">
+                <p>
+                    View Broadcast Messages
+                </p>
+            </div>
+            <div class="div">
+                <img src="{{ url_for('static', filename='bs_sol/reward-schemes-promotions.png') }}" alt="">
+                <p>
+                    Reward Schemes & Promotions
+                </p>
+            </div>
+            <div class="div">
+                <img src="{{ url_for('static', filename='bs_sol/app-extension-to-dealers.png') }}" alt="">
+                <p>
+                    App Extension to Dealers
+                </p>
+            </div>
+            <div class="div">
+                <img src="{{ url_for('static', filename='bs_sol/manage-served-unserved-clients.png') }}" alt="">
+                <p>
+                    Manage Served & Unserved Clients
+                </p>
+            </div>
+            <div class="div">
+                <img src="{{ url_for('static', filename='bs_sol/mod4.png') }}" alt="">
+                <p>
+                    Spot Billing
+                </p>
+            </div>
+            <div class="div">
+                <img src="{{ url_for('static', filename='bs_sol/mod3.png') }}" alt="">
+                <p>
+                    Campaign Management
+                </p>
+            </div>
+            <div class="div">
+                <img src="{{ url_for('static', filename='bs_sol/mod2.png') }}" alt="">
+                <p>
+                    Sales Dashboards
+                </p>
+            </div>
+            <div class="div">
+                <img src="{{ url_for('static', filename='bs_sol/mod1.png') }}" alt="">
+                <p>
+                    Fleet Monitoring
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="bs-benefits">
+        <h2>
+            Benefits Of ERP System
+        </h2>
+        <ul>
+            <li>
+                Calculable savings upto 50% on sales preparation and administrative time
+            </li>
+            <li>
+                Better decision making, elimination of redundant activities
+            </li>
+            <li>
+                Enhanced customer satisfaction
+            </li>
+            <li>
+                Maximize RoI in just 4 months
+            </li>
+            <li>
+                Data synchronization with GPRS ⁄ EDGE ⁄ 3G ⁄ WiFi
+            </li>
+            <li>
+                Support for third-party integration to legacy back-office ERPs (Tally, SAP, Navision, Oracle Applications, Microsoft Dynamics Ax)
+            </li>
+        </ul>
+    </div>
+
+    <!--Ind we serve-->
+    <div class="ind-land">
+        <div class="polygon">
+            <div class="ind-head">
+                <h1>
+                    Industries We Serve
+                </h1>
+            </div>
+        </div>
+        <div class="ind-cont">
+            <div class="contents magnet">
+                <a href="{{ url_for('fitness') }}" class="text">
+                    <img src="{{ url_for('static', filename='industries/fitness.png') }}">
+                    <h5>
+                        Fitness
+                    </h5>
+                </a>
+            </div>
+    
+            <div class="contents magnet">
+                <a href="{{ url_for('fintech') }}" class="text">
+                    <img src="{{ url_for('static', filename='industries/fintech.png') }}">
+                    <h5>
+                        Fintech
+                    </h5>
+                </a>
+            </div>
+    
+            <div class="contents magnet">
+                <a href="{{ url_for('education') }}" class="text">
+                    <img src="{{ url_for('static', filename='industries/education.png') }}">
+                    <h5>
+                        Education
+                    </h5>
+                </a>
+            </div>
+    
+            <div class="contents magnet">
+                <a href="{{ url_for('healthcare') }}" class="text">
+                    <img src="{{ url_for('static', filename='industries/healthcareicon.png') }}">
+                    <h5>
+                        Healthcare
+                    </h5>
+                </a>
+            </div>
+    
+            <div class="contents magnet">
+                <a href="{{ url_for('energy') }}" class="text">
+                    <img src="{{ url_for('static', filename='industries/energy-and-utilities.png') }}">
+                    <h5>
+                        Energy & Utilities
+                    </h5>
+                </a>
+            </div>
+    
+            <div class="contents magnet">
+                <a href="{{ url_for('travel') }}" class="text">
+                    <img src="{{ url_for('static', filename='industries/travel-and-hospitality.png') }}">
+                    <h5>
+                        Travel & Hospitality
+                    </h5>
+                </a>
+            </div>
+    
+            <div class="contents magnet">
+                <a href="{{ url_for('manufacturing') }}" class="text">
+                    <img src="{{ url_for('static', filename='industries/manufacturing.png') }}">
+                    <h5>
+                        Manufacturing
+                    </h5>
+                </a>
+            </div>
+    
+            <div class="contents magnet">
+                <a href="{{ url_for('adverts') }}" class="text">
+                    <img src="{{ url_for('static', filename='industries/advertising.png') }}">
+                    <h5>
+                        Advertising
+                    </h5>
+                </a>
+            </div>
+    
+            <div class="contents magnet">
+                <a href="{{ url_for('retail') }}" class="text">
+                    <img src="{{ url_for('static', filename='industries/retail.png') }}">
+                    <h5>
+                        Retail
+                    </h5>
+                </a>
+            </div>
+    
+            <div class="contents magnet">
+                <a href="{{ url_for('entertain') }}" class="text">
+                    <img src="{{ url_for('static', filename='industries/media-and-entertainment.png') }}">
+                        <h5>
+                            Media & Entertainment
+                        </h5>
+                </a>
+            </div>
+    
+            <div class="contents magnet">
+                <a href="{{ url_for('supplychain') }}" class="text">
+                    <img src="{{ url_for('static', filename='industries/logistics.png') }}">
+                    <h5>
+                        Supply Chain And Logistics
+                    </h5>
+                </a>
+            </div>
+    
+            <div class="contents magnet">
+                <a href="{{ url_for('travel') }}" class="text">
+                    <img src="{{ url_for('static', filename='industries/life-sciences.png') }}" alt="">
+                    <h5>
+                        Life Science
+                    </h5>
+                </a>
+            </div>  
+        </div>
+    </div>
+    
+    <script>
+        // Select all .magnet and .text elements
+        const magnetElements = document.querySelectorAll('.magnet');
+        const magnetTextElements = document.querySelectorAll('.text');
+    
+        // Function to activate the magnetic effect on mouse move
+        const activateMagneto = (event) => {
+            const boundBox = event.currentTarget.getBoundingClientRect();
+            const magnetoStrength = 40;
+            const magnetoTextStrength = 300;
+            const newX = ((event.clientX - boundBox.left) / event.currentTarget.offsetWidth) - 0.5;
+            const newY = ((event.clientY - boundBox.top) / event.currentTarget.offsetHeight) - 0.5;
+    
+            // Move the current magnet element
+            gsap.to(event.currentTarget, {
+                duration: 1,
+                x: newX * magnetoStrength,
+                y: newY * magnetoStrength,
+                ease: Power4.easeOut
+            });
+    
+            // Move the corresponding text element
+            const textElement = event.currentTarget.querySelector('.text');
+            gsap.to(textElement, {
+                duration: 1,
+                x: newX * magnetoTextStrength,
+                y: newY * magnetoTextStrength,
+                ease: Power4.easeOut
+            });
+        };
+    
+        // Function to reset the magnetic effect on mouse leave
+        const resetMagneto = (event) => {
+            // Reset the position of the magnet and the text
+            gsap.to([event.currentTarget, event.currentTarget.querySelector('.text')], {
+                duration: 1,
+                x: 0,
+                y: 0,
+                ease: Elastic.easeOut
+            });
+        };
+    
+        // Add event listeners to each magnet element
+        magnetElements.forEach((element) => {
+            element.addEventListener('mouseenter', () => {
+                element.addEventListener('mousemove', activateMagneto);
+            });
+            element.addEventListener('mouseleave', () => {
+                element.removeEventListener('mousemove', activateMagneto);
+                resetMagneto({ currentTarget: element });
+            });
+        });
+    </script>
+
+
+<div class="contact">
+    <div class="polygon serv-poly">
+        <div class="contact-head">
+            <h1>
+                Talk To Us
+            </h1>
+        </div>
+    </div>
+    <div class="contact-cont">
+        <div class="main">
+            <img src="{{ url_for('static', filename='landing/contact2.jpeg') }}" alt="">
+            <div class="content">
+                <p>Our dedicated .NET developers deliver custom .NET development solutions using versatile, cross-platform, and modern .NET frameworks.</p>
+                <a href="{{ url_for('contact') }}">
+                    <button>
+                        Lets Discuss Your Project
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+    
+</main>
+{% endblock %}

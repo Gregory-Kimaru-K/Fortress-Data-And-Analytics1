@@ -1,0 +1,186 @@
+.bs {
+    color: #fff;
+}
+.bs .bs-intro {
+    padding-top: 10%;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    background: transparent;
+}
+
+.bs .bs-intro::before {
+    content: "";
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    width: 70%;
+    height: 50%;
+    background-image: linear-gradient(45deg,#eae0c8, var(--curosel-before));
+    background-size: 500%;
+    transition: 1s;
+    filter: blur(150px);
+    z-index: -1;
+    animation: techanime 15s ease-in-out infinite alternate;
+}
+
+.bs .bs-intro .bs-intro-cont {
+    position: relative;
+    padding-top: 5%;
+    width: 40%;    
+}
+
+.bs .bs-intro .bs-intro-cont a button {
+    width: 50%;
+    margin-top: 4%;
+    height: 40px;
+    border-radius: 10px;
+    background-color: color-mix(in srgb, white 20%, blue 30%);
+    color: #fff;
+    transition: 1s;
+}
+
+.bs .bs-intro .bs-intro-cont a button:hover {
+    transform: scale(1.1);
+    color: #fff;
+    background-color: #4169e1;
+}
+
+.bs .bs-intro img {
+    width: 50%;
+}
+
+.bs .something {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2%;
+    gap: 2rem;
+}
+
+.bs .something p {
+    width: 32%;
+}
+
+.something .polygon {
+    width: 56%;
+}
+
+.bs .discover {
+    text-align: center;
+}
+
+.bs .discover .discover-cont {
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.bs .discover .discover-cont div {
+    width: 400px;
+    margin-left: 15%;
+    border: 2px solid var(--color3);
+    border-radius: 100px;
+    padding: 5%;
+    margin-bottom: 5%;
+    transition: 1s;
+}
+
+.bs-benefits {
+    width: 100%;
+    overflow: hidden;
+    overflow-wrap: break-word;
+}
+
+.bs-benefits h2{
+    text-align: center;
+}
+
+.bs-benefits ul {
+    position: relative;
+    left: 13%;
+    padding: 5%;
+}
+
+.bs-benefits ul li {
+    width: 70%;
+    border-radius: 20px;
+    height: 100%;
+    padding: 2%;
+    border: 2px solid var(--color3);
+    margin-top: 10%;
+    transition: 1s;
+}
+
+.assurance {
+    text-align: center;
+}
+
+.assurance .assurance-cont .assure {
+    display: flex;
+    padding: 2%;
+    height: 100%;
+    width: 40%;
+    margin-top: 10%;
+    border: 2px solid var(--color3);
+    position: relative;
+    left: 30%;
+    border-radius: 50px;
+    transition: 1s;
+}
+
+
+.assurance .assurance-cont .assure p {
+    padding-top: 1%;
+    position: relative;
+    left: 3%;
+}
+
+.bs_s {
+    margin-top: 20%;
+}
+
+.bs .maintain  ul li {
+    background-color: transparent;
+    color: white;
+}
+
+@media  screen and (max-width:800px) {
+    .bs .bs-intro {
+        padding-top: 20%;
+        flex-direction: column-reverse;
+    }
+    .bs .bs-intro img {
+        width: 100%;
+    }
+
+    .bs .bs-intro .bs-intro-cont {
+        width: 70%;
+        position: relative;
+        left: 15%;
+    }
+
+    .bs .discover .discover-cont .div {
+        margin-left: 5%;
+    }
+
+    .bs .bs-benefits ul {
+        left: 5%;
+    }
+
+    .bs .bs-benefits ul li {
+        width: 90%;
+    }
+
+    .assurance .assurance-cont .assure {
+        width: 80%;
+        left: 10%;
+    }
+
+    .bs .bs-intro .bs-intro-cont a button {
+        width: 80%;
+    }
+}

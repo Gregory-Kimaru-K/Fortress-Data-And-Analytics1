@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" type="x-icon" href="{{ url_for('static', filename='fortress2.png') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}"/>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='landing.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='services.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='tech.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='contact.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='ind.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bs.css') }}" />
+
+</head>
+<body class="main-body">
+    <div class="preloader">
+        <div class="loader">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+    </div>
+
+    {% include 'nav.html' %}
+        {% block content %}
+        {% endblock %}
+        <div class="footer">
+            <div class="services">
+                <h2>Services</h2>
+                <ul>
+
+                    <li>
+                        <a href="{{ url_for('tech_cosultance')}}">Erp</a>
+                    </li>
+
+                    <li>
+                        <a href="{{ url_for('tech_cosultance')}}">Technology Consulting</a>
+                    </li>
+
+                    <li>
+                        <a href="{{ url_for('bsintel')}}">Bussiness Inteligence</a>
+                    </li>
+
+                    <li>
+                        <a href="{{ url_for('customsoftware')}}">Custom Software Development</a> 
+                    </li>
+
+                    <li>
+                        <a href="{{ url_for('datawarehousing')}}">Data Warehousing</a>  
+                    </li>
+
+
+                    <li>
+                        <a href="{{ url_for('webdev')}}">Web Development</a>
+                    </li>
+
+                    <li>
+                        <a href="{{ url_for('product')}}">Product Engineering</a>
+                    </li>
+
+                    <li>
+                        <a href="{{ url_for('softwaretesting')}}">Software Testing</a>
+                    </li>
+
+                    <li>
+                        <a href="{{ url_for('mobileapp')}}">Moblie App Development</a> 
+                    </li>
+
+                    <li>
+                        <a href="{{ url_for('datavisualzation')}}">Data Visualization</a>  
+                    </li>
+
+                    <li>
+                        <a href="{{ url_for('iot')}}">Internet Of Things</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="company">
+                <h2>Company</h2>
+                <ul>
+                    <li><a href="{{ url_for('contact') }}">Contact us</a></li>
+                    <li> <a href="{[ url_for('team') ]}">Our team</a></li>
+                    <li> <a href="{[ url_for('privacypolicy') ]}">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="contactus">
+                <h2>Contact Us</h2>
+                <ul>
+                    <li><a href="{{ url_for('contact') }}">Send us a Message</a></li>
+                    <li>
+                        <label for="phone">Phone:</label>
+                        <a href="tel:+254722530651">+254 722530651</a> or <br>
+                        <a href="tel:+254723991758">+254 723991758</a>
+                    <li>
+                        <label for="gmail">Email:</label>
+                        <a href="mailto:info@fortress.co.ke">info@fortress.co.ke</a>
+
+                    </li>
+                </ul>
+            </div>
+            <div class="location">
+                <h2>Location</h2>
+                <ul>
+                    <li>
+                        <p>
+                            Empress Towers, Lipro Office Suites, Jalaram Rd
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            P.O. Box 5926-00200 Nairobi, Kenya ,
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="lowest">
+                <p>Copyright @2024 Fortress Data and Analytics. All rights reserved</p>
+            </div>
+        </div>
+        <div class="message">
+            <img src="{{ url_for('static', filename='message.svg') }}" alt="">
+            <div class="close-icon">
+                <div class="icon"></div>
+                <div class="icon"></div>
+            </div>
+        </div>
+        
+        <!-- <div class="message-flash">
+            <img src="{{ url_for('static', filename='tick.png') }}" alt="">
+            <h4>
+                Message sent successfully well be with you shortly
+            </h4>
+            <button class="close-msg">
+                OK
+            </button>
+        </div>
+
+        <div class="message-flash error">
+            <img src="{{ url_for('static', filename='x.png') }}" alt="">
+            <h4>
+                Message was not sent successfully please try again.
+            </h4>
+            <button class="close-msg">
+                OK
+            </button>
+        </div> -->
+
+        <div class="form-message">
+            <div class="pop-cont">
+                <h1>
+                    Contact Us
+                </h1>
+                <div class="img">
+                    <a href="tel:0722530651"><img src="{{ url_for('static', filename='phone.png') }}" alt=""></a>
+                    <a href="https://wa.me/+254722530651"><img src="{{ url_for('static', filename='whatsapp.png') }}" alt=""></a>
+                    <a href="mailto:info@fortress.co.ke"><img src="{{ url_for('static', filename='email.png') }}" alt=""></a>
+                </div>
+                <form id="contact-form" method="post" action="/send">
+                    <div class="input-container">
+                        <input type="text" name="name" id="input" required="">
+                        <label for="input" class="label">Name</label>
+                        <div class="underline"></div>
+                      </div>
+                      <div class="input-container">
+                        <input type="email" name="email" id="input" required="">
+                        <label for="input" class="label">Email</label>
+                        <div class="underline"></div>
+                      </div>
+                      <div class="input-container">
+                        <input type="tel" name="telNumber" id="input" required="">
+                        <label for="input" class="label">Telephone Number</label>
+                        <div class="underline"></div>
+                      </div>
+                      <div class="input-container">
+                        <input type="text" name="subject" id="input" required="">
+                        <label for="input" class="label">Subject</label>
+                        <div class="underline"></div>
+                      </div>
+                      <div class="textarea-container">
+                        <textarea id="textarea" name="message" required="" cols="10" rows="5"></textarea>
+                        <label for="textarea" class="label">Message</label>
+                        <div class="underline"></div>
+                    </div>
+                    <button type="submit" class="form-btn">
+                        <div class="svg-wrapper-1">
+                          <div class="svg-wrapper">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 24 24"
+                              width="24"
+                              height="24"
+                            >
+                              <path fill="none" d="M0 0h24v24H0z"></path>
+                              <path
+                                fill="rgba(252, 242, 240)"
+                                d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
+                              ></path>
+                            </svg>
+                          </div>
+                        </div>
+                        <span>Send</span>
+                    </button>
+                </form>
+            </div>
+
+            <div class="chat-bot">
+                <div class="chatbot-header">
+                        <h1>
+                            LIVE CHAT 
+                        </h1>
+                </div>
+                <div class="chatbot-body">
+
+                    <ul class="chatbox">
+
+                        <li class="chat incoming">
+                            <span><img src="{{ url_for('static', filename='smat_toy.svg') }}" alt=""></span>
+                            <p>Hi there 👋 <br>How May I help you?</p>
+                        </li>
+                    </ul>
+
+                    <div class="messageBox">
+                            <input required="" placeholder="Message..." type="text" id="messageInput" />
+                            <button id="sendButton">
+                              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 664 663">
+                                <path
+                                  fill="none"
+                                  d="M646.293 331.888L17.7538 17.6187L155.245 331.888M646.293 331.888L17.753 646.157L155.245 331.888M646.293 331.888L318.735 330.228L155.245 331.888"
+                                ></path>
+                                <path
+                                  stroke-linejoin="round"
+                                  stroke-linecap="round"
+                                  stroke-width="33.67"
+                                  stroke="#6c6c6c"
+                                  d="M646.293 331.888L17.7538 17.6187L155.245 331.888M646.293 331.888L17.753 646.157L155.245 331.888M646.293 331.888L318.735 330.228L155.245 331.888"
+                                ></path>
+                              </svg>
+                            </button>
+                    </div>
+                      
+                </div>
+            </div>
+            <div class="form-message-btns">
+                <button class="pop-cont-btn">
+                    Contact Form
+                </button>
+        
+                <button class="chat-bot-btn">
+                    Live Chat
+                </button>
+            </div>
+        </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.39/dist/lenis.min.js"></script> 
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+    <script>
+        //smooth scroll
+        const lenis = new Lenis()
+        lenis.on('scroll', (e) => {
+        console.log(e)
+        })
+
+        function raf(time) {
+        lenis.raf(time)
+        requestAnimationFrame(raf)
+        }
+
+        requestAnimationFrame(raf)
+    </script>
+
+    <script>
+        const loader = document.querySelector('.preloader');
+        window.addEventListener('load', function() {
+            loader.style.display = 'none';
+        })
+    </script>
+
+    <script>
+        const closeIcon = document.querySelector('.message');
+        const formMessage = document.querySelector('.form-message');
+        closeIcon.addEventListener('click', function() {
+            closeIcon.classList.toggle('closing');
+            formMessage.classList.toggle('show');
+        });
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const popCont = document.querySelector(".pop-cont");
+            const chatBot = document.querySelector(".chat-bot");
+            const popContBtn = document.querySelector(".pop-cont-btn");
+            const chatBotBtn = document.querySelector(".chat-bot-btn");
+            chatBot.classList.add('hide');
+            
+            popContBtn.addEventListener("click", function() {
+                console.log("Pop Cont button clicked");
+                popCont.classList.remove('hide');
+                chatBot.classList.add('hide');
+            });
+
+            chatBotBtn.addEventListener("click", function() {
+                console.log("Chat Bot button clicked");
+                chatBot.classList.remove("hide");
+                popCont.classList.add("hide");
+            });
+        });
+    </script>
+
+
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        const messageInput = document.getElementById("messageInput");
+        const sendButton = document.getElementById("sendButton");
+        const chatbox = document.querySelector(".chatbox");
+
+        // Event listener for sending messages
+        sendButton.addEventListener("click", function() {
+            const message = messageInput.value.trim();
+            if (message !== "") {
+                // Add user message to chatbox without the image span
+                addMessage(message, "outgoing");
+                messageInput.value = ""; // Clear the input field after sending
+
+                // Display loading indicator
+                addLoadingIndicator();
+
+                // Simulate delay before receiving bot response
+                setTimeout(() => {
+                    // Send user message to Flask backend for processing
+                    fetch("/predict", {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json"
+                        },
+                        body: JSON.stringify({ message: message })
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        const botResponse = data.answer;
+                        // Remove loading indicator and add bot response
+                        removeLoadingIndicator();
+                        addMessage(botResponse, "incoming");
+
+                        // Scroll to the bottom of the chatbox after adding new messages
+                        chatbox.scrollTop = chatbox.scrollHeight;
+                    })
+                    .catch(error => {
+                        console.error("Error:", error);
+                    });
+                }, 1000); // 1 second delay
+            }
+        });
+
+        // Function to add a message to the chat box
+        function addMessage(message, type) {
+            const messageElement = document.createElement("li");
+            messageElement.classList.add("chat", type);
+            // Check if it's an incoming message to add the image span
+            if (type === "incoming") {
+                messageElement.innerHTML = `<span><img src="{{ url_for('static', filename='smat_toy.svg') }}" alt=""></span><p>${message}</p>`;
+            } else {
+                messageElement.innerHTML = `<p>${message}</p>`;
+            }
+            chatbox.appendChild(messageElement);
+        }
+
+        // Function to add a loading indicator
+        function addLoadingIndicator() {
+            const loadingElement = document.createElement("li");
+            loadingElement.classList.add("chat", "loading");
+            loadingElement.innerHTML = `<div class="circle"></div>`;
+            loadingElement.innerHTML = `<div class="circle"></div>`;
+            loadingElement.innerHTML = `<div class="circle"></div>`;
+            loadingElement.innerHTML = `<div class="shadow"></div>`;
+            loadingElement.innerHTML = `<div class="shadow"></div>`;
+            loadingElement.innerHTML = `<div class="shadow"></div>`;
+            chatbox.appendChild(loadingElement);
+        }
+
+        // Function to remove the loading indicator
+        function removeLoadingIndicator() {
+            const loadingElement = document.querySelector(".chatbox .loading");
+            if (loadingElement) {
+                loadingElement.remove();
+            }
+        }
+    });
+
+    </script> -->
+
+    <script>
+        const closeMsg = document.querySelectorAll('.close-msg');
+        closeMsg.forEach(msgBtn => {
+            msgBtn.addEventListener("click", function() {
+                this.parentNode.style.opacity = '0'
+                this.parentNode.style.transform = 'translateY(20px)';
+                setTimeout(() => {
+                    this.parentNode.style.display = 'none';
+                }, 800)
+            })
+        })
+    </script>
+
+    <script>
+        // Function to handle form submission
+        function submitForm() {
+            // Prevent the default form submission behavior
+            event.preventDefault();
+
+            // Get the form data
+            const formData = new FormData(document.getElementById('contact-form'));
+
+            // Send the form data asynchronously using fetch
+            fetch('/send', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => {
+                if (response.ok) {
+                    // If the response is successful, display a success message
+                    return response.text().then(message => {
+                        // Display success message
+                        showMessage(message, 'success');
+                    });
+                } else {
+                    // If the response is not successful, display an error message
+                    return response.text().then(message => {
+                        // Display error message
+                        showMessage(message, 'error');
+                    });
+                }
+            })
+            .catch(error => {
+                // If there's an error with the fetch request, display a generic error message
+                console.error('Error:', error);
+                // Display error message
+                showMessage('An error occurred. Please try again later.', 'error');
+            });
+        }
+
+        // Function to display messages
+        function showMessage(message, type) {
+            // Create message element
+            const messageElement = document.createElement('div');
+            messageElement.classList.add('message-flash', type);
+
+            // Create image element
+            const imgElement = document.createElement('img');
+            imgElement.src = type === 'success' ? "{{ url_for('static', filename='tick.png') }}" : "{{ url_for('static', filename='x.png') }}";
+            imgElement.alt = type === 'success' ? 'Success' : 'Error';
+
+            // Create h4 element
+            const h4Element = document.createElement('h4');
+            h4Element.textContent = message;
+
+            // Create button element
+            const buttonElement = document.createElement('button');
+            buttonElement.classList.add('close-msg');
+            buttonElement.textContent = 'OK';
+            buttonElement.addEventListener('click', function() {
+                messageElement.remove();
+            });
+
+            // Append elements to message element
+            messageElement.appendChild(imgElement);
+            messageElement.appendChild(h4Element);
+            messageElement.appendChild(buttonElement);
+
+            // Append message element to body
+            document.body.appendChild(messageElement);
+        }
+
+        // Add event listener to the form for form submission
+        document.getElementById('contact-form').addEventListener('submit', submitForm);
+    </script>
+
+</body>
+</html>

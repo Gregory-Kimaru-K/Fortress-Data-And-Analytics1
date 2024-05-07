@@ -1,0 +1,361 @@
+{
+    "intents": [
+      {
+        "tag": "greeting",
+        "patterns": [
+          "Hi",
+          "Hey",
+          "How are you",
+          "Is anyone there?",
+          "Hello",
+          "Good day",
+          "fuck you"
+        ],
+        "responses": [
+          "Hello, thanks for visiting",
+          "Hi there, what can I do for you?",
+          "Hi there, how can I help?"
+        ]
+      },
+
+      {
+        "tag": "goodbye",
+        "patterns": ["Bye", "See you later", "Goodbye"],
+        "responses": [
+          "See you later, thanks for visiting",
+          "Have a nice day",
+          "Bye! Come back again soon."
+        ]
+      },
+
+      {
+        "tag": "thanks",
+        "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+        "responses": ["Happy to help!", "Any time!", "My pleasure"]
+      },
+
+      {
+        "tag": "services",
+        "patterns": [
+          "What services do you offer",
+          "What kinds of services do you offer",
+          "What do you sell?",
+          "What is this bussiness all about"
+        ],
+        "responses": [
+          "We offer tech solution to improve businesses to work healthy.",
+          "Our services include ERP, IOT, Technology Consulting, bussiness Intelligence, software testing, mobile app development, Data Visualization, Product Engineering"
+        ]
+      },
+
+      {
+        "tag": "solutions",
+        "patterns": [
+          "What are your business solutions",
+          "Central Solutions",
+          "Business solutions offered",
+          "Business solutions"
+        ],
+        "responses": [
+          "Our top bussiness are Enterprise Resource Planning(ERPs), Customer relationship management(CRMs) and Mobile Sales Force Automation(SFAs)."
+        ]
+      },
+
+      {
+        "tag": "main",
+        "patterns": [
+          "What are your main services",
+          "What are your top services",
+          "What services do you offer mostly"
+        ],
+        "responses": [
+          "Our common services are ERP, technology consulting, data warehousing, custom software development and IOT"
+        ]
+      },
+
+      {
+        "tag": "tech",
+        "patterns": [
+          "What technologies do you use",
+          "Types of technology solutions",
+          "Technologies used in your business",
+          "Technologies you use"
+        ],
+
+        "responses": [
+          "We have different technologies that is for backend, frontend, mobile, bussiness analytics, cloud warehousing, and IOT"
+        ]
+      },
+
+      {
+        "tag": "industry",
+        "patterns": [
+          "What industries do you serve",
+          "Industries you cater for",
+          "Industries you serve"
+        ],
+
+        "responses": [
+          "We serve industries such as fitness, fintech, education, healthcare, energy, manufacturing, travel, advertising, retail, entertainment, supply chain and life services"
+        ]
+      },
+
+      {
+        "tag": "erp",
+        "patterns": [
+          "What is erp",
+          "What is enterprise resource planning",
+          "erp",
+          "enterprise resource planning"
+        ],
+
+        "responses": [
+          "Enterprise resource planing is a platform that integrates and manages the essential parts of a business(finance, HR, supply chain, etc.).",
+          "Enterprise resource planing is a software that helps organisations automate and manage the core business processesfinance, HR, supply chain, etc.)."
+        ]
+      },
+
+      {
+        "tag": "crm",
+        "patterns": [
+          "What is crm",
+          "What is Customer relationship management",
+          "crm",
+          "Customer relationship management"
+        ],
+
+        "responses": [
+          "Customer relationship management (CRM) is the principles, practices, and guidelines that an organization follows when interacting with its customers",
+          "Customer relationship management (CRM) is a strategy to build stronger customer relationships."
+        ]
+      },
+
+      {
+        "tag": "sfa",
+        "patterns": [
+          "What is sfa",
+          "What is Mobile Sales Force Automation",
+          "sfa",
+          "Mobile Sales Force Automation"
+        ],
+
+        "responses": [
+          "Mobile Sales Force Automation(SFA) is a component of CRM systems focused on automating sales activities ."
+        ]
+      },
+
+      {
+        "tag": "backend",
+        "patterns": [
+          "Backend technologies",
+          "What is backend",
+          "What are some of the backend technologies",
+          "backend"
+        ],
+
+        "responses": [
+          "Backend technology is building and managing the server-side elements including logic data-storage, in web applications.Backend tech we use are NodeJS, python, javascript, java, django, .NET"
+        ]
+      },
+
+      {
+        "tag": "bianalytics",
+        "patterns": [
+          "BI And Analytics technologies",
+          "What is BI and analytics",
+          "What are some of the BI And Analytics technologies",
+          "BI And Analytics"
+        ],
+
+        "responses": [
+          "BI And Analytics is technology driven data analysis for informed decisions. BI And Analytics technologies include PowerBI, Tableau, Big Data, pentaho, predictive analysis solutions"
+        ]
+      },
+
+      {
+        "tag": "cloud",
+        "patterns": [
+          "Cloud technologies",
+          "What is cloud",
+          "What are some of the Cloud technologies"
+        ],
+
+        "responses": [
+          "Cloud computing is the availlablity of computing resources eg storage and infrastructure as services on the internet. Platforms that offer include Microsoft Azure, AWS and salesforce."
+        ]
+      },
+
+      {
+        "tag": "frontend",
+        "patterns": [
+          "frontend technologies",
+          "What is frontend",
+          "What are some of the frontend technologies"
+        ],
+
+        "responses": [
+          "Frontend also known as client side is creating user-friendly web elements. Frontend technologies include Javascript, ReactJS, html, css, vueJS."
+        ]
+      },
+
+      {
+        "tag": "mobile",
+        "patterns": [
+          "mobile technologies",
+          "What are some of the mobile technologies"
+        ],
+
+        "responses": [
+          "Mobile technologies we use to create mobile apps are flutter, React Native, kotlin, swift"
+        ]
+      },
+
+      {
+        "tag": "iot",
+        "patterns": [
+          "iot",
+          "What is iot",
+          "What are some of the internet of things"
+
+        ],
+
+        "responses": [
+          "Internet of things refers to a network of interconnected devices with sensors and internet connectivity12. These devices can transfer data without human intervention, enhancing various aspects of life"
+        ]
+      },
+
+      {
+        "tag": "ai",
+        "patterns": [
+          "ai",
+          "What is ai",
+          "What are some of the ai"
+
+        ],
+
+        "responses": [
+          "AI is a computer system that is able to perform tasks that historically require human intelligence. We offer ai technology such as Machine learning, deep learning, neural networking."
+        ]
+      },
+
+      {
+        "tag": "bsintel",
+        "patterns": [
+          "What is business intelligence",
+          "Why do I need business inteligence",
+          "business intelligence"          
+        ],
+
+        "responses": [
+          "Business Intelligence (BI) helps decision-making, cost-cutting, and spotting inefficiencies in businesses."
+        ]
+      },
+
+      {
+        "tag": "consulting",
+        "patterns": [
+          "What is Technology Consulting ",
+          "Why do I need Technology Consulting",
+          "Technology Consulting"          
+        ],
+
+        "responses": [
+          "We offer technology consultation for what technology is better given your business or problem you wnt to solve."
+        ]
+      },
+
+      {
+        "tag": "softwaredev",
+        "patterns": [
+          "Do you offer software solutions",
+          "Custom software solutions",
+          "What software solutions do you provide for your business"          
+        ],
+
+        "responses": [
+          "We offer custom software solutions for your business"
+        ]
+      },
+
+      {
+        "tag": "visualization",
+        "patterns": [
+          "What is data visualization",
+          "Benefits of data visualization",
+          "data visualization"
+        ],
+
+        "responses": [
+          "Data visualization is graphical representation of data and helps see patterns in data and also prediction"
+        ]
+      },
+
+      {
+        "tag": "warehousing",
+        "patterns": [
+          "What is data warehousing",
+          "Benefits of data warehousing",
+          "data warehousing"
+        ],
+
+        "responses": [
+          "A data warehouse is a system used for reporting and data analysis. Data warehousing helps data analytics on large volumes of data that standard databases can't handle efficiently."
+        ]
+      },
+
+      
+      {
+        "tag": "testing",
+        "patterns": [
+          "What is software testing",
+          "Benefits of software testing",
+          "software testing"
+        ],
+
+        "responses": [
+          "Software testing is the process of evaluating and verifying that a software product or application performs as intended."
+        ]
+      },
+      
+      {
+        "tag": "payments",
+        "patterns": [
+          "Do you take credit cards?",
+          "Do you accept Mastercard?",
+          "Can I pay with Paypal?",
+          "Are you cash only?"
+        ],
+
+        "responses": [
+          "We accept VISA, Mastercard and Paypal",
+          "We accept most major credit cards, and Paypal"
+        ]
+      },
+
+      {
+        "tag": "delivery",
+        "patterns": [
+          "How long does delivery take?",
+          "How long does shipping take?",
+          "When do I get my delivery?"
+        ],
+        "responses": [
+          "Depends on the work load.",
+          "Shipping takes 2-4 days"
+        ]
+      },
+
+      {
+        "tag": "funny",
+        "patterns": [
+          "Tell me a joke!",
+          "Tell me something funny!",
+          "Do you know a joke?"
+        ],
+        "responses": [
+          "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
+          "What did the buffalo say when his son left for college? Bison."
+        ]
+      }
+    ]
+  }

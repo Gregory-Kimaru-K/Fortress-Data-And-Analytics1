@@ -1,0 +1,295 @@
+{% extends "base.html" %}
+{% block title %}
+    Product Engineering Services
+{% endblock %}
+{% block content %}
+
+<div class="land">
+    <img src="{{ url_for('static', filename='landing/product.jpeg') }}" alt="">
+    <div class="cont">
+        <h1></h1>
+        <h1>
+            Product Engineering Services
+        </h1>
+        <p>
+            Fortress Data And Analytics delivers  diverse and dynamic solutions, helps businesses right from validating ideas, building product roadmap, developing, and continuously delivering business-centric, simple, and seamless software products.
+        </p>
+        <a href="{{ url_for('contact') }}">
+            <button>
+                Get Started
+            </button>
+        </a>
+    </div>
+</div>
+
+<div class="services-content">
+    <div class="intro-cont">
+        <h2>
+            End-To-End Product Engineering Services
+        </h2>
+        <p>
+            Technology-driven businesses require constant enhancement, a revolutionary approach, and an agile mindset to foster growth. Today’s disruptive technologies paired with a digital roadmap and high-potential talents can lead the digital space. Our software product engineering services help decide the most suitable technology stack for your ideas, bringing ideas to life through pragmatic, premier, and powerful solutions. As a product engineering services company our team of architects, consultants, designers, and engineers help you modernize your existing product can meet the ever-changing business requirement in the era of cloud, data, and collaboration.
+        </p>
+    </div>
+    <div class="main-cont">
+        <div class="contents left">
+            <h3>
+                <img src="{{ url_for('static', filename='services/BI_Support__Maintenance_icon-1.png') }}" alt="">
+                Product Development Consulting
+            </h3>
+            <p>
+                Tell us your idea and our experienced consultants help you discover complete roadmap and design entire architecture that fit your business requirement
+            </p>
+        </div>
+        <div class="contents right">
+            <h3>
+                <img src="{{ url_for('static', filename='services/Implementation_of_BI_Applications_icon.png') }}" alt="">
+
+                Product Re-Engineering / Application Modernization
+            </h3>
+            <p>
+                Make your legacy system data-driven, agile, and automated using new-age technology and modern development approach like agile and DevOps
+            </p>
+        </div>
+        <div class="contents left">
+            <h3>
+                <img src="{{ url_for('static', filename='services/Research-icon.png') }}" alt="">
+
+                Custom Software Product Engineering
+            </h3>
+            <p>
+                We have experienced developers in developing solutions across the industry verticals enable us to build scalable, business-centric, and digitally-enhanced products.
+            </p>
+        </div>
+        <div class="contents right">
+            <h3>
+                <img src="{{ url_for('static', filename='services/Implementation-of-BI-Applications-icon.png') }}" alt="">
+
+                Data Analytics and Predictive Analytics
+            </h3>
+            <p>
+                Become data-driven organization by integrating data analytics and business intelligence solutions to make drive operational efficiency and make data-informed decisions
+            </p>
+        </div>
+        <div class="contents left">
+            <h3>
+                <img src="{{ url_for('static', filename='services/Enterprise_Business_Intelligence_icon-1.png') }}" alt="">
+
+                Platform-based Product Development
+            </h3>
+            <p>
+                Meet ever-changing needs by developing flexible, scalable, and customized platform-based products with the underlying technical architecture and embedded systems
+            </p>
+        </div>
+        <div class="contents right">
+            <h3>
+                <img src="{{ url_for('static', filename='services/BI-Support-Maintenance.png') }}" alt="">
+
+                SaaS Development
+            </h3>
+            <p>
+                We design, build, test, and maintain SaaS applications using right technology from planning to scaling, delivering robust, secure, and end-to-end SaaS application
+            </p>
+        </div>
+
+    </div>
+</div>
+
+<div class="contact">
+    <div class="polygon serv-poly">
+        <div class="contact-head">
+            <h1>
+                Start, Build, And Evolve To Meet Modern Needs
+            </h1>
+        </div>
+    </div>
+    <div class="contact-cont">
+        <div class="main">
+            <img src="{{ url_for('static', filename='landing/contact2.jpeg') }}" alt="">
+            <div class="content">
+                <p>
+                    From small, and mid-sized businesses to startups and large-scale enterprises, our development and product engineering services help you unlock business potential through optimized, high-quality, and data-driven software solutions
+                </p>
+                <a href="{{ url_for('contact') }}">
+                    <button>
+                        Lets Connect
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="ind-land">
+    <div class="polygon">
+        <div class="ind-head">
+            <h1>
+                Industries We Serve
+            </h1>
+        </div>
+    </div>
+    <div class="ind-cont">
+        <div class="contents magnet">
+            <a href="{{ url_for('fitness') }}" class="text">
+                <img src="{{ url_for('static', filename='industries/fitness.png') }}">
+                <h5>
+                    Fitness
+                </h5>
+            </a>
+        </div>
+
+        <div class="contents magnet">
+            <a href="{{ url_for('fintech') }}" class="text">
+                <img src="{{ url_for('static', filename='industries/fintech.png') }}">
+                <h5>
+                    Fintech
+                </h5>
+            </a>
+        </div>
+
+        <div class="contents magnet">
+            <a href="{{ url_for('education') }}" class="text">
+                <img src="{{ url_for('static', filename='industries/education.png') }}">
+                <h5>
+                    Education
+                </h5>
+            </a>
+        </div>
+
+        <div class="contents magnet">
+            <a href="{{ url_for('healthcare') }}" class="text">
+                <img src="{{ url_for('static', filename='industries/healthcareicon.png') }}">
+                <h5>
+                    Healthcare
+                </h5>
+            </a>
+        </div>
+
+        <div class="contents magnet">
+            <a href="{{ url_for('energy') }}" class="text">
+                <img src="{{ url_for('static', filename='industries/energy-and-utilities.png') }}">
+                <h5>
+                    Energy & Utilities
+                </h5>
+            </a>
+        </div>
+
+        <div class="contents magnet">
+            <a href="{{ url_for('travel') }}" class="text">
+                <img src="{{ url_for('static', filename='industries/travel-and-hospitality.png') }}">
+                <h5>
+                    Travel & Hospitality
+                </h5>
+            </a>
+        </div>
+
+        <div class="contents magnet">
+            <a href="{{ url_for('manufacturing') }}" class="text">
+                <img src="{{ url_for('static', filename='industries/manufacturing.png') }}">
+                <h5>
+                    Manufacturing
+                </h5>
+            </a>
+        </div>
+
+        <div class="contents magnet">
+            <a href="{{ url_for('adverts') }}" class="text">
+                <img src="{{ url_for('static', filename='industries/advertising.png') }}">
+                <h5>
+                    Advertising
+                </h5>
+            </a>
+        </div>
+
+        <div class="contents magnet">
+            <a href="{{ url_for('retail') }}" class="text">
+                <img src="{{ url_for('static', filename='industries/retail.png') }}">
+                <h5>
+                    Retail
+                </h5>
+            </a>
+        </div>
+
+        <div class="contents magnet">
+            <a href="{{ url_for('entertain') }}" class="text">
+                <img src="{{ url_for('static', filename='industries/media-and-entertainment.png') }}">
+                    <h5>
+                        Media & Entertainment
+                    </h5>
+            </a>
+        </div>
+
+        <div class="contents magnet">
+            <a href="{{ url_for('supplychain') }}" class="text">
+                <img src="{{ url_for('static', filename='industries/logistics.png') }}">
+                <h5>
+                    Supply Chain And Logistics
+                </h5>
+            </a>
+        </div>
+
+        <div class="contents magnet">
+            <a href="{{ url_for('travel') }}" class="text">
+                <img src="{{ url_for('static', filename='industries/life-sciences.png') }}" alt="">
+                <h5>
+                    Life Science
+                </h5>
+            </a>
+        </div>  
+    </div>
+</div>
+
+<script>
+    // Select all .magnet and .text elements
+    const magnetElements = document.querySelectorAll('.magnet');
+    const magnetTextElements = document.querySelectorAll('.text');
+
+    // Function to activate the magnetic effect on mouse move
+    const activateMagneto = (event) => {
+        const boundBox = event.currentTarget.getBoundingClientRect();
+        const magnetoStrength = 40;
+        const magnetoTextStrength = 300;
+        const newX = ((event.clientX - boundBox.left) / event.currentTarget.offsetWidth) - 0.5;
+        const newY = ((event.clientY - boundBox.top) / event.currentTarget.offsetHeight) - 0.5;
+
+        // Move the current magnet element
+        gsap.to(event.currentTarget, {
+            duration: 1,
+            x: newX * magnetoStrength,
+            y: newY * magnetoStrength,
+            ease: Power4.easeOut
+        });
+
+        // Move the corresponding text element
+        const textElement = event.currentTarget.querySelector('.text');
+        gsap.to(textElement, {
+            duration: 1,
+            x: newX * magnetoTextStrength,
+            y: newY * magnetoTextStrength,
+            ease: Power4.easeOut
+        });
+    };
+
+    // Function to reset the magnetic effect on mouse leave
+    const resetMagneto = (event) => {
+        // Reset the position of the magnet and the text
+        gsap.to([event.currentTarget, event.currentTarget.querySelector('.text')], {
+            duration: 1,
+            x: 0,
+            y: 0,
+            ease: Elastic.easeOut
+        });
+    };
+
+    // Add event listeners to each magnet element
+    magnetElements.forEach((element) => {
+        element.addEventListener('mouseenter', () => {
+            element.addEventListener('mousemove', activateMagneto);
+        });
+        element.addEventListener('mouseleave', () => {
+            element.removeEventListener('mousemove', activateMagneto);
+            resetMagneto({ currentTarget: element });
+        });
+    });
+</script>
+{% endblock %}

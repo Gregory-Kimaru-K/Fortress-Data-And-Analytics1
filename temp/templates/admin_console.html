@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Console</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            width: 80%;
+            margin: 50px auto;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ffffff;
+        }
+
+        th {
+            background-color: #007bff;
+            color: #ffffff;
+        }
+
+        tr:nth-child(even) {
+            background-color: #1f1f1f;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #ffffff;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        .btn-danger {
+            background-color: #dc3545;
+        }
+
+        .btn-danger:hover {
+            background-color: #bd2130;
+        }
+
+        form {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        input[type="text"], input[type="email"], input[type="number"], textarea {
+            padding: 10px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 300px;
+            outline: none;
+        }
+
+        textarea {
+            height: 100px;
+            resize: vertical;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Admin Console</h1>
+        <h2>User Information</h2>
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Actions</th>
+            </tr>
+            {% for user in users %}
+                <tr>
+                    <td>{{ user.id }}</td>
+                    <td>{{ user.name }}</td>
+                    <td>{{ user.email }}</td>
+                    <td>
+                        <button class="btn btn-danger" onclick="deleteUser({{ user.id }})">Delete</button>
+                        <button class="btn" onclick="editUser({{ user.id }})">Edit</button>
+                    </td>
+                </tr>
+            {% endfor %}
+        </table>
+
+        <h2>Add or Update User</h2>
+        <form id="addOrUpdateUserForm" action="" method="post">
+            <input type="hidden" name="user_id" id="user_id">
+            <input type="text" name="username" id="username" placeholder="Username" required>
+            <input type="password" name="password" id="password" placeholder="Password" required>
+            <input type="email" name="email" id="email" placeholder="Email" required>
+            <label for="is_admin">Is Admin:</label>
+            <input type="checkbox" id="is_admin" name="is_admin">
+            <button type="submit" class="btn" id="submitButton">Add User</button>
+        </form>
+        
+    </div>
+
+    <script>
+        document.getElementById('addUserForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission behavior
+            
+            // Get form data
+            const formData = new FormData(this);
+    
+            // Convert formData to JSON object
+            const jsonObject = {};
+            formData.forEach((value, key) => { jsonObject[key] = value; });
+            
+            // Make a POST request to add a new user
+            fetch('/add_user', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(jsonObject)
+            })
+            .then(response => {
+                if (response.ok) {
+                    // Reload the page or update the user list without reloading the page
+                    location.reload(); // Example: Reload the page
+                } else {
+                    // Handle error response
+                    console.error('Failed to add user:', response.statusText);
+                }
+            })
+            .catch(error => {
+                console.error('Error adding user:', error);
+            });
+        });
+    </script>
+    <script>
+        function editUser(userId) {
+            fetch(`/get_user/${userId}`)
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('user_id').value = data.id;
+                    document.getElementById('username').value = data.username;
+                    document.getElementById('email').value = data.email;
+                    document.getElementById('is_admin').checked = data.is_admin;
+                    document.getElementById('submitButton').innerText = 'Update User';
+                    document.getElementById('addOrUpdateUserForm').action = `/update_user/${data.id}`;
+                })
+                .catch(error => {
+                    console.error('Error fetching user:', error);
+                });
+        }
+    </script>
+    
+    
+</body>
+</html>

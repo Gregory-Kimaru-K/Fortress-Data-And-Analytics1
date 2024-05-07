@@ -1,0 +1,401 @@
+{% extends "base.html" %}
+{% block title %}
+    Web Development Services
+{% endblock %}
+{% block content %}
+<div class="land">
+    <img src="{{ url_for('static', filename='landing/webdev.jpeg') }}" alt="">
+    <div class="cont">
+        <h1></h1>
+        <h1>
+            Web Development Company
+        </h1>
+        <p>
+            Websites have become a crucial part of the digital ecosystem and hold the digital identity of your business irrespective of business size and domain. From early-stage startups to well-known brands, we are a technology partner united with a sole vision to unlock digital potential through scalable, state-of-the-art, secure, and superior web development services.
+        </p>
+        <a href="{{ url_for('contact') }}">
+            <button>
+                Talk To Us
+            </button>
+        </a>
+    </div>
+</div>
+
+<div class="services-content">
+    <div class="intro-cont">
+        <h2>
+            Our Key Web Development Services
+        </h2>
+        <p>
+            We strive for client satisfaction in every web app development project we undertake. Our customer-centric approach, always-on learning mode, and consistency enable us to overcome complexities in web app development services.
+        </p>
+    </div>
+    <div class="main-cont">
+        <div class="contents left">
+            <h3>
+                <img src="{{ url_for('static', filename='services/Custom-Enterprise-Software-Development.png') }}" alt="">
+                Custom Web Development Services
+            </h3>
+            <p>
+                Fortress Data And Analytics offers custom application development services that cover tailor-made web solutions uniquely built for your business objectives. With our 36+ years of experience in building customized web applications for a range of industry domains, we ensure scalable, reliable, secure, and flexible web application solutions that meet changing business demands. We emphasize a perfect blend of design thinking and innovation to craft value-driven user experiences.
+            </p>
+        </div>
+        <div class="contents right">
+            <h3>
+                <img src="{{ url_for('static', filename='services/Full-Stack-Web-Development.png') }}" alt="">
+
+                Full Stack Web Development
+            </h3>
+            <p>
+                Bring your ideas to life with Fortress Data And Analytics' full-stack web development services. Our full-stack web developer is proficient in both – frontend and backend tools and technology along with knowledge about databases, servers, and hosting environments. Our team of experienced web app developers builds performant, modern web applications from the scratch.
+            </p>
+        </div>
+        <div class="contents left">
+            <h3>
+                <img src="{{ url_for('static', filename='services/SaaS-Development.png') }}" alt="">
+
+                SaaS Development
+            </h3>
+            <p>
+                The growth of cloud technology has contributed significantly to SaaS application development. We offer SaaS development that covers all the benefits of flexibility, scalability, and cost-effectiveness. Our SaaS development services include the design, implementation, deployment, and maintenance of SaaS-based applications. Our experienced developers are proficient in cloud technologies and tools to develop applications that are secure, flexible, scalable, and efficient.
+            </p>
+        </div>
+        <div class="contents right">
+            <h3>
+                <img src="{{ url_for('static', filename='services/Legacy-App-Modernization.png') }}" alt="">
+
+                Legacy Application Modernization
+            </h3>
+            <p>
+                Modernizing legacy applications requires a strategic plan and risk-free, incremental approach to ensure a successful migration. We, at Fortress Data And Analytics, understand your requirements closely and modernize your digital platform by determining what approach works best – rebuilding, rearchitecting, rehosting, or replacing. Take advantage of modern technologies and next-gen tools to overcome business challenges, drive business value, and achieve agility.
+            </p>
+        </div>
+        <div class="contents left">
+            <h3>
+                <img src="{{ url_for('static', filename='services/Front-End-Development.png') }}" alt="">
+
+                Front-End Development
+            </h3>
+            <p>
+                We architect the UI/UX of the websites and mobile applications using the latest technologies and frameworks. Our skilled team of UI/UX designers and front-end developers covers every aspect of front-end development and craft responsive, aesthetic, interactive, and seamless website and app frontends leveraging subject matter expertise, years of experience, and a wide range of tools, technologies, and frameworks. Good UI/UX improves the odds of success by multifold.
+            </p>
+        </div>
+        <div class="contents right">
+            <h3>
+                <img src="{{ url_for('static', filename='services/Back-End-Development.png') }}" alt="">
+
+                Back-End Development
+            </h3>
+            <p>
+                A robust, stable, highly-available backend is a key to successful web and mobile applications. Our backend engineers develop cloud-based and on-premise backend solutions for mobile apps, web applications, and enterprise apps. Our back-end development services also cover migrating your legacy backend to modern cloud platforms and ensuring secure architecture, storage, and business logic.
+            </p>
+        </div>
+
+    </div>
+</div>
+
+<div class="services-tech-stack">
+    <h2>
+        Our Professional Web Development Services Tech Stack
+    </h2>
+    <div class="contents">
+        <h4>
+            Frontend
+        </h4>
+        <img src="{{ url_for('static', filename='services/React-icon.png') }}" alt="">
+        <img src="{{ url_for('static', filename='services/Angular-icon.png') }}" alt="">
+        <img src="{{ url_for('static', filename='services/vue_js-icon.png') }}" alt="">
+        <img src="{{ url_for('static', filename='services/HTML-icon.png') }}" alt="">
+        <img src="{{ url_for('static', filename='services/CSS-icon.png') }}" alt="">
+
+    </div>
+    <div class="contents">
+        <h4>
+            Backend
+        </h4>
+        <img src="{{ url_for('static', filename='services/Dot_net-icon.png') }}" alt="">
+        <img src="{{ url_for('static', filename='services/PHP-icon.png') }}" alt="">
+        <img src="{{ url_for('static', filename='services/JAVA-icon.png') }}" alt="">
+        <img src="{{ url_for('static', filename='services/pythone-icon.png') }}" alt="">
+        <img src="{{ url_for('static', filename='services/Nodejs-Icon.png') }}" alt="">
+
+    </div>
+    <div class="contents">
+        <h4>
+            Databases
+        </h4>
+        <img src="{{ url_for('static', filename='services/MySQL-Technology.png') }}" alt="">
+        <img src="{{ url_for('static', filename='services/SQL-Server-Technology.png') }}" alt="">
+        <img src="{{ url_for('static', filename='services/Oracle-icon.png') }}" alt="">
+        <img src="{{ url_for('static', filename='services/PostgreSQL-Technology.png') }}" alt="">
+        <img src="{{ url_for('static', filename='services/Mongo_bd-icon.png') }}" alt="">
+
+    </div>
+    <div class="contents">
+        <h4>
+            Web Frameworks
+        </h4>
+        <img src="{{ url_for('static', filename='services/Laravel-icon.png') }}" alt="">
+        <img src="{{ url_for('static', filename='services/Spring-icon.png') }}" alt="">
+        <img src="{{ url_for('static', filename='services/django-icon.png') }}" alt="">
+        <img src="{{ url_for('static', filename='services/Express.js-icon.png') }}" alt="">
+
+    </div>
+    <div class="contents">
+        <h4>
+            Cloud And DevOps
+        </h4>
+        <img src="{{ url_for('static', filename='services/Azure-Technology.png') }}" alt="">
+        <img src="{{ url_for('static', filename='services/AWS-Technology.png') }}" alt="">
+        <img src="{{ url_for('static', filename='services/Google-Cloud-Technology.png') }}" alt="">
+        <img src="{{ url_for('static', filename='services/Docker_Tech_Logo.png') }}" alt="">
+        <img src="{{ url_for('static', filename='services/Kubernetes-icon.png') }}" alt="">
+
+    </div>
+</div>
+
+<div class="contact">
+    <div class="polygon serv-poly">
+        <div class="contact-head">
+            <h1>
+                Contact Us
+            </h1>
+        </div>
+    </div>
+    <div class="contact-cont">
+        <div class="main">
+            <img src="{{ url_for('static', filename='landing/contact2.jpeg') }}" alt="">
+            <div class="content">
+                <p>
+                    We provide scalable, secure, and end-to-end custom web application development services that includes requirement analysis, UI/UX design, development, testing, deployment, support, maintenance, and enhancements.
+                </p>
+                <a href="{{ url_for('contact') }}">
+                    <button>
+                        Talk To Our Experts
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="ind-land">
+    <div class="polygon">
+        <div class="ind-head">
+            <h1>
+                Industries We Serve
+            </h1>
+        </div>
+    </div>
+    <div class="ind-cont">
+        <div class="contents magnet">
+            <a href="{{ url_for('fitness') }}" class="text">
+                <img src="{{ url_for('static', filename='industries/fitness.png') }}">
+                <h5>
+                    Fitness
+                </h5>
+            </a>
+        </div>
+
+        <div class="contents magnet">
+            <a href="{{ url_for('fintech') }}" class="text">
+                <img src="{{ url_for('static', filename='industries/fintech.png') }}">
+                <h5>
+                    Fintech
+                </h5>
+            </a>
+        </div>
+
+        <div class="contents magnet">
+            <a href="{{ url_for('education') }}" class="text">
+                <img src="{{ url_for('static', filename='industries/education.png') }}">
+                <h5>
+                    Education
+                </h5>
+            </a>
+        </div>
+
+        <div class="contents magnet">
+            <a href="{{ url_for('healthcare') }}" class="text">
+                <img src="{{ url_for('static', filename='industries/healthcareicon.png') }}">
+                <h5>
+                    Healthcare
+                </h5>
+            </a>
+        </div>
+
+        <div class="contents magnet">
+            <a href="{{ url_for('energy') }}" class="text">
+                <img src="{{ url_for('static', filename='industries/energy-and-utilities.png') }}">
+                <h5>
+                    Energy & Utilities
+                </h5>
+            </a>
+        </div>
+
+        <div class="contents magnet">
+            <a href="{{ url_for('travel') }}" class="text">
+                <img src="{{ url_for('static', filename='industries/travel-and-hospitality.png') }}">
+                <h5>
+                    Travel & Hospitality
+                </h5>
+            </a>
+        </div>
+
+        <div class="contents magnet">
+            <a href="{{ url_for('manufacturing') }}" class="text">
+                <img src="{{ url_for('static', filename='industries/manufacturing.png') }}">
+                <h5>
+                    Manufacturing
+                </h5>
+            </a>
+        </div>
+
+        <div class="contents magnet">
+            <a href="{{ url_for('adverts') }}" class="text">
+                <img src="{{ url_for('static', filename='industries/advertising.png') }}">
+                <h5>
+                    Advertising
+                </h5>
+            </a>
+        </div>
+
+        <div class="contents magnet">
+            <a href="{{ url_for('retail') }}" class="text">
+                <img src="{{ url_for('static', filename='industries/retail.png') }}">
+                <h5>
+                    Retail
+                </h5>
+            </a>
+        </div>
+
+        <div class="contents magnet">
+            <a href="{{ url_for('entertain') }}" class="text">
+                <img src="{{ url_for('static', filename='industries/media-and-entertainment.png') }}">
+                    <h5>
+                        Media & Entertainment
+                    </h5>
+            </a>
+        </div>
+
+        <div class="contents magnet">
+            <a href="{{ url_for('supplychain') }}" class="text">
+                <img src="{{ url_for('static', filename='industries/logistics.png') }}">
+                <h5>
+                    Supply Chain And Logistics
+                </h5>
+            </a>
+        </div>
+
+        <div class="contents magnet">
+            <a href="{{ url_for('travel') }}" class="text">
+                <img src="{{ url_for('static', filename='industries/life-sciences.png') }}" alt="">
+                <h5>
+                    Life Science
+                </h5>
+            </a>
+        </div>  
+    </div>
+</div>
+
+<div class="serv-land">
+    <div class="polygon serv-poly">
+        <div class="serv-land-head">
+            <h1>
+                Web Applications We Build
+            </h1>
+        </div>
+    </div>
+    <div class="serv-land-cont serv-ben">
+        <div class="card">
+            <h2>
+                Progressive Web Apps
+            </h2>
+            <p>
+                PWAs are a great choice to deliver a user experience that has the look and feel of a mobile app. It is an ideal and cost-effective alternative to native apps by taking advantage of the web and mobile. With faster load time, responsive design, and seamless navigation, our Progressive Web App development deliver a native-like experience in a web browser.
+            </p>
+        </div>
+        <div class="card">
+            <h2>
+                Better Decision-Making
+            </h2>
+            <p>
+                Visual representation of data is easy to digest and interpret. Business intelligence reporting enables companies to see all key performance indicators on a single page. BI tools deliver fast and accurate information with current, historical, and predictive views to make timely, faster, and smarter decisions.
+            </p>
+        </div>
+        <div class="card">
+            <h2>
+                Web CMS
+            </h2>
+            <p>
+                A web CMS is used to create, store, manage and display content through web pages. We deliver custom web CMS solutions that facilitate content management and result in simplified collaboration between teams. With web CMS solutions, a team can effortlessly manage content with enhanced security, accessibility, and personalization.
+            </p>
+        </div>
+        <div class="card">
+            <h2>
+                Enterprise Web Apps
+            </h2>
+            <p>
+                We develop enterprise web apps to manage internal and external business processes and operations of an organization. We  take care of your business needs and deliver secure, mission-critical enterprise-grade web apps.
+            </p>
+        </div>
+        <div class="card">
+            <h2>
+                Cloud-based Web Apps
+            </h2>
+            <p>
+                A cloud environment is more secure, scalable, robust, and cost-effective. Cloud-based web apps are an advanced type of web app preferred for effective collaboration and complex tasks. Our team of cloud consultants and web developers analyze your needs and suggest the right type of cloud app for increased productivity and streamlined activities
+            </p>
+        </div>
+        <div class="card">
+            <h2>
+                Web Portals
+            </h2>
+            <p>
+                Our team constantly learns and adapts to the changes in web development. With our diverse and decades-long experience, we possess expertise in building different types of web applications and web portals as per your requirements. We develop web portals that serve as a single access point for all the information and services. Create a unified platform for interaction with customers, partners, and employees with web portal development
+            </p>
+        </div>
+        <div class="card">
+            <h2>
+                CRM Software
+            </h2>
+            <p>
+                Increase your sales by managing your customers more effectively with a customized CRM system. Client Relationship Management (CMS) plays a vital role to enhance customer service, improve customer retention, and making your sales team productive and efficient. Our enterprise CRM software can be used by companies of all sizes to manage customer and sales information in a centralized, accessible, and secure way.
+            </p>
+        </div>
+    </div>
+</div>
+<div class="other">
+</div>
+<div class="other">
+</div>
+<div class="other">
+</div>
+<div class="other">
+</div>
+
+<div class="contact">
+    <div class="polygon serv-poly">
+        <div class="contact-head">
+            <h1>
+                Hire Web Developer
+            </h1>
+        </div>
+    </div>
+    <div class="contact-cont">
+        <div class="main">
+            <img src="{{ url_for('static', filename='landing/contact2.jpeg') }}" alt="">
+            <div class="content">
+                <p>
+                    Our dedicated web developers offer flexible, tailored, and full-cycle web solutions in an array of business domains following modern project development methods and ensuring the best possible outcome.
+                </p>
+                <a href="{{ url_for('contact') }}">
+                    <button>
+                        Contact Us
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

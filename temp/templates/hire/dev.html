@@ -1,0 +1,273 @@
+{% extends "base.html" %}
+{% block title %}
+    Hire Dedicated Developers
+{% endblock %}
+{% block content %}
+<main class="main-services hiring">
+    <div class="land">
+        <img src="{{ url_for('static', filename='landing/dedicated.jpeg') }}" alt="">
+        <div class="cont">
+            <h1></h1>
+            <h1>
+                Hire Dedicated Developer
+            </h1>
+            <p>
+                A dedicated development team is made up of developers, designers, testers, marketers, and managers as per the business requirements. It acts as your in-house team but you are free from managing administrative support, HR, tax, and social-related issues.
+            </p>
+            <a href="{{ url_for('contact') }}">
+                <button>
+                    Consult A Developer
+                </button>
+            </a>
+        </div>
+    </div>
+
+    <div class="serv-land">
+        <div class="polygon serv-poly">
+            <div class="serv-land-head">
+                <h1>
+                    Hire Dedicated Developers!
+                </h1>
+            </div>
+        </div>
+        <div class="serv-land-cont">
+            <div class="races">
+                <div class="card">
+                    <h2>
+                        Hire Expert Frontend Developers!
+                    </h2>
+                    <p>
+                        Elevate your user experience to the next level with our top-tier frontend developers. Whether it's crafting intuitive interfaces or optimizing user interactions, our team ensures your app stands out from the crowd.
+                    </p>
+                </div>
+                <div class="card">
+                    <h2>
+                        Find Skilled Backend Developers!
+                    </h2>
+                    <p>
+                        Power up your app's performance and reliability with our seasoned backend developers. From scalable architecture to efficient data management, our experts ensure your app's backend is robust and future-proof.
+                    </p>
+                </div>
+                <div class="card">
+                    <h2>
+                        Hire Top-Notch Mobile App Developers!
+                    </h2>
+                    <p>
+                        Dive into a world of talent with our diverse pool of mobile app developers, covering iOS, Android, Kotlin, Swift, React Native, and Flutter specialists. Whether you need frontend wizards, backend maestros, or meticulous software testers, we've got you covered!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="other">
+    </div>
+    <div class="other">
+    </div>
+    
+   <div class="services-content">
+        <div class="intro-cont">
+                <h2>
+                    Steps to Hire Dedicated Developers from Fortress Data And Analytics
+                </h2>
+        </div>
+        <div class="main-cont">
+            <div class="contents left">
+                <h3>
+                    <img src="{{ url_for('static', filename='services/hire_1.png') }}" alt="">
+                    Post Your Inquiry
+                </h3>
+
+            </div>
+            <div class="contents right">
+                <h3>
+                    <img src="{{ url_for('static', filename='services/hire_4.png') }}" alt="">
+     
+                    Interview
+                </h3>
+            </div>
+            <div class="contents left">
+                <h3>
+                    <img src="{{ url_for('static', filename='services/hire_3.png') }}" alt="">
+
+                    Engagement Terms
+                </h3>
+            </div>
+            <div class="contents right">
+                <h3>
+                    <img src="{{ url_for('static', filename='services/hire_2.png') }}" alt="">
+
+                    Get Started
+                </h3>
+            </div>
+        </div>
+   </div>
+    
+    
+    <div class="services-technologies hire">
+        <h2>
+            Technologies
+        </h2>
+        <button>
+            <img src="{{ url_for('static', filename='services/JavaScript-Logo.png') }}"><br>
+            JavaScript
+        </button>
+        <button>
+            <img src="{{ url_for('static', filename='services/Python-Logo.png') }}"><br>
+            Python
+        </button>
+        <button>
+            <img src="{{ url_for('static', filename='services/cplus.png') }}"><br>
+            C++
+        </button>
+        <button>
+            <img src="{{ url_for('static', filename='services/JAVA-Logo.png') }}"><br>
+            Java
+        </button>
+    </div>
+
+    <div class="contact">
+        <div class="polygon serv-poly">
+            <div class="contact-head">
+                <h1>
+                    Hire a Dedicated Developer
+                </h1>
+            </div>
+        </div>
+        <div class="contact-cont">
+            <div class="main">
+                <img src="{{ url_for('static', filename='landing/contact2.jpeg') }}" alt="">
+                <!-- <img src="{{ url_for('static', filename='services/Project_With_Us_graphic.png') }}" alt=""> -->
+                <div class="content">
+                    <p>
+                        We can help achieve business goals rapidly with a dedicated team of Power BI consultants. Drop us your requirements and we assure to find Power BI resources matching your criteria.
+                    </p>
+                    <a href="{{ url_for('contact') }}">
+                        <button>
+                            Hire Dedicated Developer
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ind-land">
+        <div class="polygon">
+            <div class="ind-head">
+                <h1>
+                    Industries We Serve
+                </h1>
+            </div>
+        </div>
+        <div class="ind-cont">
+            <div class="contents magnet">
+                <a href="{{ url_for('fitness') }}" class="text">
+                    <img src="{{ url_for('static', filename='industries/fitness.png') }}">
+                    <h5>
+                        Fitness
+                    </h5>
+                </a>
+            </div>
+    
+            <div class="contents magnet">
+                <a href="{{ url_for('fintech') }}" class="text">
+                    <img src="{{ url_for('static', filename='industries/fintech.png') }}">
+                    <h5>
+                        Fintech
+                    </h5>
+                </a>
+            </div>
+    
+            <div class="contents magnet">
+                <a href="{{ url_for('education') }}" class="text">
+                    <img src="{{ url_for('static', filename='industries/education.png') }}">
+                    <h5>
+                        Education
+                    </h5>
+                </a>
+            </div>
+    
+            <div class="contents magnet">
+                <a href="{{ url_for('healthcare') }}" class="text">
+                    <img src="{{ url_for('static', filename='industries/healthcareicon.png') }}">
+                    <h5>
+                        Healthcare
+                    </h5>
+                </a>
+            </div>
+    
+            <div class="contents magnet">
+                <a href="{{ url_for('energy') }}" class="text">
+                    <img src="{{ url_for('static', filename='industries/energy-and-utilities.png') }}">
+                    <h5>
+                        Energy & Utilities
+                    </h5>
+                </a>
+            </div>
+    
+            <div class="contents magnet">
+                <a href="{{ url_for('travel') }}" class="text">
+                    <img src="{{ url_for('static', filename='industries/travel-and-hospitality.png') }}">
+                    <h5>
+                        Travel & Hospitality
+                    </h5>
+                </a>
+            </div>
+    
+            <div class="contents magnet">
+                <a href="{{ url_for('manufacturing') }}" class="text">
+                    <img src="{{ url_for('static', filename='industries/manufacturing.png') }}">
+                    <h5>
+                        Manufacturing
+                    </h5>
+                </a>
+            </div>
+    
+            <div class="contents magnet">
+                <a href="{{ url_for('adverts') }}" class="text">
+                    <img src="{{ url_for('static', filename='industries/advertising.png') }}">
+                    <h5>
+                        Advertising
+                    </h5>
+                </a>
+            </div>
+    
+            <div class="contents magnet">
+                <a href="{{ url_for('retail') }}" class="text">
+                    <img src="{{ url_for('static', filename='industries/retail.png') }}">
+                    <h5>
+                        Retail
+                    </h5>
+                </a>
+            </div>
+    
+            <div class="contents magnet">
+                <a href="{{ url_for('entertain') }}" class="text">
+                    <img src="{{ url_for('static', filename='industries/media-and-entertainment.png') }}">
+                        <h5>
+                            Media & Entertainment
+                        </h5>
+                </a>
+            </div>
+    
+            <div class="contents magnet">
+                <a href="{{ url_for('supplychain') }}" class="text">
+                    <img src="{{ url_for('static', filename='industries/logistics.png') }}">
+                    <h5>
+                        Supply Chain And Logistics
+                    </h5>
+                </a>
+            </div>
+    
+            <div class="contents magnet">
+                <a href="{{ url_for('travel') }}" class="text">
+                    <img src="{{ url_for('static', filename='industries/life-sciences.png') }}" alt="">
+                    <h5>
+                        Life Science
+                    </h5>
+                </a>
+            </div>  
+        </div>
+    </div>
+</main>
+{% endblock %}
