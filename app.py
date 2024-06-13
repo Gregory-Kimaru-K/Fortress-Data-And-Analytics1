@@ -16,7 +16,7 @@ app.config['SECRET_KEY'] = secrets.token_hex(16)
 
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 465
-app.config['MAIL_USERNAME'] = 'gregorykariara1@gmail.com'
+app.config['MAIL_USERNAME'] = os.environ['GMAIL']
 app.config['MAIL_PASSWORD'] = token
 app.config['MAIL_USE_TLS'] = False
 app.config['MAIL_USE_SSL'] = True
@@ -239,7 +239,7 @@ def sending():
         subject = request.form['subject']
         message = request.form['message']
 
-        msg = Message(subject, sender='gregorykariara1@gmail.com', recipients=['gregorykariara1@gmail.com'])
+        msg = Message(subject, sender=os.environ['GMAIL'], recipients=os.environ['GMAIL'])
         msg.body = f"Name: {name}\nEmail: {email}\nTelephone Number: {telNumber}\nMessage: {message}"
         mail.send(msg)
         
