@@ -2,7 +2,10 @@ from flask import Flask, jsonify, render_template, request, flash
 from flask_mail import Mail, Message
 import secrets
 from chat import get_response
+import os
+from dotenv import load_dotenv
 
+load_dotenv()
 
 temmplate_folder = 'temp/templates'
 static_folder = 'temp/static'
@@ -14,8 +17,8 @@ app.config['SECRET_KEY'] = secrets.token_hex(16)
 
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 465
-app.config['MAIL_USERNAME'] = os.environ['GMAIL']
-app.config['MAIL_PASSWORD'] =os.environ['PASSWORD']
+app.config['MAIL_USERNAME'] = os.getenv("GMAIL")
+app.config['MAIL_PASSWORD'] =os.getenv("PASSWORD")
 app.config['MAIL_USE_TLS'] = False
 app.config['MAIL_USE_SSL'] = True
 
@@ -237,7 +240,7 @@ def sending():
         subject = request.form['subject']
         message = request.form['message']
 
-        msg = Message(subject, sender=os.environ['GMAIL'], recipients=os.environ['GMAIL'])
+        msg = Message(subject, sender=os.getenv("GMAIL"), recipients=os.getenv('GMAIL'))
         msg.body = f"Name: {name}\nEmail: {email}\nTelephone Number: {telNumber}\nMessage: {message}"
         mail.send(msg)
         
