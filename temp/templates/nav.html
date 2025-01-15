@@ -18,8 +18,10 @@
 <body class="nav-body">
     <header class="header">
         <div class="logo">
-            <a href="{{ url_for('home') }}"><img src="{{ url_for('static', filename='fortress2.png') }}"></a>
-            <h5 class="fortress">FORTRESS DATA AND ANALYTICS</h5>
+            <a href="{{ url_for('home') }}">
+                <img src="{{ url_for('static', filename='fortress2.png') }}">
+                <h5 class="fortress">FORTRESS DATA AND ANALYTICS</h5>
+            </a>
         </div>
 
         <nav class="navbar">
@@ -153,7 +155,7 @@
         });
     </script>
     
-    <script>
+    <!-- <script>
         // Function to refresh the page on resize
         function refreshOnResize() {
             window.addEventListener('resize', function() {
@@ -163,7 +165,7 @@
     
         // Call the function to enable refreshing on resize
         refreshOnResize();
-    </script>
+    </script> -->
         
 </body>
 </html>

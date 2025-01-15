@@ -40,12 +40,16 @@
     gap: 1.2rem;
 }
 
+.header .logo a {
+    display: flex;
+}
+
 .header .logo a img {
     width: 64px;
     height: 64px;
 }
 
-.header .logo .fortress {
+.header .logo a .fortress {
     align-self: center;
     font-size: 1rem;
     color: var(--color2);
@@ -183,6 +187,8 @@
         overflow-y: scroll;
         transition: 0.5s;
     }
+
+    .header .logo a .fortress {    }
 
     .header .active {
         opacity: 1;
