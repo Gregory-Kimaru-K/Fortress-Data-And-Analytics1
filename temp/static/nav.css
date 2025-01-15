@@ -42,6 +42,7 @@
 
 .header .logo a {
     display: flex;
+    text-decoration: none;
 }
 
 .header .logo a img {
@@ -187,8 +188,6 @@
         overflow-y: scroll;
         transition: 0.5s;
     }
-
-    .header .logo a .fortress {    }
 
     .header .active {
         opacity: 1;
